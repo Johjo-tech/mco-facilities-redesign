@@ -269,7 +269,7 @@
     if (btn) btn.setAttribute('disabled', '');
     if (btnLabel) btnLabel.textContent = 'Envoi en cours…';
     if (statusEl) { statusEl.style.color = ''; statusEl.textContent = ''; }
- 
+
     var payload = Object.fromEntries(new FormData(form).entries());
 
     fetch('https://api.web3forms.com/submit', {
