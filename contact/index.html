@@ -104,7 +104,7 @@
 
     <section class="section">
       <div class="contact">
-        <form class="contact__form" id="mco-contact-form" data-reveal>
+                <form class="contact__form" id="mco-contact-form" data-reveal>
           <input type="hidden" name="access_key" value="ff813cd9-f523-435a-a91c-af91e989e3d1" />
           <input type="hidden" name="from_name" value="Site MCO Facilities" />
           <!-- Honeypot anti-spam : ne pas remplir, ne pas retirer -->
@@ -246,48 +246,48 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="/main.js"></script>
 
-  <!-- Envoi du formulaire de contact via Web3Forms -->
-  <script>
-  (function () {
-    var form = document.getElementById('mco-contact-form');
-    if (!form) return;
-    var statusEl = document.getElementById('contact-status');
-    var btn = form.querySelector('button[type="submit"]');
-    var btnLabel = btn ? btn.querySelector('span') : null;
-    var defaultLabel = btnLabel ? btnLabel.textContent : 'Envoyer ma demande';
+<!-- Envoi du formulaire de contact via Web3Forms -->
+<script>
+(function () {
+  var form = document.getElementById('mco-contact-form');
+  if (!form) return;
+  var statusEl = document.getElementById('contact-status');
+  var btn = form.querySelector('button[type="submit"]');
+  var btnLabel = btn ? btn.querySelector('span') : null;
+  var defaultLabel = btnLabel ? btnLabel.textContent : 'Envoyer ma demande';
 
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      if (btn) btn.setAttribute('disabled', '');
-      if (btnLabel) btnLabel.textContent = 'Envoi en cours…';
-      if (statusEl) { statusEl.style.color = ''; statusEl.textContent = ''; }
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (btn) btn.setAttribute('disabled', '');
+    if (btnLabel) btnLabel.textContent = 'Envoi en cours…';
+    if (statusEl) { statusEl.style.color = ''; statusEl.textContent = ''; }
 
-      var payload = Object.fromEntries(new FormData(form).entries());
+    var payload = Object.fromEntries(new FormData(form).entries());
 
-      fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify(payload)
-      })
-        .then(function (r) { return r.json(); })
-        .then(function (data) {
-          if (data.success) {
-            if (btnLabel) btnLabel.textContent = 'Message envoyé ✓';
-            if (statusEl) { statusEl.style.color = '#36d399'; statusEl.textContent = 'Merci, votre demande a bien été envoyée. Réponse sous 24h ouvrées.'; }
-            form.reset();
-          } else {
-            if (btn) btn.removeAttribute('disabled');
-            if (btnLabel) btnLabel.textContent = defaultLabel;
-            if (statusEl) { statusEl.style.color = '#f87272'; statusEl.textContent = 'Une erreur est survenue : ' + (data.message || 'envoi impossible') + '. Réessayez ou écrivez-nous directement.'; }
-          }
-        })
-        .catch(function () {
-          if (btn) btn.removeAttribute('disabled');
-          if (btnLabel) btnLabel.textContent = defaultLabel;
-          if (statusEl) { statusEl.style.color = '#f87272'; statusEl.textContent = 'Erreur réseau. Réessayez ou écrivez-nous à alexandre.angulo@mco-facilities.fr.'; }
-        });
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      if (data.success) {
+        if (btnLabel) btnLabel.textContent = 'Message envoyé ✓';
+        if (statusEl) { statusEl.style.color = '#36d399'; statusEl.textContent = 'Merci, votre demande a bien été envoyée. Réponse sous 24h ouvrées.'; }
+        form.reset();
+      } else {
+        if (btn) btn.removeAttribute('disabled');
+        if (btnLabel) btnLabel.textContent = defaultLabel;
+        if (statusEl) { statusEl.style.color = '#f87272'; statusEl.textContent = 'Une erreur est survenue : ' + (data.message || 'envoi impossible') + '. Réessayez ou écrivez-nous directement.'; }
+      }
+    })
+    .catch(function () {
+      if (btn) btn.removeAttribute('disabled');
+      if (btnLabel) btnLabel.textContent = defaultLabel;
+      if (statusEl) { statusEl.style.color = '#f87272'; statusEl.textContent = 'Erreur réseau. Réessayez ou écrivez-nous à alexandre.angulo@mco-facilities.fr.'; }
     });
-  })();
-  </script>
+  });
+})();
+</script>
 </body>
 </html>
