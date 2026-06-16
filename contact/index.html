@@ -21,7 +21,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="/style.css" />
-  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <link rel="icon" type="image/svg+xml" href="/Logo1.png" />
 
   <script type="application/ld+json">
   {
@@ -58,11 +58,7 @@
 
   <header class="nav" id="nav">
     <a href="/" class="nav__logo" aria-label="MCO Facilities — accueil">
-      <svg width="148" height="36" viewBox="0 0 180 44" fill="none">
-        <g transform="translate(2 6)"><path d="M16 0 L30 8 L30 24 L16 32 L2 24 L2 8 Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 21 L9 11 L16 18 L23 11 L23 21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></g>
-        <text x="44" y="29" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="20" letter-spacing="0.5" fill="currentColor">MCO</text>
-        <text x="92" y="29" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="20" fill="currentColor" opacity="0.55">facilities</text>
-      </svg>
+      <img src="Logo1.png" alt="MCO Facilities" height="50" style="height:55px;width:auto;display:block;" />
     </a>
     <nav class="nav__links" aria-label="Navigation principale">
       <div class="nav__dropdown">
@@ -108,7 +104,11 @@
 
     <section class="section">
       <div class="contact">
-        <form class="contact__form" data-reveal onsubmit="event.preventDefault(); this.querySelector('button').textContent='Message envoyé ✓'; this.querySelector('button').setAttribute('disabled','');">
+        <form class="contact__form" id="mco-contact-form" data-reveal>
+          <input type="hidden" name="access_key" value="ff813cd9-f523-435a-a91c-af91e989e3d1" />
+          <input type="hidden" name="from_name" value="Site MCO Facilities" />
+          <!-- Honeypot anti-spam : ne pas remplir, ne pas retirer -->
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
           <div class="field">
             <label for="f-name">Nom complet</label>
             <input id="f-name" name="name" type="text" required placeholder="Prénom Nom" />
@@ -153,6 +153,7 @@
             En soumettant ce formulaire, vous acceptez que vos données soient utilisées pour traiter votre demande.
             Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données — voir nos <a href="/mentions-legales/">mentions légales</a>.
           </p>
+          <p class="contact__status" id="contact-status" role="status" aria-live="polite" style="margin:0 0 .5rem;min-height:1.2em;"></p>
           <button type="submit" class="btn btn--primary btn--block">
             <span>Envoyer ma demande</span>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -226,11 +227,7 @@
   <footer class="footer">
     <div class="footer__top">
       <div class="footer__brand">
-        <svg width="148" height="36" viewBox="0 0 180 44" fill="none">
-          <g transform="translate(2 6)"><path d="M16 0 L30 8 L30 24 L16 32 L2 24 L2 8 Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 21 L9 11 L16 18 L23 11 L23 21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></g>
-          <text x="44" y="29" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="20" letter-spacing="0.5" fill="currentColor">MCO</text>
-          <text x="92" y="29" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="20" fill="currentColor" opacity="0.55">facilities</text>
-        </svg>
+        <img src="Logo1.png" alt="MCO Facilities" height="50" style="height:55px;width:auto;display:block;" />
         <p>Maintien en Condition Opérationnelle, vidéosurveillance et contrôle d'accès — pour des sites sereins et performants.</p>
       </div>
       <nav class="footer__nav" aria-label="Pied de page">
@@ -248,5 +245,49 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="/main.js"></script>
+
+  <!-- Envoi du formulaire de contact via Web3Forms -->
+  <script>
+  (function () {
+    var form = document.getElementById('mco-contact-form');
+    if (!form) return;
+    var statusEl = document.getElementById('contact-status');
+    var btn = form.querySelector('button[type="submit"]');
+    var btnLabel = btn ? btn.querySelector('span') : null;
+    var defaultLabel = btnLabel ? btnLabel.textContent : 'Envoyer ma demande';
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (btn) btn.setAttribute('disabled', '');
+      if (btnLabel) btnLabel.textContent = 'Envoi en cours…';
+      if (statusEl) { statusEl.style.color = ''; statusEl.textContent = ''; }
+
+      var payload = Object.fromEntries(new FormData(form).entries());
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          if (data.success) {
+            if (btnLabel) btnLabel.textContent = 'Message envoyé ✓';
+            if (statusEl) { statusEl.style.color = '#36d399'; statusEl.textContent = 'Merci, votre demande a bien été envoyée. Réponse sous 24h ouvrées.'; }
+            form.reset();
+          } else {
+            if (btn) btn.removeAttribute('disabled');
+            if (btnLabel) btnLabel.textContent = defaultLabel;
+            if (statusEl) { statusEl.style.color = '#f87272'; statusEl.textContent = 'Une erreur est survenue : ' + (data.message || 'envoi impossible') + '. Réessayez ou écrivez-nous directement.'; }
+          }
+        })
+        .catch(function () {
+          if (btn) btn.removeAttribute('disabled');
+          if (btnLabel) btnLabel.textContent = defaultLabel;
+          if (statusEl) { statusEl.style.color = '#f87272'; statusEl.textContent = 'Erreur réseau. Réessayez ou écrivez-nous à alexandre.angulo@mco-facilities.fr.'; }
+        });
+    });
+  })();
+  </script>
 </body>
 </html>
