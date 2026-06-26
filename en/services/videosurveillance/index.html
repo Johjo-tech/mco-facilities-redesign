@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#08090f" />
+
+  <title>Professional Access Control — Badges, Biometrics, Mobile NFC | MCO Facilities</title>
+  <meta name="description" content="Access control solutions for businesses and local authorities: Mifare badges, biometrics, mobile NFC, video intercoms, Active Directory integration. GDPR compliant. Varces, Grenoble, Auvergne-Rhône-Alpes." />
+  <meta name="keywords" content="access control, badge, biometrics, mobile NFC, Mifare DESFire, video intercom, anti-passback, Active Directory, GDPR, Grenoble" />
+  <link rel="canonical" href="https://mco-facilities.vibeia.io/services/controle-acces/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="https://mco-facilities.vibeia.io/services/controle-acces/" />
+  <meta property="og:title" content="Access Control — MCO Facilities" />
+  <meta property="og:description" content="Control flows and permissions across your sites. Badges, biometrics, mobile NFC, HRIS/AD integration." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1633265486064-086b219458ec?w=1200&q=80&auto=format&fit=crop" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" type="image/svg+xml" href="/logo.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mco-facilities.vibeia.io/" },
+          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://mco-facilities.vibeia.io/#services" },
+          { "@type": "ListItem", "position": 3, "name": "Access Control", "item": "https://mco-facilities.vibeia.io/services/controle-acces/" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "serviceType": "Professional Access Control",
+        "name": "Access Control",
+        "provider": { "@type": "Organization", "name": "MCO Facilities", "url": "https://mco-facilities.vibeia.io/" },
+        "areaServed": { "@type": "AdministrativeArea", "name": "Auvergne-Rhône-Alpes" },
+        "description": "Access control solutions: biometric readers, Mifare badges, mobile NFC, video intercoms, HRIS/Active Directory integration."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Which badge technology should I choose?", "acceptedAnswer": { "@type": "Answer", "text": "For new installations, the industry standard is Mifare DESFire EV2 or EV3 — featuring AES encryption, anti-cloning security, and a 10-year lifespan. Avoid legacy technologies like HID Prox 125 kHz and Mifare Classic, which are highly vulnerable to smartphone cloning." } },
+          { "@type": "Question", "name": "Is biometrics GDPR compliant?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, under specific conditions. Standard regulatory frameworks (such as CNIL guidelines) require biometric templates to be stored directly on the user's personal badge rather than a centralized database, along with an explicit purpose and a prior Data Protection Impact Assessment (DPIA). MCO Facilities manages this entire process." } },
+          { "@type": "Question", "name": "Can access control be integrated with Active Directory?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Badges are automatically provisioned based on your Active Directory or HRIS directory (SAP, Workday, etc.), and immediately revoked when an employee leaves. This eliminates the risk of unmanaged 'ghost' badges remaining active." } },
+          { "@type": "Question", "name": "What is anti-passback?", "acceptedAnswer": { "@type": "Answer", "text": "Anti-passback prevents the same badge from being used twice to enter a zone without a corresponding exit log. This stops users from passing their badge back to a second person. It is essential for high-security sites such as data centers and sensitive industrial facilities." } },
+          { "@type": "Question", "name": "Does the entire building need to be rewired?", "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily. IP-PoE readers connect via standard RJ45 Ethernet cabling, delivering data and power through a single cable. For retrofits and renovations, wireless solutions (Wi-Fi, BLE, long-range RFID) avoid invasive wall cutting and keep structural modifications to a minimum." } }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="page--service">
+  <div class="bg-layer" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-orb bg-orb--1"></div>
+    <div class="bg-orb bg-orb--2"></div>
+    <div class="bg-noise"></div>
+  </div>
+
+  <div class="cursor" aria-hidden="true"><div class="cursor__dot"></div></div>
+
+  <header class="nav" id="nav">
+    <a href="/" class="nav__logo" aria-label="MCO Facilities — home">
+      <img src="/Logo1.png" alt="MCO Facilities" height="50" style="height:55px;width:auto;display:block;" />
+    </a>
+    <nav class="nav__links" aria-label="Main navigation">
+      <div class="nav__dropdown">
+        <button class="nav__dropdown-trigger is-active" aria-haspopup="true" aria-expanded="false">Services <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="nav__dropdown-menu">
+          <a href="/services/maintien-condition-operationnelle/"><span class="nav__dropdown-num">01</span><div><strong>Operational Readiness (MCO)</strong><span>Preventive and corrective maintenance</span></div></a>
+          <a href="/services/videosurveillance/"><span class="nav__dropdown-num">02</span><div><strong>Video Surveillance</strong><span>IP systems, monitoring, GDPR</span></div></a>
+          <a href="/services/controle-acces/" class="is-current"><span class="nav__dropdown-num">03</span><div><strong>Access Control</strong><span>Badges, biometrics, mobile NFC</span></div></a>
+          <a href="/services/maintenance-multi-technique/"><span class="nav__dropdown-num">04</span><div><strong>Multi-technical Maintenance</strong><span>HVAC, electricity, plumbing</span></div></a>
+        </div>
+      </div>
+      <a href="/#expertise">Expertise</a>
+      <a href="/#methode">Method</a>
+      <a href="/#references">References</a>
+
+      <!-- Language Selector Toggle -->
+      <div class="nav__lang" style="margin-left: 15px; font-size: 0.9rem; font-family: var(--ff-mono, monospace);">
+        <span class="lang--active" style="font-weight: bold; color: #fff;">EN</span> | <a href="/services/controle-acces/" class="lang__link" style="opacity: 0.6; text-decoration: none; color: #fff;">FR</a>
+      </div>
+    </nav>
+    <a href="/contact/" class="nav__cta"><span>Contact us</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="page-hero__photo" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1633265486064-086b219458ec?w=1920&q=75&auto=format&fit=crop" alt="" loading="eager" fetchpriority="high" />
+      </div>
+      <div class="page-hero__inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a><span aria-hidden="true">·</span>
+          <a href="/#services">Services</a><span aria-hidden="true">·</span>
+          <span aria-current="page">Access Control</span>
+        </nav>
+
+        <span class="page-hero__kicker" data-reveal>
+          <span class="dot"></span><span>Service 03 — Access Control</span>
+        </span>
+
+        <h1 class="page-hero__title" data-reveal>
+          Who enters, where,<br/><em>when</em>, and how.
+        </h1>
+
+        <p class="page-hero__lede" data-reveal>
+          Master **flows**, **permissions**, and **traceability** across all your facilities — from Mifare smart badges and mobile NFC to advanced biometrics. Enjoy native integration with your Active Directory or HRIS directories.
+        </p>
+
+        <div class="page-hero__actions" data-reveal>
+          <a href="/contact/" class="btn btn--primary"><span>Audit My Access</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="#offre" class="btn btn--ghost"><span>Explore Our Solutions</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__head">
+        <span class="kicker" data-reveal>Why Choose Us</span>
+        <h2 class="section__title" data-reveal>
+          <span>Access control is</span>
+          <span><em>more</em> than just a lock.</span>
+        </h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-grid__item" data-reveal>
+          <span class="why-grid__num">01</span>
+          <h3>Multi-Technology Ecosystem</h3>
+          <p>From Mifare DESFire badges to **vascular vein biometrics**, mobile NFC credentials, and temporary QR codes. Select the ideal authentication method for each zone instead of a generic, one-size-fits-all approach.</p>
+        </div>
+        <div class="why-grid__item" data-reveal>
+          <span class="why-grid__num">02</span>
+          <h3>Automated HR Synchronization</h3>
+          <p>Credentials are provisioned automatically when a new team member joins and instantly deactivated upon their departure via your **Active Directory** or HRIS database. No more forgotten or unmanaged ghost badges left active.</p>
+        </div>
+        <div class="why-grid__item" data-reveal>
+          <span class="why-grid__num">03</span>
+          <h3>GDPR-Compliant Traceability</h3>
+          <p>Every entry and exit log is **tracked and anonymized** after a customizable retention period. Clear, accessible audit logs are always available for your authorized users and your DPO. Compliance by design.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="offre">
+      <div class="section__head">
+        <span class="kicker" data-reveal>Our Access Control Solutions</span>
+        <h2 class="section__title" data-reveal>
+          <span>Six technologies,</span>
+          <span>one unified <em>cockpit.</em></span>
+        </h2>
+      </div>
+
+      <div class="sub-services">
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><rect x="6" y="10" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="17" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M16 6v4M11 6v4M21 6v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+          <h3>Mifare DESFire Badges</h3>
+          <p>The industry benchmark in 2026. AES encryption, clone-proof security, and a 10-year runtime. Seamlessly compatible with wall readers, turnstiles, cafeteria payment points, and secure follow-me printing.</p>
+        </article>
+
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><path d="M16 4 C10 4 6 8 6 14 C6 20 10 26 16 28 C22 26 26 20 26 14 C26 8 22 4 16 4 Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M11 14 c0 -3 2 -5 5 -5 s5 2 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+          <h3>Biometrics</h3>
+          <p>Fingerprint scan, palm/vascular vein pattern recognition, and facial recognition. Biometric templates are stored safely on the individual's local badge (not a central server) for strict GDPR compliance.</p>
+        </article>
+
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><rect x="9" y="4" width="14" height="24" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="24" r="1.5" fill="currentColor"/><path d="M14 9 c1 -1.5 3 -1.5 4 0 a 3 3 0 0 1 -2 5 v 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Mobile NFC & BLE</h3>
+          <p>Turn your team's smartphones into secure digital keys. Instantly grant entry via close-range NFC or hands-free Bluetooth Low Energy (BLE) — ideal for opening parking gates without rolling down a window.</p>
+        </article>
+
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><rect x="6" y="6" width="20" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="14" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M9 22 c1 -3 4 -4 7 -4 s6 1 7 4" stroke="currentColor" stroke-width="1.5"/></svg></div>
+          <h3>Video & Audio Intercoms</h3>
+          <p>IP-connected intercom arrays tightly paired with your video surveillance network. Features live visual verification, remote door release from front desks or mobile apps, and native SIP telephone integration.</p>
+        </article>
+
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><path d="M6 16h20M6 10h20M6 22h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="11" cy="10" r="2" fill="currentColor"/><circle cx="20" cy="16" r="2" fill="currentColor"/><circle cx="14" cy="22" r="2" fill="currentColor"/></svg></div>
+          <h3>Centralized Multi-Site Management</h3>
+          <p>A unified web interface to manage all user profiles, access zones, and automated schedules across multiple distinct properties nationwide. Supports granular delegation to local branch managers.</p>
+        </article>
+
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><path d="M16 4 L26 9 V18 C26 22 22 26 16 28 C10 26 6 22 6 18 V9 Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M11 16l3 3 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Anti-Passback & Audit Trails</h3>
+          <p>Stops tailgating or dual entry using a single badge. Full cryptographic audit trail captures who, where, and when with granted or denied statuses. Logs are securely anonymized over time.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="callout">
+        <p data-reveal>
+          <em>Our Guiding Principle</em>: The appropriate level of physical security must match the **criticality of each specific zone**. An open-plan office space rarely warrants biometrics, while a core server room absolutely demands it. **We adapt the technology to your operational risks**, never the other way around.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__head">
+        <span class="kicker" data-reveal>Target Applications</span>
+        <h2 class="section__title" data-reveal>
+          <span>Seven sectors,</span>
+          <span>seven tailored <em>configurations.</em></span>
+        </h2>
+      </div>
+
+      <div class="sectors">
+        <article class="sector" data-reveal><h3>Corporate Offices</h3><p>Main entrances controlled via smart badges, floor-restricted elevator integration, meeting rooms unlocked upon booking validation, and automated parking access for personnel.</p></article>
+        <article class="sector" data-reveal><h3>Industrial Facilities</h3><p>ATEX zones, locker rooms, R&D labs, and assembly floors. Leverages dual-factor authentication (badge + biometrics) for critical areas with time-restricted shifts.</p></article>
+        <article class="sector" data-reveal><h3>Data Centers</h3><p>Triple-factor authentication (badge + biometrics + PIN), mantrap interlocking portals, and rigorous anti-passback rules. Comprehensive logging built for ISO 27001 and SOC 2 audits.</p></article>
+        <article class="sector" data-reveal><h3>Healthcare Sites</h3><p>Restricted access control across operating blocks, emergency rooms, pharmacies, and patient record storage. Fully integrated with hospital HR systems.</p></article>
+        <article class="sector" data-reveal><h3>Hospitality</h3><p>Guest keys encoded instantly at check-in to unlock specific rooms, shared amenities (fitness center, pool), and integrated minibar or point-of-sale systems.</p></article>
+        <article class="sector" data-reveal><h3>Residential Buildings</h3><p>Secure lobbies, multi-story parkings, common waste storage, and bicycle rooms. IP-based video entry routing visitor calls directly to residents' mobile phones.</p></article>
+        <article class="sector" data-reveal><h3>Logistics Hubs</h3><p>Loading docks, high-value sorting cages, and driver welcome booths utilizing temporary QR codes pre-generated by your operations desk.</p></article>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="section__head">
+        <span class="kicker" data-reveal>Field Operations</span>
+        <h2 class="section__title" data-reveal>
+          <span>From hardware readers</span>
+          <span>to the <em>central cockpit.</em></span>
+        </h2>
+      </div>
+
+      <div class="gallery">
+        <figure class="gallery__item gallery__item--lg" data-reveal>
+          <img src="https://images.unsplash.com/photo-1632408269748-6deecd9b3ee0?w=1200&q=75&auto=format&fit=crop" alt="Smart card badge reader installed on a corporate main door" loading="lazy" />
+          <figcaption><span>Access Readers</span><span class="muted">Mifare DESFire EV3 architecture</span></figcaption>
+        </figure>
+        <figure class="gallery__item" data-reveal>
+          <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=900&q=75&auto=format&fit=crop" alt="Access control turnstiles inside a corporate lobby" loading="lazy" />
+          <figcaption><span>Lobby Turnstiles</span><span class="muted">Corporate facility entrances</span></figcaption>
+        </figure>
+        <figure class="gallery__item" data-reveal>
+          <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=900&q=75&auto=format&fit=crop" alt="Central system server rack for access control management" loading="lazy" />
+          <figcaption><span>Control Units</span><span class="muted">Multi-site central management</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__head">
+        <span class="kicker" data-reveal>Frequently Asked Questions — Access Control</span>
+        <h2 class="section__title" data-reveal>
+          <span>Technical insights on</span>
+          <span>modern <em>building security.</em></span>
+        </h2>
+      </div>
+
+      <div class="faq">
+        <details class="faq__item" data-reveal>
+          <summary><span>Which badge technology should I choose?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">For new installations, the standard is <strong>Mifare DESFire EV2 or EV3</strong> — featuring AES encryption, anti-clonage security, and a 10-year lifespan. Avoid legacy technologies like HID Prox 125 kHz and Mifare Classic, which are highly vulnerable to simple smartphone cloning apps.</div>
+        </details>
+
+        <details class="faq__item" data-reveal>
+          <summary><span>Is biometrics GDPR compliant?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">Yes, under specific conditions. Regulatory frameworks require <strong>storing biometric templates on the user's personal badge</strong> rather than a centralized database, a well-defined purpose, a prior Data Protection Impact Assessment (DPIA), and clear user documentation. We manage this complete compliance lifecycle.</div>
+        </details>
+
+        <details class="faq__item" data-reveal>
+          <summary><span>Can access control be integrated with Active Directory?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">Yes. User tokens and access parameters are <strong>automatically provisioned</strong> directly from Active Directory or your HRIS suite (SAP, Workday, Oracle) and immediately revoked upon offboarding. This stops active "ghost" badges, which represent a primary source of physical security breaches.</div>
+        </details>
+
+        <details class="faq__item" data-reveal>
+          <summary><span>What is anti-passback?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">Anti-passback rules prevent an individual card or token from registering two sequential entry scans without an intervening exit record. This <strong>stops users from passing their badge back to a second unverified person</strong> and is critical for data centers and sensitive manufacturing hubs.</div>
+        </details>
+
+        <details class="faq__item" data-reveal>
+          <summary><span>Does the entire building need to be rewired?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">Not necessarily. Modern <strong>IP-PoE readers</strong> communicate over network RJ45 cables, running power and data down one wire. For existing retrofits, <strong>wireless handle sets</strong> (Wi-Fi, BLE, long-range RFID) avoid invasive masonry cuts and keep structural adjustments down. Our assessment determines the best layout for your structure.</div>
+        </details>
+
+        <details class="faq__item" data-reveal>
+          <summary><span>How much does an access control system cost?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">Costs vary depending on scale and infrastructure. As a general guide, systems average between <strong>€800 and €2,500 excl. VAT per door</strong> using standard IP-PoE Mifare DESFire readers, excluding custom structural cabling or heavy ironmongery. Long-term ROI stems from removing physical re-keying costs due to lost physical keys (~€150 per cylinder) and neutralizing unrevoked ghost badges.</div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="section__head">
+        <span class="kicker" data-reveal>More at MCO Facilities</span>
+        <h2 class="section__title" data-reveal>
+          <span>Three other pillars</span>
+          <span>of dedicated <em>expertise.</em></span>
+        </h2>
+      </div>
+      <div class="related">
+        <a href="/services/maintien-condition-operationnelle/" class="related__card" data-reveal>
+          <span class="related__num">01</span>
+          <h3>Operational Readiness (MCO)</h3>
+          <p>Preventive and corrective technical asset lifecycle management.</p>
+          <span class="related__link">Discover →</span>
+        </a>
+        <a href="/services/videosurveillance/" class="related__card" data-reveal>
+          <span class="related__num">02</span>
+          <h3>Video Surveillance</h3>
+          <p>IP video hardware, NVR setups, remote video routing, and GDPR compliance.</p>
+          <span class="related__link">Discover →</span>
+        </a>
+        <a href="/services/maintenance-multi-technique/" class="related__card" data-reveal>
+          <span class="related__num">04</span>
+          <h3>Multi-technical Maintenance</h3>
+          <p>HVAC plants, electrical distribution, plumbing networks, low voltage infrastructure, and BMS platforms.</p>
+          <span class="related__link">Discover →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="cta-block">
+        <div data-reveal>
+          <span class="kicker">Secure Your Site</span>
+          <h2 class="cta-block__title"><span>Free security & access</span><span><em>facility audit.</em></span></h2>
+          <p>On-site walkthrough inspection, mapping existing vulnerabilities and access hardware, followed by a detailed cost breakdown delivered within 7 business days. Completely obligation-free.</p>
+        </div>
+        <div class="cta-block__actions" data-reveal>
+          <a href="/contact/" class="btn btn--primary"><span>Request Your Audit</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="tel:+33670986561" class="btn btn--ghost"><span>+33 6 70 98 65 61</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="/Logo1.png" alt="MCO Facilities" height="50" style="height:55px;width:auto;display:block;" />
+        <p>Operational Readiness, video surveillance, and access control solutions — keeping your buildings resilient, secure, and running smoothly.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <div><h4>Services</h4><a href="/services/maintien-condition-operationnelle/">MCO</a><a href="/services/videosurveillance/">Video Surveillance</a><a href="/services/controle-acces/">Access Control</a><a href="/services/maintenance-multi-technique/">Multi-technical</a></div>
+        <div><h4>Company</h4><a href="/#expertise">Expertise</a><a href="/#methode">Method</a><a href="/#references">References</a><a href="/contact/">Contact</a></div>
+        <div><h4>Contact Details</h4><a href="tel:+33670986561">+33 6 70 98 65 61</a><a href="mailto:alexandre.angulo@mco-facilities.fr">Email</a><span>26 chemin de la digue, 38760 Varces</span></div>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> MCO Facilities — All rights reserved.</span>
+      <span class="footer__legal"><a href="/mentions-legales/">Legal Notice</a> · <span class="muted">Designed in France</span></span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#08090f" />
+
+  <title>Professional IP Video Surveillance — Cameras, NVR, GDPR Monitoring | MCO Facilities</title>
+  <meta name="description" content="Design, deployment, and management of IP video surveillance systems for businesses and public authorities. Cameras, NVR, remote monitoring, GDPR and data privacy compliance. Varces, Grenoble, Auvergne-Rhône-Alpes." />
+  <meta name="keywords" content="video surveillance, IP cameras, NVR, VMS, GDPR, data protection, remote monitoring, ANPR, license plate recognition, thermal camera, Grenoble, Isère" />
+  <link rel="canonical" href="https://mco-facilities.vibeia.io/services/videosurveillance/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="https://mco-facilities.vibeia.io/services/videosurveillance/" />
+  <meta property="og:title" content="IP Video Surveillance — MCO Facilities" />
+  <meta property="og:description" content="Secure your sites with high-definition IP video systems. Built-in GDPR compliance, 24/7 monitoring, visual verification." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1573164574511-73c773193279?w=1200&q=80&auto=format&fit=crop" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" type="image/svg+xml" href="/Logo.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mco-facilities.vibeia.io/" },
+          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://mco-facilities.vibeia.io/#services" },
+          { "@type": "ListItem", "position": 3, "name": "Video Surveillance", "item": "https://mco-facilities.vibeia.io/services/videosurveillance/" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "serviceType": "Professional IP Video Surveillance",
+        "name": "IP Video Surveillance",
+        "provider": { "@type": "Organization", "name": "MCO Facilities", "url": "https://mco-facilities.vibeia.io/" },
+        "areaServed": { "@type": "AdministrativeArea", "name": "Auvergne-Rhône-Alpes" },
+        "description": "Design, deployment, and management of IP video systems. Cameras, NVR/VMS, remote monitoring, visual verification, GDPR and data privacy compliance."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Do video surveillance systems need to be declared to the Data Protection Authority?", "acceptedAnswer": { "@type": "Answer", "text": "For private workspaces not open to the public, registration in your internal GDPR data processing log is mandatory, but no direct declaration to the Data Protection Authority is required. For locations open to the public, a prefectural authorization is necessary. MCO Facilities manages the entire compliance process." } },
+          { "@type": "Question", "name": "What is the legal retention period for video footage?", "acceptedAnswer": { "@type": "Answer", "text": "Data protection regulations recommend a maximum of 30 days. Beyond this, any extended period must be justified by a legitimate need (legal proceedings, investigations). MCO Facilities configures a 30-day automatic overwrite cycle by default." } },
+          { "@type": "Question", "name": "What is the difference between an NVR and a VMS?", "acceptedAnswer": { "@type": "Answer", "text": "An NVR (Network Video Recorder) is a dedicated, closed, and straightforward hardware recorder. A VMS (Video Management System) is an open-platform software solution that manages multiple sites, integrates video analytics, access control, and AI. An NVR is ideal for 1 to 16 cameras; beyond that or for multi-site infrastructure, a VMS is highly recommended." } },
+          { "@type": "Question", "name": "Can video surveillance be coupled with access control?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and it is highly recommended. Integration enables instant visual verification for every badge swipe and allows for seamless post-incident entry/exit tracking. Both systems are managed from a unified interface." } },
+          { "@type": "Question", "name": "What happens in the event of a network outage?", "acceptedAnswer": { "@type": "Answer", "text": "IP cameras continue to record locally on their internal SD cards or directly to the NVR during an outage, and then automatically sync back to the cloud once connection is restored. No footage is lost. An alert is sent to the operator in case of prolonged downtime." } }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="page--service">
+  <div class="bg-layer" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-orb bg-orb--1"></div>
+    <div class="bg-orb bg-orb--2"></div>
+    <div class="bg-noise"></div>
+  </div>
+
+  <div class="cursor" aria-hidden="true"><div class="cursor__dot"></div></div>
+
+  <header class="nav" id="nav">
+    <a href="/" class="nav__logo" aria-label="MCO Facilities — home">
+      <img src="/Logo1.png" alt="MCO Facilities" height="50" style="height:55px;width:auto;display:block;" />
+    </a>
+    <nav class="nav__links" aria-label="Main navigation">
+      <div class="nav__dropdown">
+        <button class="nav__dropdown-trigger is-active" aria-haspopup="true" aria-expanded="false">Services <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="nav__dropdown-menu">
+          <a href="/services/maintien-condition-operationnelle/"><span class="nav__dropdown-num">01</span><div><strong>Operational Readiness (MCO)</strong><span>Preventive and corrective maintenance</span></div></a>
+          <a href="/services/videosurveillance/" class="is-current"><span class="nav__dropdown-num">02</span><div><strong>Video Surveillance</strong><span>IP systems, monitoring, GDPR compliance</span></div></a>
+          <a href="/services/controle-acces/"><span class="nav__dropdown-num">03</span><div><strong>Access Control</strong><span>Badges, biometrics, mobile NFC</span></div></a>
+          <a href="/services/maintenance-multi-technique/"><span class="nav__dropdown-num">04</span><div><strong>Multi-technical Maintenance</strong><span>HVAC, electricity, plumbing</span></div></a>
+        </div>
+      </div>
+      <a href="/#expertise">Expertise</a>
+      <a href="/#methode">Method</a>
+      <a href="/#references">References</a>
+
+      <!-- Language Selector -->
+      <div class="nav__lang" style="margin-left: 15px; font-size: 0.9rem; font-family: var(--ff-mono, monospace);">
+        <span class="lang--active" style="font-weight: bold; color: #fff;">EN</span> | <a href="/services/videosurveillance/" class="lang__link" style="opacity: 0.6; text-decoration: none; color: #fff;">FR</a>
+      </div>
+    </nav>
+    <a href="/contact/" class="nav__cta"><span>Contact us</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="page-hero__photo" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1573164574511-73c773193279?w=1920&q=75&auto=format&fit=crop" alt="" loading="eager" fetchpriority="high" />
+      </div>
+      <div class="page-hero__inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a><span aria-hidden="true">·</span>
+          <a href="/#services">Services</a><span aria-hidden="true">·</span>
+          <span aria-current="page">Video Surveillance</span>
+        </nav>
+
+        <span class="page-hero__kicker" data-reveal>
+          <span class="dot"></span><span>Service 02 — Video Surveillance</span>
+        </span>
+
+        <h1 class="page-hero__title" data-reveal>
+          <em>See</em> what<br/>truly matters.
+        </h1>
+
+        <p class="page-hero__lede" data-reveal>
+          Design, deployment, and operation of <strong>IP video surveillance systems</strong>
+          for businesses, public authorities, and industrial sites. High-resolution cameras, 24/7 
+          remote monitoring, and <strong>built-in GDPR compliance</strong> integrated from the initial engineering phase.
+        </p>
+
+        <div class="page-hero__actions" data-reveal>
+          <a href="/contact/" class="btn btn--primary"><span>Secure a site</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="#offre" class="btn btn--ghost"><span>Discover our solutions</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__head">
+        <span class="kicker" data-reveal>Why Choose Us</span>
+        <h2 class="section__title" data-reveal>
+          <span>Video surveillance that works,</span>
+          <span>exactly when you <em>need it.</em></span>
+        </h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-grid__item" data-reveal>
+          <span class="why-grid__num">01</span>
+          <h3>Open Architecture</h3>
+          <p>We partner with industry-leading brands (Axis, Hikvision, Bosch, Hanwha) utilizing the <strong>ONVIF protocol</strong>. No vendor lock-in — you maintain complete control over your system and service providers.</p>
+        </div>
+        <div class="why-grid__item" data-reveal>
+          <span class="why-grid__num">02</span>
+          <h3>GDPR by Design</h3>
+          <p>Privacy masking, configured retention cycles, data processing logs, and access request protocols: <strong>everything is delivered fully compliant upon commissioning</strong>, never as an afterthought.</p>
+        </div>
+        <div class="why-grid__item" data-reveal>
+          <span class="why-grid__num">03</span>
+          <h3>Proactive Monitoring</h3>
+          <p>Beyond simple recording, we provide <strong>active monitoring</strong> with optional visual verification through APSAD P5 certified stations, intelligent alerts, and comprehensive incident reporting.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="offre">
+      <div class="section__head">
+        <span class="kicker" data-reveal>Our Video Surveillance Solutions</span>
+        <h2 class="section__title" data-reveal>
+          <span>From sensor to pixel,</span>
+          <span>everything is <em>mastered.</em></span>
+        </h2>
+      </div>
+
+      <div class="sub-services">
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M22 10 l4 -4 M22 22 l4 4 M10 10 l-4 -4 M10 22 l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+          <h3>Site Layout Study</h3>
+          <p>Site mapping, focal length calculation, field of view simulation, and blind spot analysis. Privacy masking over private areas (breakrooms, offices) is planned from day one.</p>
+        </article>
+
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><rect x="4" y="10" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M24 14l4-2v8l-4-2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="14" cy="17" r="3" stroke="currentColor" stroke-width="1.5"/></svg></div>
+          <h3>High-Definition IP Cameras</h3>
+          <p>Fixed cameras, motorized domes (PTZ), thermal units for perimeter breaches, 360° fisheye for open offices, and ANPR for license plate recognition. Resolutions from 2 to 12 MP, low-light performance, and IR up to 50m.</p>
+        </article>
+
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><rect x="5" y="6" width="22" height="16" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M5 11h22M9 26h14" stroke="currentColor" stroke-width="1.5"/></svg></div>
+          <h3>Hybrid NVR / VMS</h3>
+          <p>Local NVR storage for high-resolution streams, paired with encrypted cloud redundancy for business continuity. Scalable architecture built for 4 cameras up to multi-site systems with hundreds of feeds.</p>
+        </article>
+
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="11" stroke="currentColor" stroke-width="1.5"/><path d="M16 8v8l5 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>24/7 Monitoring</h3>
+          <p>Optional visual verification via APSAD P5 certified monitoring centers. Intrusion detection backed by AI video analytics (differentiating humans, animals, and vehicles), mobile alerts, and security guard dispatching.</p>
+        </article>
+
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><path d="M16 4 L26 9 V18 C26 22 22 26 16 28 C10 26 6 22 6 18 V9 Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M11 16l3 3 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Built-in GDPR Compliance</h3>
+          <p>Data processing logging, automated retention cycles (30 days by default), regulatory signage layouts, and data access response protocols. Annual compliance audits included.</p>
+        </article>
+
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><path d="M16 26V6M8 14l8-8 8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Access Control Integration</h3>
+          <p>Video feeds and access security managed within a single interface. Instant visual confirmation for every badge event, streamlined entry/exit historical auditing, and anti-passback or tailgating alerts.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="callout">
+        <p class="callout__text" data-reveal>
+          <em>Our core principle</em>: Video security must serve to <strong>prevent, deter, and
+          document</strong> — never to spy on employees. Every system strictly adheres to the 
+          GDPR <strong>proportionality principle</strong>, leaving private spaces hidden by default.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__head">
+        <span class="kicker" data-reveal>Use Cases</span>
+        <h2 class="section__title" data-reveal>
+          <span>Seven sectors,</span>
+          <span>seven tailored <em>configurations.</em></span>
+        </h2>
+      </div>
+
+      <div class="sectors">
+        <article class="sector" data-reveal><h3>Logistics</h3><p>Monitoring of loading docks, inbound/outbound license plate tracking, and night-time perimeter protection via thermal imaging.</p></article>
+        <article class="sector" data-reveal><h3>Industry</h3><p>Securing ATEX explosion-hazard zones, tracking high-value inventory storage, protecting R&D laboratories, and maintaining environmental compliance.</p></article>
+        <article class="sector" data-reveal><h3>Corporate</h3><p>Lobbies, parking facilities, and supply closets. Coupled with access control systems for instant visual verification. GDPR masking over work desks.</p></article>
+        <article class="sector" data-reveal><h3>Retail</h3><p>Loss prevention, cash register monitoring, foot-traffic analytics, and anomalous behavior detection driven by on-edge AI algorithms.</p></article>
+        <article class="sector" data-reveal><h3>Healthcare</h3><p>Access management in senior living facilities, ER security monitoring in private clinics, and AI-assisted fall detection in corridors.</p></article>
+        <article class="sector" data-reveal><h3>Public Sector</h3><p>Urban area video protection, monitoring of schools, sports complexes, and waste collection points. Coordination with municipal law enforcement.</p></article>
+        <article class="sector" data-reveal><h3>Hospitality</h3><p>Surveillance of common spaces, guest parking lots, and back-of-house service areas. Highly discreet camera designs that integrate smoothly into the architecture.</p></article>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="section__head">
+        <span class="kicker" data-reveal>On the Field</span>
+        <h2 class="section__title" data-reveal>
+          <span>From camera lens</span>
+          <span>to the <em>control center.</em></span>
+        </h2>
+      </div>
+
+      <div class="gallery">
+        <figure class="gallery__item gallery__item--lg" data-reveal>
+          <img src="https://images.unsplash.com/photo-1614624533395-7ee4e8e8de2c?w=1200&q=75&auto=format&fit=crop" alt="Outdoor IP video surveillance camera installation" loading="lazy" />
+          <figcaption><span>Outdoor IP Cameras</span><span class="muted">Perimeter & Access</span></figcaption>
+        </figure>
+        <figure class="gallery__item" data-reveal>
+          <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=900&q=75&auto=format&fit=crop" alt="Multi-screen security monitoring desk" loading="lazy" />
+          <figcaption><span>Control Center</span><span class="muted">Multi-stream VMS</span></figcaption>
+        </figure>
+        <figure class="gallery__item" data-reveal>
+          <img src="https://images.unsplash.com/photo-1551808525-51a94da548ce?w=900&q=75&auto=format&fit=crop" alt="Motorized dome camera" loading="lazy" />
+          <figcaption><span>Motorized Domes</span><span class="muted">High-Resolution PTZ</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__head">
+        <span class="kicker" data-reveal>Frequently Asked Questions — Video Surveillance</span>
+        <h2 class="section__title" data-reveal>
+          <span>Everything you need to know about</span>
+          <span>legal <em>compliance.</em></span>
+        </h2>
+      </div>
+
+      <div class="faq">
+        <details class="faq__item" data-reveal>
+          <summary><span>Do video surveillance systems need to be declared to the Data Protection Authority?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">For <strong>private workspaces not open to the public</strong>, registration in your internal GDPR data processing log is mandatory, but no direct declaration to the Data Protection Authority is required. For <strong>locations open to the public</strong>, a prefectural authorization is necessary. We manage the entire compliance process for you.</div>
+        </details>
+
+        <details class="faq__item" data-reveal>
+          <summary><span>What is the legal retention period for video footage?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">Data protection rules recommend a <strong>maximum of 30 days</strong>. Beyond this, any extended timeframe must be officially justified by a legitimate need (such as ongoing legal proceedings or police investigations). We configure a 30-day automatic overwrite cycle by default, which can be adjusted to match your declared setup.</div>
+        </details>
+
+        <details class="faq__item" data-reveal>
+          <summary><span>What is the difference between an NVR and a VMS?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">An <strong>NVR</strong> (Network Video Recorder) is a dedicated, closed hardware appliance designed for simple recording. A <strong>VMS</strong> (Video Management System) is an open software enterprise framework capable of managing multi-site systems, integrating smart video analytics, access systems, and advanced AI. An NVR fits setups with 1 to 16 cameras perfectly; for larger deployment or multi-site setups, a VMS is highly recommended.</div>
+        </details>
+
+        <details class="faq__item" data-reveal>
+          <summary><span>Can video surveillance be coupled with access control?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">Yes, it is <strong>highly recommended</strong>. Integrating both systems allows for visual validation during each badge check and easy retrospective audits of entries and exits. Both functions are handled through a single, unified interface.</div>
+        </details>
+
+        <details class="faq__item" data-reveal>
+          <summary><span>What happens in the event of a network outage?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">IP cameras record locally onto edge-storage micro SD cards or directly to the local NVR during downtime. They seamlessly sync back up with the cloud once infrastructure comes online. <strong>No footage is lost.</strong> Critical alerts are triggered if an outage persists.</div>
+        </details>
+
+        <details class="faq__item" data-reveal>
+          <summary><span>Is AI-driven video analysis GDPR compliant?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">It depends entirely on the usage. <strong>Object and non-biometric anomaly detection</strong> is compliant. Conversely, live <strong>facial recognition</strong> requires strict regulatory clearance from relevant data privacy authorities. We will guide you toward permitted configurations based on your operational context.</div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="section__head">
+        <span class="kicker" data-reveal>More at MCO Facilities</span>
+        <h2 class="section__title" data-reveal>
+          <span>Three other pillars</span>
+          <span>of dedicated <em>expertise.</em></span>
+        </h2>
+      </div>
+      <div class="related">
+        <a href="/services/maintien-condition-operationnelle/" class="related__card" data-reveal>
+          <span class="related__num">01</span>
+          <h3>Operational Readiness (MCO)</h3>
+          <p>Preventive and corrective maintenance of your technical systems.</p>
+          <span class="related__link">Discover →</span>
+        </a>
+        <a href="/services/controle-acces/" class="related__card" data-reveal>
+          <span class="related__num">03</span>
+          <h3>Access Control</h3>
+          <p>Mifare badges, biometrics, mobile NFC, Active Directory integration.</p>
+          <span class="related__link">Discover →</span>
+        </a>
+        <a href="/services/maintenance-multi-technique/" class="related__card" data-reveal>
+          <span class="related__num">04</span>
+          <h3>Multi-technical Maintenance</h3>
+          <p>HVAC, electrical systems, plumbing, low voltage, BMS.</p>
+          <span class="related__link">Discover →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="cta-block">
+        <div data-reveal>
+          <span class="kicker">Secure a Site</span>
+          <h2 class="cta-block__title"><span>Free site assessment</span><span><em>& study.</em></span></h2>
+          <p>Technical site visit, precise tracking layout maps, and itemized quotes delivered in under 7 business days. Completely obligation-free.</p>
+        </div>
+        <div class="cta-block__actions" data-reveal>
+          <a href="/contact/" class="btn btn--primary"><span>Request an engineering study</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="tel:+33670986561" class="btn btn--ghost"><span>+33 6 70 98 65 61</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="/Logo1.png" alt="MCO Facilities" height="50" style="height:55px;width:auto;display:block;" />
+        <p>Operational Readiness (MCO), video surveillance, and access control — for secure, resilient, and high-performing facilities.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <div><h4>Services</h4><a href="/services/maintien-condition-operationnelle/">MCO</a><a href="/services/videosurveillance/">Video Surveillance</a><a href="/services/controle-acces/">Access Control</a><a href="/services/maintenance-multi-technique/">Multi-technical</a></div>
+        <div><h4>Company</h4><a href="/#expertise">Expertise</a><a href="/#methode">Method</a><a href="/#references">References</a><a href="/contact/">Contact</a></div>
+        <div><h4>Contact Details</h4><a href="tel:+33670986561">+33 6 70 98 65 61</a><a href="mailto:alexandre.angulo@mco-facilities.fr">Email</a><span>26 chemin de la digue, 38760 Varces</span></div>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> MCO Facilities — All rights reserved.</span>
+      <span class="footer__legal"><a href="/mentions-legales/">Legal Notice</a> · <span class="muted">Designed in France</span></span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>

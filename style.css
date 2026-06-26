@@ -561,7 +561,7 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; }
   max-width: 14ch;
 }
 .service--featured h3 {
-  font-size: clamp(28px, 3.2vw, 42px);
+  font-size: clamp(28px, 3.2vw, 30px);
   max-width: 16ch;
 }
 
