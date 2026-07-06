@@ -88,6 +88,29 @@
     const onScroll = () => nav.classList.toggle('is-stuck', window.scrollY > 32);
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
+
+    /* Mobile menu: inject a burger button and toggle the nav panel */
+    const navLinks = nav.querySelector('.nav__links');
+    if (navLinks) {
+      const burger = document.createElement('button');
+      burger.className = 'nav__burger';
+      burger.setAttribute('aria-label', 'Menu');
+      burger.setAttribute('aria-controls', navLinks.id || 'nav');
+      burger.setAttribute('aria-expanded', 'false');
+      burger.innerHTML = '<span></span>';
+      nav.appendChild(burger);
+
+      const closeMenu = () => {
+        nav.classList.remove('is-open');
+        burger.setAttribute('aria-expanded', 'false');
+      };
+      burger.addEventListener('click', () => {
+        const open = nav.classList.toggle('is-open');
+        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
+    }
   }
 
   /* ─── 7. Card tilt + spotlight (desktop only) ─── */

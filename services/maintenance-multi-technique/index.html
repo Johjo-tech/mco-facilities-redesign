@@ -73,21 +73,24 @@
 
   <header class="nav" id="nav">
     <a href="/" class="nav__logo" aria-label="MCO Facilities — accueil">
-      <img src="Logo1.png" alt="MCO Facilities" height="50" style="height:55px;width:auto;display:block;" />
+      <img src="/Logo1.png" alt="MCO Facilities" height="50" style="height:55px;width:auto;display:block;" />
     </a>
     <nav class="nav__links" aria-label="Navigation principale">
       <div class="nav__dropdown">
         <button class="nav__dropdown-trigger is-active" aria-haspopup="true" aria-expanded="false">Services <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
         <div class="nav__dropdown-menu">
-          <a href="/services/maintien-condition-operationnelle/"><span class="nav__dropdown-num">01</span><div><strong>Maintien en Condition Opérationnelle</strong><span>Maintenance préventive et corrective</span></div></a>
-          <a href="/services/videosurveillance/"><span class="nav__dropdown-num">02</span><div><strong>Vidéosurveillance</strong><span>Systèmes IP, supervision, RGPD</span></div></a>
-          <a href="/services/controle-acces/"><span class="nav__dropdown-num">03</span><div><strong>Contrôle d'accès</strong><span>Badges, biométrie, mobile NFC</span></div></a>
-          <a href="/services/maintenance-multi-technique/" class="is-current"><span class="nav__dropdown-num">04</span><div><strong>Maintenance multi-technique</strong><span>CVC, électricité, plomberie</span></div></a>
+          <a href="/services/automatisme-robotique/"><span class="nav__dropdown-num">01</span><div><strong>Automatisme &amp; robotique</strong><span>Systèmes automatisés, SCADA, robotique</span></div></a>
+          <a href="/services/maintien-condition-operationnelle/"><span class="nav__dropdown-num">02</span><div><strong>Maintien en Condition Opérationnelle</strong><span>Maintenance préventive &amp; corrective 24/7</span></div></a>
+          <a href="/services/surete-videoprotection/"><span class="nav__dropdown-num">03</span><div><strong>Sûreté &amp; vidéoprotection</strong><span>Vidéoprotection IA, serveurs, JRI My Sirius</span></div></a>
+          <a href="/services/electricite-reseaux/"><span class="nav__dropdown-num">04</span><div><strong>Électricité &amp; réseaux</strong><span>Électricité générale, cuivre &amp; fibre optique</span></div></a>
         </div>
       </div>
       <a href="/#expertise">Expertise</a>
       <a href="/#methode">Méthode</a>
       <a href="/#references">Références</a>
+          <div class="nav__lang" style="margin-left: 15px; font-size: 0.9rem; font-family: var(--ff-mono, monospace);">
+        <span class="lang--active" style="font-weight: bold; color: #fff;">FR</span> | <a href="/en/services/maintenance-multi-technique/" class="lang__link" style="opacity: 0.6; text-decoration: none; color: #fff;">EN</a>
+      </div>
     </nav>
     <a href="/contact/" class="nav__cta"><span>Nous contacter</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
   </header>
@@ -309,22 +312,22 @@
         </h2>
       </div>
       <div class="related">
-        <a href="/services/maintien-condition-operationnelle/" class="related__card" data-reveal>
+        <a href="/services/automatisme-robotique/" class="related__card" data-reveal>
           <span class="related__num">01</span>
+          <h3>Automatisme &amp; robotique</h3>
+          <p>Systèmes automatisés, SCADA, robotique industrielle.</p>
+          <span class="related__link">Découvrir →</span>
+        </a>
+        <a href="/services/maintien-condition-operationnelle/" class="related__card" data-reveal>
+          <span class="related__num">02</span>
           <h3>Maintien en Condition Opérationnelle</h3>
           <p>Maintenance préventive et corrective de vos installations.</p>
           <span class="related__link">Découvrir →</span>
         </a>
-        <a href="/services/videosurveillance/" class="related__card" data-reveal>
-          <span class="related__num">02</span>
-          <h3>Vidéosurveillance</h3>
-          <p>Caméras IP, NVR, supervision déportée, RGPD.</p>
-          <span class="related__link">Découvrir →</span>
-        </a>
-        <a href="/services/controle-acces/" class="related__card" data-reveal>
+        <a href="/services/surete-videoprotection/" class="related__card" data-reveal>
           <span class="related__num">03</span>
-          <h3>Contrôle d'accès</h3>
-          <p>Badges Mifare, biométrie, mobile NFC, intégration AD.</p>
+          <h3>Sûreté &amp; vidéoprotection</h3>
+          <p>Vidéoprotection IA, caméras IP, NVR, RGPD.</p>
           <span class="related__link">Découvrir →</span>
         </a>
       </div>
@@ -349,11 +352,11 @@
   <footer class="footer">
     <div class="footer__top">
       <div class="footer__brand">
-        <img src="Logo1.png" alt="MCO Facilities" height="50" style="height:55px;width:auto;display:block;" />
-        <p>Maintien en Condition Opérationnelle, vidéosurveillance et contrôle d'accès — pour des sites sereins et performants.</p>
+        <img src="/Logo1.png" alt="MCO Facilities" height="50" style="height:55px;width:auto;display:block;" />
+        <p>Automatisme, MCO, sûreté &amp; vidéoprotection et électricité — pour des sites sereins et performants.</p>
       </div>
       <nav class="footer__nav" aria-label="Pied de page">
-        <div><h4>Services</h4><a href="/services/maintien-condition-operationnelle/">MCO</a><a href="/services/videosurveillance/">Vidéosurveillance</a><a href="/services/controle-acces/">Contrôle d'accès</a><a href="/services/maintenance-multi-technique/">Multi-technique</a></div>
+        <div><h4>Services</h4><a href="/services/automatisme-robotique/">Automatisme &amp; robotique</a><a href="/services/maintien-condition-operationnelle/">MCO 24/7</a><a href="/services/surete-videoprotection/">Sûreté &amp; vidéoprotection</a><a href="/services/electricite-reseaux/">Électricité &amp; réseaux</a></div>
         <div><h4>Société</h4><a href="/#expertise">Expertise</a><a href="/#methode">Méthode</a><a href="/#references">Références</a><a href="/contact/">Contact</a></div>
         <div><h4>Coordonnées</h4><a href="tel:+33670986561">+33 6 70 98 65 61</a><a href="mailto:alexandre.angulo@mco-facilities.fr">Email</a><span>26 chemin de la digue, 38760 Varces</span></div>
       </nav>

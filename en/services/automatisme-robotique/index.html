@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#08090f" />
+
+  <title>Industrial Automation &amp; Robotics — PLCs, SCADA, Cobots | MCO Facilities</title>
+  <meta name="description" content="Design and integration of automated systems and advanced robotics: Schneider &amp; Siemens PLCs, SCADA, cobots, variable speed drives, retrofit, CE machine safety. Varces, Grenoble, Auvergne-Rhône-Alpes." />
+  <meta name="keywords" content="industrial automation, robotics, PLC, Schneider Electric, Siemens, SCADA, supervision, Profinet, Modbus, OPC-UA, cobot, variable speed drive, retrofit, machine safety, Grenoble" />
+  <link rel="canonical" href="https://mco-facilities.vibeia.io/services/automatisme-robotique/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="https://mco-facilities.vibeia.io/services/automatisme-robotique/" />
+  <meta property="og:title" content="Automation &amp; Robotics — MCO Facilities" />
+  <meta property="og:description" content="Control, monitor, and automate production. PLCs, SCADA, robotics, variable speed drives, retrofit, and CE compliance." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=1200&q=80&auto=format&fit=crop" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" type="image/svg+xml" href="/logo.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mco-facilities.vibeia.io/en/" },
+          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://mco-facilities.vibeia.io/en/#services" },
+          { "@type": "ListItem", "position": 3, "name": "Automation & Robotics", "item": "https://mco-facilities.vibeia.io/services/automatisme-robotique/" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "serviceType": "Industrial Automation & Robotics",
+        "name": "Automation & Robotics",
+        "provider": { "@type": "Organization", "name": "MCO Facilities", "url": "https://mco-facilities.vibeia.io/" },
+        "areaServed": { "@type": "AdministrativeArea", "name": "Auvergne-Rhône-Alpes" },
+        "description": "Design and integration of automated systems and advanced robotics: Schneider Electric and Siemens PLCs, SCADA, cobots, variable speed drives, retrofit, CE machine safety."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Schneider Electric or Siemens — which PLC should I choose?", "acceptedAnswer": { "@type": "Answer", "text": "Both ranges are excellent. Schneider Electric (Modicon M340/M580, EcoStruxure) leads in France and the food industry; Siemens (S7-1200/1500, TIA Portal) dominates exported lines and precision mechatronics. The real criterion is your existing installed base and the skills of your maintenance teams. We program and maintain both, with no lock-in to a single brand." } },
+          { "@type": "Question", "name": "What is a SCADA and what is it for?", "acceptedAnswer": { "@type": "Answer", "text": "A SCADA (Supervisory Control And Data Acquisition) is the supervision station that collects real-time data from PLCs, displays line status, logs alarms, and drives production. It gives operators a synoptic view of the site and enables downtime analysis, traceability, and decision support. We deploy Wonderware/AVEVA, WinCC, PcVue, and Ignition." } },
+          { "@type": "Question", "name": "Can a line be modernized without replacing everything?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — that is the whole point of a retrofit. We keep the sound mechanical part and replace only the obsolete control hardware: end-of-support PLC, drives, HMI, wiring. You recover a high-performing, fully documented machine for a fraction of the cost of new equipment, with controlled production downtime." } },
+          { "@type": "Question", "name": "Are variable speed drives worth the investment?", "acceptedAnswer": { "@type": "Answer", "text": "On pumps and fans, a variable frequency drive typically cuts energy consumption by 20 to 50% by matching speed to actual demand instead of running at full power with mechanical throttling. Payback is often between 1 and 3 years, and mechanical wear drops sharply thanks to soft starts." } },
+          { "@type": "Question", "name": "What is an industrial network like Profinet or OPC-UA?", "acceptedAnswer": { "@type": "Answer", "text": "These are the buses that let PLCs, drives, sensors, and supervision communicate. Profinet and EtherCAT handle real-time control on the shop floor, Modbus TCP links third-party equipment, and OPC-UA feeds data up to supervision and enterprise IT (MES/ERP) in a secure, standardized way. A clean network architecture is the foundation of a reliable, cyber-secure site." } }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="page--service">
+  <div class="bg-layer" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-orb bg-orb--1"></div>
+    <div class="bg-orb bg-orb--2"></div>
+    <div class="bg-noise"></div>
+  </div>
+
+  <div class="cursor" aria-hidden="true"><div class="cursor__dot"></div></div>
+
+  <header class="nav" id="nav">
+    <a href="/en/" class="nav__logo" aria-label="MCO Facilities — home">
+      <img src="/Logo1.png" alt="MCO Facilities" height="50" style="height:55px;width:auto;display:block;" />
+    </a>
+    <nav class="nav__links" aria-label="Main navigation">
+      <div class="nav__dropdown">
+        <button class="nav__dropdown-trigger is-active" aria-haspopup="true" aria-expanded="false">Services <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="nav__dropdown-menu">
+          <a href="/en/services/automatisme-robotique/" class="is-current"><span class="nav__dropdown-num">01</span><div><strong>Automation &amp; Robotics</strong><span>Automated systems, SCADA, robotics</span></div></a>
+          <a href="/en/services/maintien-condition-operationnelle/"><span class="nav__dropdown-num">02</span><div><strong>Operational Readiness (MCO)</strong><span>24/7 preventive &amp; corrective maintenance</span></div></a>
+          <a href="/en/services/surete-videoprotection/"><span class="nav__dropdown-num">03</span><div><strong>Security &amp; Video Protection</strong><span>AI video protection, servers, JRI</span></div></a>
+          <a href="/en/services/electricite-reseaux/"><span class="nav__dropdown-num">04</span><div><strong>Electricity &amp; Networks</strong><span>Industrial power, copper &amp; fibre optic</span></div></a>
+        </div>
+      </div>
+      <a href="/en/#expertise">Expertise</a>
+      <a href="/en/#methode">Method</a>
+      <a href="/en/#references">References</a>
+
+      <!-- Language Selector Toggle -->
+      <div class="nav__lang" style="margin-left: 15px; font-size: 0.9rem; font-family: var(--ff-mono, monospace);">
+        <span class="lang--active" style="font-weight: bold; color: #fff;">EN</span> | <a href="/services/automatisme-robotique/" class="lang__link" style="opacity: 0.6; text-decoration: none; color: #fff;">FR</a>
+      </div>
+    </nav>
+    <a href="/en/contact/" class="nav__cta"><span>Contact us</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="page-hero__photo" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=1920&q=75&auto=format&fit=crop" alt="" loading="eager" fetchpriority="high" />
+      </div>
+      <div class="page-hero__inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/en/">Home</a><span aria-hidden="true">·</span>
+          <a href="/en/#services">Services</a><span aria-hidden="true">·</span>
+          <span aria-current="page">Automation &amp; Robotics</span>
+        </nav>
+
+        <span class="page-hero__kicker" data-reveal>
+          <span class="dot"></span><span>Service 01 — Automation &amp; Robotics</span>
+        </span>
+
+        <h1 class="page-hero__title" data-reveal>
+          Control, monitor,<br/><em>automate</em> production.
+        </h1>
+
+        <p class="page-hero__lede" data-reveal>
+          Complete design and integration of complex <strong>automated systems</strong> and
+          cutting-edge <strong>robotic solutions</strong> to optimize your production cycles —
+          from Schneider or Siemens PLCs to collaborative cobots, via
+          <strong>SCADA supervision</strong> and real-time industrial networks.
+        </p>
+
+        <div class="page-hero__actions" data-reveal>
+          <a href="/en/contact/" class="btn btn--primary"><span>Assess My Project</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="#offre" class="btn btn--ghost"><span>Explore Our Solutions</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__head">
+        <span class="kicker" data-reveal>Why Choose Us</span>
+        <h2 class="section__title" data-reveal>
+          <span>Automation is</span>
+          <span><em>more</em> than just a PLC.</span>
+        </h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-grid__item" data-reveal>
+          <span class="why-grid__num">01</span>
+          <h3>Vendor-Neutral Expertise</h3>
+          <p>We program and maintain <strong>Schneider Electric and Siemens</strong>, as well as Rockwell and Beckhoff. No lock-in to a single brand: we select the solution best suited to your installed base and your teams' skills.</p>
+        </div>
+        <div class="why-grid__item" data-reveal>
+          <span class="why-grid__num">02</span>
+          <h3>From Shop Floor to Supervisor</h3>
+          <p>From the sensor to the <strong>SCADA</strong>, we master the entire chain: PLC programming, HMI, industrial networks, and data feeds into your MES or ERP. A coherent, documented, and scalable architecture.</p>
+        </div>
+        <div class="why-grid__item" data-reveal>
+          <span class="why-grid__num">03</span>
+          <h3>Safety &amp; CE Compliance</h3>
+          <p>Every installation is designed to be <strong>safe by design</strong>: risk assessment, safety circuits (emergency stop, guards, PLd/PLe performance levels), technical file, and CE marking. Productivity never comes at the expense of operators.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="offre">
+      <div class="section__head">
+        <span class="kicker" data-reveal>Our Automation &amp; Robotics Solutions</span>
+        <h2 class="section__title" data-reveal>
+          <span>Six areas of expertise,</span>
+          <span>one unified <em>line.</em></span>
+        </h2>
+      </div>
+
+      <div class="sub-services">
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><rect x="6" y="8" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M10 12h4M10 16h4M10 20h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="21" cy="13" r="1.5" fill="currentColor"/><circle cx="21" cy="19" r="1.5" fill="currentColor"/></svg></div>
+          <h3>PLC Development &amp; Integration</h3>
+          <p>Programming of <strong>Schneider Electric</strong> (Modicon M340/M580, EcoStruxure) and <strong>Siemens</strong> (S7-1200/1500, TIA Portal) PLCs. Functional analysis, development, commissioning, and complete documentation.</p>
+        </article>
+
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><rect x="12" y="4" width="8" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M16 10v6M16 16l-6 4M16 16l6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="22" r="2.5" stroke="currentColor" stroke-width="1.5"/><circle cx="23" cy="22" r="2.5" stroke="currentColor" stroke-width="1.5"/></svg></div>
+          <h3>Advanced Robotic Integration</h3>
+          <p>Industrial arms, collaborative <strong>cobots</strong>, and complete cells: palletizing, assembly, welding, pick-and-place. Feasibility study, gripping, collaborative safety, and programming by teach-in.</p>
+        </article>
+
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><rect x="5" y="7" width="22" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M12 25h8M16 21v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M9 14l3 3 4-6 3 4 2-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Industrial IT &amp; SCADA</h3>
+          <p>Real-time supervision, data historization, alarm management, and dashboards. Industrial networks — <strong>Profinet, Modbus TCP, OPC-UA</strong>, EtherCAT. Secure gateways to your MES and ERP systems.</p>
+        </article>
+
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M16 10v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 4v3M16 25v3M28 16h-3M7 16H4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+          <h3>Variable Speed Drives</h3>
+          <p>Variable frequency drives and soft starters on pumps, fans, and conveyors. <strong>20 to 50% energy savings</strong>, smooth starts, and reduced mechanical wear. Configuration and commissioning included.</p>
+        </article>
+
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><path d="M20 6l-8 8 4 4 8-8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 14l-6 6 6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="23" cy="9" r="1.5" fill="currentColor"/></svg></div>
+          <h3>Retrofit &amp; Modernization</h3>
+          <p>Replacement of end-of-support PLCs and HMIs, migration of obsolete programs, wiring upgrades. We keep the sound mechanical part and give your installations another decade of life, at a controlled cost.</p>
+        </article>
+
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><path d="M16 4 L26 9 V18 C26 22 22 26 16 28 C10 26 6 22 6 18 V9 Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M16 12v5M16 20v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+          <h3>Machine Safety &amp; CE Compliance</h3>
+          <p>Risk assessment, certified safety circuits (emergency stop, guards, PLd/PLe levels per EN ISO 13849), technical file, and <strong>CE marking</strong>. Compliance upgrades for existing equipment included.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="callout">
+        <p data-reveal>
+          <em>Our Guiding Principle</em>: we do not automate for the sake of it. We start from your
+          <strong>real bottleneck</strong> — throughput, ergonomics, non-quality, energy —
+          and size the solution to the challenge. <strong>Technology serves production</strong>,
+          never the other way around.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__head">
+        <span class="kicker" data-reveal>Target Applications</span>
+        <h2 class="section__title" data-reveal>
+          <span>Five sectors,</span>
+          <span>five <em>automated lines.</em></span>
+        </h2>
+      </div>
+
+      <div class="sectors">
+        <article class="sector" data-reveal><h3>Food &amp; Beverage</h3><p>Packaging lines, dosing, robotic palletizing. Batch-by-batch traceability, automated cleaning (CIP), hygiene compliance, and real-time throughput supervision.</p></article>
+        <article class="sector" data-reveal><h3>Pharma &amp; Cosmetics</h3><p>Sensitive processes, precision filling, serialization, and regulatory traceability. Redundant PLCs, certified historization, and MES integration for audit readiness.</p></article>
+        <article class="sector" data-reveal><h3>Logistics &amp; Intralogistics</h3><p>Conveyors, sorters, AGVs, and palletizing cells. Synchronization with the WMS, flow regulation, and downtime supervision to sustain shipping throughput.</p></article>
+        <article class="sector" data-reveal><h3>Energy</h3><p>Conversion stations, variable speed drives on rotating machinery, production automation management, and remote multi-site supervision via OPC-UA.</p></article>
+        <article class="sector" data-reveal><h3>Water Treatment</h3><p>Pumping and treatment stations, level and flow regulation, remote management, and alarms. Major energy savings thanks to variable speed drives on pumps.</p></article>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="section__head">
+        <span class="kicker" data-reveal>Field Operations</span>
+        <h2 class="section__title" data-reveal>
+          <span>From the control cabinet</span>
+          <span>to the <em>robotic cell.</em></span>
+        </h2>
+      </div>
+
+      <div class="gallery">
+        <figure class="gallery__item gallery__item--lg" data-reveal>
+          <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1200&q=75&auto=format&fit=crop" alt="Industrial robotic arms on an automated production line" loading="lazy" />
+          <figcaption><span>Robotic Cell</span><span class="muted">Arms &amp; cobots</span></figcaption>
+        </figure>
+        <figure class="gallery__item" data-reveal>
+          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=75&auto=format&fit=crop" alt="SCADA supervision station for a production line" loading="lazy" />
+          <figcaption><span>Supervision</span><span class="muted">Real-time SCADA</span></figcaption>
+        </figure>
+        <figure class="gallery__item" data-reveal>
+          <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=900&q=75&auto=format&fit=crop" alt="Electrical cabinet and industrial programmable controller" loading="lazy" />
+          <figcaption><span>Control Cabinet</span><span class="muted">PLC &amp; drives</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__head">
+        <span class="kicker" data-reveal>Frequently Asked Questions — Automation &amp; Robotics</span>
+        <h2 class="section__title" data-reveal>
+          <span>Technical insights on</span>
+          <span>automated <em>production.</em></span>
+        </h2>
+      </div>
+
+      <div class="faq">
+        <details class="faq__item" data-reveal>
+          <summary><span>Schneider Electric or Siemens — which PLC should I choose?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">Both ranges are excellent. <strong>Schneider Electric</strong> (Modicon M340/M580, EcoStruxure) leads in France and the food industry; <strong>Siemens</strong> (S7-1200/1500, TIA Portal) dominates exported lines and precision mechatronics. The real criterion is your existing installed base and the skills of your maintenance teams. We program and maintain both, with no lock-in to a single brand.</div>
+        </details>
+
+        <details class="faq__item" data-reveal>
+          <summary><span>What is a SCADA and what is it for?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">A <strong>SCADA</strong> (Supervisory Control And Data Acquisition) is the supervision station that collects real-time data from PLCs, displays line status, logs alarms, and drives production. It gives operators a synoptic view of the site and enables downtime analysis, traceability, and decision support. We deploy Wonderware/AVEVA, WinCC, PcVue, and Ignition.</div>
+        </details>
+
+        <details class="faq__item" data-reveal>
+          <summary><span>Can a line be modernized without replacing everything?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">Yes — that is the whole point of a <strong>retrofit</strong>. We keep the sound mechanical part and replace only the obsolete control hardware: end-of-support PLC, drives, HMI, wiring. You recover a high-performing, fully documented machine for a fraction of the cost of new equipment, with controlled production downtime.</div>
+        </details>
+
+        <details class="faq__item" data-reveal>
+          <summary><span>Are variable speed drives worth the investment?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">On pumps and fans, a variable frequency drive typically cuts energy consumption by <strong>20 to 50%</strong> by matching speed to actual demand instead of running at full power with mechanical throttling. Payback is often between 1 and 3 years, and mechanical wear drops sharply thanks to soft starts.</div>
+        </details>
+
+        <details class="faq__item" data-reveal>
+          <summary><span>What is an industrial network like Profinet or OPC-UA?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">These are the buses that let PLCs, drives, sensors, and supervision communicate. <strong>Profinet</strong> and EtherCAT handle real-time control on the shop floor, <strong>Modbus TCP</strong> links third-party equipment, and <strong>OPC-UA</strong> feeds data up to supervision and enterprise IT (MES/ERP) in a secure, standardized way. A clean network architecture is the foundation of a reliable, cyber-secure site.</div>
+        </details>
+
+        <details class="faq__item" data-reveal>
+          <summary><span>Do you provide maintenance after commissioning?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">Yes. We provide <strong>maintenance and support</strong> for the installations we integrate, including remote diagnostics, on-call service, and program backups. This is also at the heart of our <a href="/en/services/maintien-condition-operationnelle/">Operational Readiness (MCO)</a> offering, which covers 24/7 availability of your critical equipment.</div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="section__head">
+        <span class="kicker" data-reveal>More at MCO Facilities</span>
+        <h2 class="section__title" data-reveal>
+          <span>Three other pillars</span>
+          <span>of dedicated <em>expertise.</em></span>
+        </h2>
+      </div>
+      <div class="related">
+        <a href="/en/services/maintien-condition-operationnelle/" class="related__card" data-reveal>
+          <span class="related__num">02</span>
+          <h3>Operational Readiness (MCO)</h3>
+          <p>24/7 preventive &amp; corrective maintenance of your installations.</p>
+          <span class="related__link">Discover →</span>
+        </a>
+        <a href="/en/services/surete-videoprotection/" class="related__card" data-reveal>
+          <span class="related__num">03</span>
+          <h3>Security &amp; Video Protection</h3>
+          <p>AI video protection, servers, JRI My Sirius.</p>
+          <span class="related__link">Discover →</span>
+        </a>
+        <a href="/en/services/electricite-reseaux/" class="related__card" data-reveal>
+          <span class="related__num">04</span>
+          <h3>Electricity &amp; Networks</h3>
+          <p>Industrial power, copper &amp; fibre optic networks.</p>
+          <span class="related__link">Discover →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="cta-block">
+        <div data-reveal>
+          <span class="kicker">Automate a Line</span>
+          <h2 class="cta-block__title"><span>Free feasibility</span><span><em>study.</em></span></h2>
+          <p>On-site technical visit, analysis of your bottleneck, costed recommendations, and retrofit or automation scenarios delivered within 7 business days. Completely obligation-free.</p>
+        </div>
+        <div class="cta-block__actions" data-reveal>
+          <a href="/en/contact/" class="btn btn--primary"><span>Request the Study</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="tel:+33670986561" class="btn btn--ghost"><span>+33 6 70 98 65 61</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="/Logo1.png" alt="MCO Facilities" height="50" style="height:55px;width:auto;display:block;" />
+        <p>Automation, robotics, operational readiness, security, and networks — keeping your industrial sites high-performing and resilient.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <div><h4>Services</h4><a href="/en/services/automatisme-robotique/">Automation &amp; Robotics</a><a href="/en/services/maintien-condition-operationnelle/">MCO 24/7</a><a href="/en/services/surete-videoprotection/">Security &amp; Video Protection</a><a href="/en/services/electricite-reseaux/">Electricity &amp; Networks</a></div>
+        <div><h4>Company</h4><a href="/en/#expertise">Expertise</a><a href="/en/#methode">Method</a><a href="/en/#references">References</a><a href="/en/contact/">Contact</a></div>
+        <div><h4>Contact Details</h4><a href="tel:+33670986561">+33 6 70 98 65 61</a><a href="mailto:alexandre.angulo@mco-facilities.fr">Email</a><span>26 chemin de la digue, 38760 Varces</span></div>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> MCO Facilities — All rights reserved.</span>
+      <span class="footer__legal"><a href="/en/mentions-legales/">Legal Notice</a> · <span class="muted">Designed in France</span></span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>
