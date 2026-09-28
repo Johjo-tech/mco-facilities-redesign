@@ -1,45 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://mco-facilities.vibeia.io/</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mco-facilities.vibeia.io/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mco-facilities.vibeia.io/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mco-facilities.vibeia.io/" />
+    <lastmod>2026-09-28</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://mco-facilities.vibeia.io/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mco-facilities.vibeia.io/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mco-facilities.vibeia.io/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mco-facilities.vibeia.io/" />
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mco-facilities.vibeia.io/services/automatisme-robotique/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mco-facilities.vibeia.io/services/automatisme-robotique/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mco-facilities.vibeia.io/en/services/automatisme-robotique/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mco-facilities.vibeia.io/services/automatisme-robotique/" />
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mco-facilities.vibeia.io/en/services/automatisme-robotique/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mco-facilities.vibeia.io/services/automatisme-robotique/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mco-facilities.vibeia.io/en/services/automatisme-robotique/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mco-facilities.vibeia.io/services/automatisme-robotique/" />
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://mco-facilities.vibeia.io/services/maintien-condition-operationnelle/</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mco-facilities.vibeia.io/services/maintien-condition-operationnelle/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mco-facilities.vibeia.io/en/services/maintien-condition-operationnelle/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mco-facilities.vibeia.io/services/maintien-condition-operationnelle/" />
+    <lastmod>2026-09-28</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mco-facilities.vibeia.io/services/videosurveillance/</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://mco-facilities.vibeia.io/en/services/maintien-condition-operationnelle/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mco-facilities.vibeia.io/services/maintien-condition-operationnelle/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mco-facilities.vibeia.io/en/services/maintien-condition-operationnelle/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mco-facilities.vibeia.io/services/maintien-condition-operationnelle/" />
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mco-facilities.vibeia.io/services/surete-videoprotection/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mco-facilities.vibeia.io/services/surete-videoprotection/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mco-facilities.vibeia.io/en/services/surete-videoprotection/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mco-facilities.vibeia.io/services/surete-videoprotection/" />
+    <lastmod>2026-09-28</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mco-facilities.vibeia.io/services/controle-acces/</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://mco-facilities.vibeia.io/en/services/surete-videoprotection/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mco-facilities.vibeia.io/services/surete-videoprotection/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mco-facilities.vibeia.io/en/services/surete-videoprotection/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mco-facilities.vibeia.io/services/surete-videoprotection/" />
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mco-facilities.vibeia.io/services/electricite-reseaux/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mco-facilities.vibeia.io/services/electricite-reseaux/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mco-facilities.vibeia.io/en/services/electricite-reseaux/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mco-facilities.vibeia.io/services/electricite-reseaux/" />
+    <lastmod>2026-09-28</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mco-facilities.vibeia.io/services/maintenance-multi-technique/</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://mco-facilities.vibeia.io/en/services/electricite-reseaux/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mco-facilities.vibeia.io/services/electricite-reseaux/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mco-facilities.vibeia.io/en/services/electricite-reseaux/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mco-facilities.vibeia.io/services/electricite-reseaux/" />
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mco-facilities.vibeia.io/contact/</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>yearly</changefreq>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mco-facilities.vibeia.io/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mco-facilities.vibeia.io/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mco-facilities.vibeia.io/contact/" />
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mco-facilities.vibeia.io/en/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mco-facilities.vibeia.io/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mco-facilities.vibeia.io/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mco-facilities.vibeia.io/contact/" />
+    <lastmod>2026-09-28</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mco-facilities.vibeia.io/mentions-legales/</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>yearly</changefreq>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mco-facilities.vibeia.io/mentions-legales/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mco-facilities.vibeia.io/en/mentions-legales/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mco-facilities.vibeia.io/mentions-legales/" />
+    <lastmod>2026-09-28</lastmod>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://mco-facilities.vibeia.io/en/mentions-legales/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mco-facilities.vibeia.io/mentions-legales/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mco-facilities.vibeia.io/en/mentions-legales/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mco-facilities.vibeia.io/mentions-legales/" />
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://mco-facilities.vibeia.io/cgu/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mco-facilities.vibeia.io/cgu/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mco-facilities.vibeia.io/en/cgu/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mco-facilities.vibeia.io/cgu/" />
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://mco-facilities.vibeia.io/en/cgu/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mco-facilities.vibeia.io/cgu/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mco-facilities.vibeia.io/en/cgu/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mco-facilities.vibeia.io/cgu/" />
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.2</priority>
   </url>
 </urlset>

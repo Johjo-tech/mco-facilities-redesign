@@ -8,6 +8,9 @@
   <title>Contact — Demander un audit | MCO Facilities Varces, Grenoble</title>
   <meta name="description" content="Contactez MCO Facilities pour un audit gratuit de votre site : maintenance multi-technique, vidéosurveillance ou contrôle d'accès. Réponse sous 24h ouvrées. Varces, Grenoble, Auvergne-Rhône-Alpes." />
   <link rel="canonical" href="https://mco-facilities.vibeia.io/contact/" />
+  <link rel="alternate" hreflang="fr" href="https://mco-facilities.vibeia.io/contact/" />
+  <link rel="alternate" hreflang="en" href="https://mco-facilities.vibeia.io/en/contact/" />
+  <link rel="alternate" hreflang="x-default" href="https://mco-facilities.vibeia.io/contact/" />
 
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="fr_FR" />
@@ -16,12 +19,11 @@
   <meta property="og:description" content="Décrivez-nous votre site, vos contraintes et votre échéance. Nous revenons sous 24h ouvrées avec une première proposition d'audit." />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+  <link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/fonts/fonts.css" />
 
   <link rel="stylesheet" href="/style.css" />
-  <link rel="icon" type="image/svg+xml" href="/Logo1.png" />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
 
   <script type="application/ld+json">
   {
@@ -241,56 +243,15 @@
     </div>
     <div class="footer__bottom">
       <span>© <span id="year"></span> MCO Facilities — Tous droits réservés.</span>
-      <span class="footer__legal"><a href="/mentions-legales/">Mentions légales</a> · <span class="muted">Conçu en France</span></span>
+      <span class="footer__legal"><a href="/mentions-legales/">Mentions légales</a> · <a href="/cgu/">CGU</a> · <span class="muted">Conçu en France</span></span>
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="/vendor/gsap.min.js"></script>
+  <script src="/vendor/ScrollTrigger.min.js"></script>
   <script src="/main.js"></script>
 
 <!-- Envoi du formulaire de contact via Web3Forms -->
-<script>
-(function () {
-  var form = document.getElementById('mco-contact-form');
-  if (!form) return;
-  var statusEl = document.getElementById('contact-status');
-  var btn = form.querySelector('button[type="submit"]');
-  var btnLabel = btn ? btn.querySelector('span') : null;
-  var defaultLabel = btnLabel ? btnLabel.textContent : 'Envoyer ma demande';
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    if (btn) btn.setAttribute('disabled', '');
-    if (btnLabel) btnLabel.textContent = 'Envoi en cours…';
-    if (statusEl) { statusEl.style.color = ''; statusEl.textContent = ''; }
-
-    var payload = Object.fromEntries(new FormData(form).entries());
-
-    fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify(payload)
-    })
-    .then(function (r) { return r.json(); })
-    .then(function (data) {
-      if (data.success) {
-        if (btnLabel) btnLabel.textContent = 'Message envoyé ✓';
-        if (statusEl) { statusEl.style.color = '#36d399'; statusEl.textContent = 'Merci, votre demande a bien été envoyée. Réponse sous 24h ouvrées.'; }
-        form.reset();
-      } else {
-        if (btn) btn.removeAttribute('disabled');
-        if (btnLabel) btnLabel.textContent = defaultLabel;
-        if (statusEl) { statusEl.style.color = '#f87272'; statusEl.textContent = 'Une erreur est survenue : ' + (data.message || 'envoi impossible') + '. Réessayez ou écrivez-nous directement.'; }
-      }
-    })
-    .catch(function () {
-      if (btn) btn.removeAttribute('disabled');
-      if (btnLabel) btnLabel.textContent = defaultLabel;
-      if (statusEl) { statusEl.style.color = '#f87272'; statusEl.textContent = 'Erreur réseau. Réessayez ou écrivez-nous à alexandre.angulo@mco-facilities.fr.'; }
-    });
-  });
-})();
-</script>
+<script src="/contact-form.js" defer></script>
 </body>
 </html>

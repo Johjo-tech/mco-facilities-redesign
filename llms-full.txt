@@ -1,116 +1,95 @@
-# MCO Facilities — Maintien en Condition Opérationnelle, Vidéosurveillance & Contrôle d'accès
+# MCO Facilities — Maintien en condition opérationnelle, automatisme, sûreté et électricité industrielle
 
 ## À propos
 
-MCO Facilities est une entreprise de facility management basée à Varces (Isère, 38760), à proximité de Grenoble. Elle accompagne les entreprises, collectivités, bailleurs sociaux et industriels dans la maintenance multi-technique de leurs bâtiments et la sécurisation de leurs sites par vidéosurveillance et contrôle d'accès.
+MCO Facilities (SAS, SIREN 790 810 386) est un prestataire de services techniques basé à Varces (Isère, 38760), à côté de Grenoble, dirigé par Alexandre Angulo. L'entreprise est spécialisée dans le maintien en condition opérationnelle (MCO) des installations industrielles complexes et des grandes infrastructures. Elle intervient sur des environnements exigeants pour le compte d'acteurs industriels, d'infrastructures hospitalières et militaires, et de collectivités.
 
-Fondée et dirigée par Alexandre Angulo, la société opère sur l'ensemble de la région Auvergne-Rhône-Alpes (Grenoble, Lyon, Chambéry, Annecy, Valence) et capable d'intervenir sur tout le territoire français pour des comptes multi-sites.
+Zone d'intervention : toute la région Auvergne-Rhône-Alpes (Grenoble, Lyon, Chambéry, Annecy…), et la France entière pour les clients grands comptes et les infrastructures de défense. Une astreinte technique complète est assurée 24h/24 — 7j/7 pour les sites critiques sous contrat.
 
-L'approche MCO Facilities repose sur trois principes : audit préalable systématique, multi-métiers sous un interlocuteur unique, et supervision continue avec reporting mensuel.
+## Secteurs servis
 
-## Services
+- **Industrie & grands comptes** : secteurs de pointe (chimie, énergie, semiconducteurs) avec des contraintes de haute disponibilité.
+- **Infrastructures publiques** : continuité technique globale des grands établissements publics et des centres hospitaliers.
+- **Armée & défense** : interventions spécialisées pour les infrastructures critiques de défense et l'Armée de Terre.
+- **Collectivités** : accompagnement technique des collectivités territoriales de la région.
 
-### Maintien en Condition Opérationnelle (MCO)
+## Prestations
 
-Le MCO consiste à garantir la disponibilité, la performance et la conformité des installations techniques d'un bâtiment tout au long de leur cycle de vie. MCO Facilities propose :
+### 1. Automatisme & robotique industriels
 
-- **Plans de maintenance préventive sur-mesure** : visites périodiques (mensuelles, trimestrielles, semestrielles) selon les exigences réglementaires et les recommandations constructeur.
-- **Interventions correctives sous SLA** : engagement contractuel sur les délais de prise en charge et de remise en service, avec astreinte 24/7 disponible.
-- **GMAO (Gestion de Maintenance Assistée par Ordinateur)** : tous les bons d'intervention, contrôles réglementaires et rapports sont tracés dans un outil partagé avec le client.
-- **Reporting mensuel** : tableau de bord avec indicateurs de disponibilité, MTBF, MTTR, et consommations énergétiques.
-- **Pilotage budgétaire et CAPEX** : conseil sur les renouvellements d'équipements et anticipation des investissements.
+Conception et intégration de systèmes automatisés et de solutions robotiques pour optimiser les cycles de production.
 
-Secteurs servis : tertiaire (sièges sociaux, immeubles de bureau), industrie (sites de production), logistique (plateformes et entrepôts), bailleurs sociaux (parc résidentiel), collectivités (écoles, mairies), retail (réseaux multi-sites), santé (EHPAD, cliniques), hôtellerie.
+- **Développement et intégration automate** : Schneider Electric (Modicon M340/M580, EcoStruxure) et Siemens (S7-1200/1500, TIA Portal) ; également Rockwell et Beckhoff. Analyse fonctionnelle, développement, mise en service, documentation.
+- **Intégration robotique avancée** : bras industriels, cobots collaboratifs, cellules complètes (palettisation, assemblage, soudure, pick-and-place).
+- **Informatique industrielle & SCADA** : supervision temps réel, historisation, gestion d'alarmes ; réseaux Profinet, Modbus TCP, OPC-UA, EtherCAT ; passerelles vers MES et ERP.
+- **Variation de vitesse** : variateurs de fréquence et démarreurs progressifs sur pompes, ventilateurs et convoyeurs.
+- **Rétrofit & modernisation** : remplacement d'automates et d'IHM en fin de support, migration de programmes.
+- **Sécurité & conformité CE** : analyse de risques, circuits de sécurité, niveaux de performance PLd/PLe, dossier technique et marquage CE.
 
-### Vidéosurveillance professionnelle
+Page : https://mco-facilities.vibeia.io/services/automatisme-robotique/
 
-MCO Facilities conçoit, déploie et exploite des systèmes de vidéosurveillance modernes basés sur des architectures IP ouvertes. L'offre couvre :
+### 2. Maintien en Condition Opérationnelle (MCO)
 
-- **Étude d'implantation** : analyse des angles morts, calcul des focales, masques de confidentialité conformes RGPD.
-- **Choix des équipements** : caméras IP fixes, dômes motorisés (PTZ), caméras thermiques pour la détection périmétrique, fisheye 360°, lecture de plaques (ANPR/LAPI).
-- **Stockage hybride** : NVR/VMS local pour les flux haute résolution, cloud chiffré pour la redondance et l'accès distant.
-- **Supervision et levée de doute 24/7** : intégration possible avec un centre de télésurveillance certifié APSAD P5.
-- **Conformité RGPD/CNIL** : déclaration préalable, registre des traitements, durée de conservation paramétrée (30 jours par défaut), masques sur les zones privées.
+Garantir la disponibilité, la performance et la conformité des installations techniques tout au long de leur cycle de vie.
 
-Cas d'usage typiques : surveillance de quais de chargement logistique, sécurisation de parkings d'entreprise, supervision de zones de stockage à valeur élevée, contrôle des points d'accès en hôpital ou EHPAD, anti-effraction nocturne sur sites industriels.
+- **Maintenance préventive** : plans sur-mesure établis à partir des préconisations constructeur, des obligations réglementaires et de l'historique du site.
+- **Maintenance corrective** : engagement contractuel sur les délais de prise en charge (GTI) et de remise en service (GTR), niveaux de criticité P1/P2/P3.
+- **GMAO partagée** : bons d'intervention, contrats, contrôles réglementaires, plans et photos centralisés et accessibles 24/7.
+- **Reporting mensuel** : disponibilité, MTBF, MTTR, nature des interventions, consommations énergétiques.
+- **Astreinte 24/7** : numéro unique, technicien d'astreinte qualifié, intervention sur site selon SLA contractuel.
+- **Pilotage CAPEX** : anticipation des fins de vie et des renouvellements d'équipements.
 
-### Contrôle d'accès
+Page : https://mco-facilities.vibeia.io/services/maintien-condition-operationnelle/
 
-Le contrôle d'accès permet de maîtriser qui entre, où, quand et avec quelles autorisations. MCO Facilities déploie des solutions adaptées à la taille et la criticité du site :
+### 3. Sûreté & vidéoprotection
 
-- **Technologies de lecteurs** : badges RFID Mifare DESFire, biométrie (empreinte digitale, reconnaissance veineuse, reconnaissance faciale), mobile NFC, claviers à code, codes QR temporaires.
-- **Vidéophonie et interphonie IP** : interphones SIP couplés à la vidéosurveillance, ouverture à distance.
-- **Gestion centralisée multi-sites** : interface web unique pour gérer tous les badges, les zones, les plages horaires, sur N sites en France.
-- **Anti-pass-back, sas et barrières** : pour les sites à criticité élevée (data centers, sites industriels sensibles).
-- **Intégration SIRH / Active Directory** : provisionnement automatique des badges à partir de l'annuaire RH, suppression automatique au départ d'un collaborateur.
-- **Traçabilité RGPD** : logs d'accès consultables, anonymisation après délai paramétrable.
+Conception, déploiement et exploitation de systèmes de sûreté et de vidéoprotection IP pour industriels, entreprises et collectivités.
 
-Cas d'usage : entrée principale d'immeuble de bureau, zones sensibles en industrie, parkings d'entreprise avec lecture de plaques, sas d'accès hôpital, copropriétés et résidences.
+- **Intégration de serveurs dédiés et d'enregistreurs** (NVR/VMS), architectures évolutives et multi-sites.
+- **Solutions IA de vidéoprotection** : Hik Vision, Dahua, CASD ; détection d'intrusion par analyse vidéo (humain / animal / véhicule).
+- **Intégrateur certifié JRI My Sirius** : mesure et suivi de température de laboratoire pour les systèmes critiques.
+- **Étude d'implantation** : calcul des focales, champs de vision, masques de confidentialité.
+- **Conformité RGPD intégrée** : registre des traitements, durée de conservation paramétrée, procédure de réponse aux demandes d'accès.
+- **Couplage avec le contrôle d'accès** depuis une même interface.
 
-### Maintenance multi-technique
+Page : https://mco-facilities.vibeia.io/services/surete-videoprotection/
 
-MCO Facilities couvre l'ensemble des lots techniques d'un bâtiment :
+### 4. Électricité & réseaux
 
-- **CVC (Chauffage, Ventilation, Climatisation)** : split, multi-split, VRV/VRF, centrales de traitement d'air (CTA), VMC simple et double flux, chaudières gaz et fioul, pompes à chaleur air-eau et eau-eau.
-- **Électricité** : tableaux généraux basse tension (TGBT), tableaux divisionnaires, éclairage de sécurité (BAES), parafoudres, contrôles thermographiques.
-- **Plomberie et sanitaires** : réseaux d'eau froide et chaude sanitaire, désembouage, traitement anti-légionellose, sanitaires PMR.
-- **Courants faibles** : détection incendie SSI catégorie A à E, détection intrusion certifiée APSAD R81, alarmes techniques.
-- **GTB / GTC** : systèmes de gestion technique de bâtiment, intégration multi-protocoles (BACnet, Modbus, KNX).
+Infrastructures électriques robustes et architectures réseaux très haut débit pour les sites connectés.
 
-## Méthodologie en 3 étapes
+- **Électricité générale industrielle** (courants forts) conforme à la NF C 15-100 ; armoires et tableaux électriques.
+- **Réseaux cuivre haute performance** : câblage VDI catégorie 6A/7, baies de brassage, PoE.
+- **Réseaux fibre optique (FO)** : monomode et multimode, backbones inter-bâtiments, soudure par fusion.
+- **Déploiement, raccordement et recette** : certification cuivre, réflectométrie OTDR sur la fibre, dossier de recette complet.
+- **Courants faibles** et GTB.
 
-### 1. Audit & cartographie
+Page : https://mco-facilities.vibeia.io/services/electricite-reseaux/
 
-Visite technique complète du site, inventaire de l'existant équipement par équipement, analyse de risque, préconisations chiffrées. Le client repart avec un état des lieux factuel et un plan d'action priorisé, sans engagement.
+## Références clients citées sur le site
 
-Livrable : rapport d'audit + plan d'action.
+- Industrie & défense : Dassault Aviation, ST Microelectronics, Schneider Electric, Veolia, Armée de Terre
+- Santé / public : CHU Grenoble-Alpes, CH Métropole Savoie
+- Collectivités : Commune de Moulins, Commune de Chamrousse, Métropole de Lyon
 
-### 2. Conception & déploiement
+## Questions fréquentes
 
-Choix des équipements en architecture ouverte (pas de dépendance fournisseur), intégration avec les systèmes existants, mise en service, formation des exploitants.
+**Qu'est-ce que le maintien en condition opérationnelle (MCO) ?**
+Le MCO consiste à garantir la disponibilité, la performance et la conformité des installations techniques et industrielles tout au long de leur cycle de vie, en combinant maintenance préventive et maintenance corrective réactive 24h/24 et 7j/7.
 
-Livrable : DOE (Dossier des Ouvrages Exécutés), DIUO (Dossier d'Intervention Ultérieure sur l'Ouvrage), certificats de conformité.
+**Quelles sont vos technologies de sûreté et certifications ?**
+MCO Facilities intervient comme intégrateur de serveurs et de solutions IA de vidéoprotection (Hik Vision, Dahua, CASD) et est intégrateur certifié JRI My Sirius pour la mesure de température de laboratoire.
 
-### 3. Supervision & amélioration continue
+**Quelle zone géographique couvrez-vous ?**
+Siège à Varces, près de Grenoble ; interventions dans toute la région Auvergne-Rhône-Alpes et en France entière pour les grands comptes et les infrastructures de défense.
 
-Astreinte technique 24/7, GMAO partagée, télésurveillance des installations critiques, reporting mensuel automatisé, revue trimestrielle de performance avec le client.
-
-Livrable : tableau de bord mensuel + revue trimestrielle.
-
-## Différenciants
-
-- **15 ans d'expérience** dans le facility management multi-technique
-- **240+ sites** sous supervision active
-- **Disponibilité 24/7** pour les contrats de supervision
-- **Conformité RGPD** intégrée par design pour la vidéo et le contrôle d'accès
-- **Architectures ouvertes** : aucun verrouillage fournisseur
-- **Reporting mesurable** : disponibilité, MTBF, MTTR, consommations
-- **Interlocuteur unique** pour tous les lots techniques
-
-## FAQ
-
-**Quelle est la zone d'intervention de MCO Facilities ?**
-Principalement la région Auvergne-Rhône-Alpes (Grenoble, Lyon, Chambéry, Annecy, Valence), avec capacité d'intervention sur l'ensemble du territoire français pour les comptes multi-sites.
-
-**MCO Facilities propose-t-elle de l'astreinte 24/7 ?**
-Oui, pour les sites sous contrat de supervision. Les délais d'intervention sont contractualisés (typiquement 2h en heures ouvrées, 4h en heures non-ouvrées pour les pannes critiques).
-
-**Les systèmes de vidéosurveillance sont-ils conformes RGPD ?**
-Oui, l'ensemble du process (étude, déclaration, masques de confidentialité, durée de conservation paramétrée, registre des traitements) est conforme RGPD et aux recommandations CNIL.
-
-**Peut-on intégrer un système de contrôle d'accès à un Active Directory existant ?**
-Oui, l'intégration LDAP/AD est standard. Les badges sont provisionnés automatiquement à partir de l'annuaire RH ou de l'AD, et révoqués automatiquement au départ d'un collaborateur.
-
-**Quelle est la différence entre une maintenance préventive et corrective ?**
-La maintenance préventive consiste à intervenir périodiquement selon un planning défini pour éviter les pannes (vidange, contrôle, remplacement de pièces d'usure). La maintenance corrective intervient après une panne pour remettre l'équipement en service.
-
-**Faut-il signer un contrat annuel ou peut-on faire des interventions ponctuelles ?**
-Les deux modes sont possibles. Les contrats annuels (P1/P2/P3) offrent les meilleurs SLA et tarifs. Les interventions ponctuelles à la demande sont également proposées, avec facturation au temps passé.
+**Assurez-vous une astreinte ?**
+Oui, une astreinte technique 24h/24 — 7j/7 est dédiée aux infrastructures industrielles et aux sites critiques sous contrat.
 
 ## Contact
 
 - Adresse : 26 chemin de la digue, 38760 Varces, France
-- Téléphone mobile : +33 6 70 98 65 61
-- Téléphone fixe : 04 76 72 99 58
+- Mobile : +33 6 70 98 65 61
+- Fixe : 04 76 72 99 58
 - Email : alexandre.angulo@mco-facilities.fr
-- Site web : https://mco-facilities.vibeia.io
+- Formulaire : https://mco-facilities.vibeia.io/contact/

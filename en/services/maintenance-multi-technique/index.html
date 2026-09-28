@@ -18,13 +18,12 @@
   <meta property="og:image" content="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=1200&q=80&auto=format&fit=crop" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://images.unsplash.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+  <link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/fonts/fonts.css" />
 
   <link rel="stylesheet" href="/style.css" />
-  <link rel="icon" type="image/svg+xml" href="/logo.png" />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
 
   <script type="application/ld+json">
   {
@@ -213,7 +212,8 @@
     <section class="section">
       <div class="callout">
         <p data-reveal>
-          <em>Our Underlying Principle</em>: A modern facility is a complex, unified **ecosystem**, not an independent collection of separate parts. A minor water leak can short out a main switchboard; an AHU breakdown can compromise a server stack. **We evaluate the entire picture** and execute where it matters most.
+          <em>Our Underlying Principle</em>
+          A modern facility is a complex, unified **ecosystem**, not an independent collection of separate parts. A minor water leak can short out a main switchboard; an AHU breakdown can compromise a server stack. **We evaluate the entire picture** and execute where it matters most.
         </p>
       </div>
     </section>
@@ -371,12 +371,12 @@
     </div>
     <div class="footer__bottom">
       <span>© <span id="year"></span> MCO Facilities — All rights reserved.</span>
-      <span class="footer__legal"><a href="/en/mentions-legales/">Legal Notice</a> · <span class="muted">Designed in France</span></span>
+      <span class="footer__legal"><a href="/en/mentions-legales/">Legal Notice</a> · <a href="/en/cgu/">Terms of Use</a> · <span class="muted">Designed in France</span></span>
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="/vendor/gsap.min.js"></script>
+  <script src="/vendor/ScrollTrigger.min.js"></script>
   <script src="/main.js"></script>
 </body>
 </html>
