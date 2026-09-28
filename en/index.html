@@ -173,43 +173,32 @@
   <main id="contenu">
 
     <!-- ─────────────── HERO ─────────────── -->
-    <section class="h-hero">
-      <div class="h-hero__media">
-        <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=1800&q=75&auto=format&fit=crop" alt="Technician working on an industrial installation" fetchpriority="high" />
-      </div>
+    <section class="x-hero">
+      <canvas class="circuit" data-circuit="hero" aria-hidden="true"></canvas>
+      <div class="x-hero__glow" aria-hidden="true"></div>
 
-      <svg class="h-hero__traces trace" viewBox="0 0 600 900" preserveAspectRatio="xMaxYMid slice" aria-hidden="true">
-        <path d="M620 150 H470 V290 H300 V420" />
-        <path d="M620 560 H520 V470 H380" />
-        <path d="M620 760 H430 V640 H240 V560" />
-        <circle cx="300" cy="420" r="8" />
-        <circle cx="380" cy="470" r="8" />
-        <circle cx="240" cy="560" r="8" />
-      </svg>
-
-      <div class="h-hero__inner">
-        <h1 class="h-hero__title">
-          <span class="line"><span>When the plant</span></span>
-          <span class="line"><span>stops, we're</span></span>
-          <span class="line"><span>already on</span></span>
-          <span class="line"><span>our way.</span></span>
+      <div class="x-hero__inner">
+        <p class="x-hero__status"><span class="live" aria-hidden="true"></span>On call now, 24/7</p>
+        <h1 class="x-hero__title" data-scramble>
+          <span class="line">When the plant stops,</span>
+          <span class="line">we're already</span>
+          <span class="line x-hero__accent">on our way.</span>
         </h1>
-        <p class="h-hero__lede">
-          MCO Facilities maintains, automates and secures industrial, hospital and defence
-          installations across Auvergne-Rhône-Alpes, France. One team, one phone number,
-          on call 24 hours a day, 7 days a week.
+        <p class="x-hero__lede">
+          Maintenance, automation, security and electrical work for industrial, hospital
+          and defence sites. One team, one phone number.
         </p>
-        <div class="h-hero__actions">
-          <a href="/en/contact/" class="btn btn--signal">Request an audit</a>
-          <a href="tel:+33670986561" class="btn btn--line">Call +33 6 70 98 65 61</a>
+        <div class="x-hero__actions">
+          <a href="/en/contact/" class="btn btn--glow">Request an audit</a>
+          <a href="tel:+33670986561" class="btn btn--line">+33 6 70 98 65 61</a>
         </div>
       </div>
 
-      <dl class="h-hero__plate">
-        <div><dt>On call</dt><dd><span class="live" aria-hidden="true"></span>24/7, all year</dd></div>
-        <div><dt>Head office</dt><dd>Varces, Isère</dd></div>
-        <div><dt>Coverage</dt><dd>Auvergne-Rhône-Alpes and all of France</dd></div>
-        <div><dt>Sectors</dt><dd>Industry, healthcare, defence, local authorities</dd></div>
+      <dl class="x-hud" aria-label="Key facts">
+        <div><dt>Local time</dt><dd data-clock>--:--:--</dd></div>
+        <div><dt>Base</dt><dd>Varces 45.10° N · 5.69° E</dd></div>
+        <div><dt>Zone</dt><dd>Auvergne-Rhône-Alpes, France</dd></div>
+        <div><dt>Sectors</dt><dd>Industry, healthcare, defence, public sector</dd></div>
       </dl>
     </section>
 
@@ -223,95 +212,108 @@
     </section>
 
     <!-- ─────────────── SERVICES ─────────────── -->
-    <section class="h-services" id="prestations">
-      <header class="h-head">
-        <h2 class="h-head__title">Four trades, one team</h2>
-        <p class="h-head__lede">Every job is documented, and every installation has a contact who knows it.</p>
-      </header>
+    <section class="x-svc" id="prestations">
+      <div class="x-svc__pin">
+        <header class="x-svc__head">
+          <h2 class="x-title">Four trades, one team</h2>
+        </header>
 
-      <div class="h-services__grid">
-        <svg class="h-bus trace" viewBox="0 0 40 1000" preserveAspectRatio="none" aria-hidden="true">
-          <path class="h-bus__line" d="M20 0 V1000" />
-        </svg>
-
-        <article class="svc" data-svc>
-          <span class="svc__node" aria-hidden="true"></span>
-          <figure class="svc__media">
-            <img src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=1400&q=75&auto=format&fit=crop" alt="Robotic cell on a production floor" loading="lazy" />
-          </figure>
-          <div class="svc__body">
-            <h3>Automation &amp; robotics</h3>
-            <p>Design and integration of automated systems and robotic cells, from the PLC up to supervision.</p>
-            <ul>
-              <li>Schneider Electric and Siemens programming</li>
-              <li>Industrial robots and cobots</li>
-              <li>Industrial IT and SCADA</li>
-              <li>Variable speed drives and retrofits</li>
-            </ul>
-            <a class="svc__link" href="/en/services/automatisme-robotique/">See the automation offer</a>
+        <div class="x-svc__stage">
+          <div class="x-svc__rail" aria-hidden="true">
+          <ol class="x-svc__nav">
+            <li class="is-active">Automation &amp; robotics</li>
+            <li>Operational readiness (MCO)</li>
+            <li>Security &amp; video protection</li>
+            <li>Electrical &amp; networks</li>
+          </ol>
+          <span class="x-svc__progress"><span></span></span>
           </div>
-        </article>
 
-        <article class="svc" data-svc>
-          <span class="svc__node" aria-hidden="true"></span>
-          <figure class="svc__media">
-            <img src="https://images.unsplash.com/photo-1573164574511-73c773193279?w=1400&q=75&auto=format&fit=crop" alt="Maintenance technician at work" loading="lazy" />
-          </figure>
-          <div class="svc__body">
-            <h3>Operational readiness (MCO)</h3>
-            <p>Preventive and corrective maintenance of critical installations, with an on-call line that answers day and night.</p>
-            <ul>
-              <li>Planned preventive maintenance</li>
-              <li>Emergency on-site repairs</li>
-              <li>Shared CMMS and monthly reporting</li>
-              <li>24/7 on-call service</li>
-            </ul>
-            <a class="svc__link" href="/en/services/maintien-condition-operationnelle/">See the MCO offer</a>
+          <div class="x-svc__panels">
+            <article class="x-panel is-active" data-panel>
+              <h3>Automation &amp; robotics</h3>
+              <p>Design and integration of automated systems and robotic cells, from the PLC up to supervision.</p>
+              <ul>
+                <li>Schneider Electric and Siemens programming</li>
+                <li>Industrial robots and cobots</li>
+                <li>Industrial IT and SCADA</li>
+                <li>Variable speed drives and retrofits</li>
+              </ul>
+              <a class="x-link" href="/en/services/automatisme-robotique/">See the automation offer</a>
+            </article>
+            <article class="x-panel" data-panel>
+              <h3>Operational readiness (MCO)</h3>
+              <p>Preventive and corrective maintenance of critical installations, with an on-call line that answers day and night.</p>
+              <ul>
+                <li>Planned preventive maintenance</li>
+                <li>Emergency on-site repairs</li>
+                <li>Shared CMMS and monthly reporting</li>
+                <li>24/7 on-call service</li>
+              </ul>
+              <a class="x-link" href="/en/services/maintien-condition-operationnelle/">See the MCO offer</a>
+            </article>
+            <article class="x-panel" data-panel>
+              <h3>Security &amp; video protection</h3>
+              <p>Intelligent video protection and dedicated servers to protect sensitive sites, in line with the GDPR.</p>
+              <ul>
+                <li>Dedicated servers and recorders</li>
+                <li>AI video analytics: Hik Vision, Dahua, CASD</li>
+                <li>Certified JRI My Sirius integrator</li>
+                <li>Laboratory temperature monitoring</li>
+              </ul>
+              <a class="x-link" href="/en/services/surete-videoprotection/">See the security offer</a>
+            </article>
+            <article class="x-panel" data-panel>
+              <h3>Electrical &amp; networks</h3>
+              <p>Power distribution, copper and fibre-optic cabling, installed, connected and tested, with a full acceptance report.</p>
+              <ul>
+                <li>Industrial electrical work</li>
+                <li>High-performance copper networks</li>
+                <li>Single-mode and multimode fibre</li>
+                <li>Connection, testing and acceptance</li>
+              </ul>
+              <a class="x-link" href="/en/services/electricite-reseaux/">See the electrical offer</a>
+            </article>
           </div>
-        </article>
 
-        <article class="svc" data-svc>
-          <span class="svc__node" aria-hidden="true"></span>
-          <figure class="svc__media">
-            <img src="https://images.unsplash.com/photo-1633265486064-086b219458ec?w=1400&q=75&auto=format&fit=crop" alt="Security camera on an industrial site" loading="lazy" />
-          </figure>
-          <div class="svc__body">
-            <h3>Security &amp; video protection</h3>
-            <p>Intelligent video protection and dedicated servers to protect sensitive sites, in line with the GDPR.</p>
-            <ul>
-              <li>Dedicated servers and recorders</li>
-              <li>AI video analytics: Hik Vision, Dahua, CASD</li>
-              <li>Certified JRI My Sirius integrator</li>
-              <li>Laboratory temperature monitoring</li>
-            </ul>
-            <a class="svc__link" href="/en/services/surete-videoprotection/">See the security offer</a>
+          <div class="x-svc__visual" aria-hidden="true">
+            <svg class="x-art is-active" viewBox="0 0 400 400" data-art>
+              <!-- robot arm -->
+              <path d="M110 340 H290" /><path d="M140 340 V310 H260 V340" />
+              <path d="M200 310 V250" /><circle cx="200" cy="240" r="14" />
+              <path d="M210 230 L270 150" /><circle cx="276" cy="142" r="12" />
+              <path d="M284 136 L330 170" /><path d="M330 170 L350 150 M330 170 L352 188" />
+              <circle cx="200" cy="240" r="30" class="x-art__ring" /><path d="M60 110 H130 V60" class="x-art__trace" /><circle cx="130" cy="60" r="5" />
+            </svg>
+            <svg class="x-art" viewBox="0 0 400 400" data-art>
+              <!-- monitoring gauge + heartbeat -->
+              <path d="M90 250 A110 110 0 0 1 310 250" /><path d="M110 250 A90 90 0 0 1 290 250" class="x-art__ring" />
+              <path d="M200 250 L262 180" /><circle cx="200" cy="250" r="10" />
+              <path d="M100 250 h12 M288 250 h12 M200 140 v12 M129 179 l9 9 M271 179 l-9 9" />
+              <path d="M60 320 H140 L158 290 L176 350 L194 300 L208 320 H340" class="x-art__trace" />
+            </svg>
+            <svg class="x-art" viewBox="0 0 400 400" data-art>
+              <!-- camera with detection -->
+              <path d="M80 110 H200 V160 H80 Z" /><path d="M200 125 L232 115 V155 L200 145" /><path d="M120 160 V200 H100" /><circle cx="110" cy="135" r="10" />
+              <path d="M232 135 L360 90 M232 135 L360 330" class="x-art__ring" />
+              <path d="M270 210 H330 V300 H270 Z" class="x-art__trace" /><path d="M300 225 v20 M290 255 h20 M300 245 v30 M300 275 l-10 20 M300 275 l10 20" />
+            </svg>
+            <svg class="x-art" viewBox="0 0 400 400" data-art>
+              <!-- cabinet, bolt, fibre -->
+              <path d="M90 70 H230 V330 H90 Z" /><path d="M90 130 H230 M90 200 H230 M90 270 H230" />
+              <path d="M170 90 L140 160 H175 L150 230" class="x-art__ring" />
+              <path d="M230 110 C300 110 280 180 350 180" class="x-art__trace" /><path d="M230 170 C290 170 300 240 350 240" class="x-art__trace" /><path d="M230 240 C280 240 310 300 350 300" class="x-art__trace" />
+              <circle cx="350" cy="180" r="5" /><circle cx="350" cy="240" r="5" /><circle cx="350" cy="300" r="5" />
+            </svg>
           </div>
-        </article>
-
-        <article class="svc" data-svc>
-          <span class="svc__node" aria-hidden="true"></span>
-          <figure class="svc__media">
-            <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=1400&q=75&auto=format&fit=crop" alt="Electrical cabinet and network cabling" loading="lazy" />
-          </figure>
-          <div class="svc__body">
-            <h3>Electrical &amp; networks</h3>
-            <p>Power distribution, copper and fibre-optic cabling, installed, connected and tested, with a full acceptance report.</p>
-            <ul>
-              <li>Industrial electrical work</li>
-              <li>High-performance copper networks</li>
-              <li>Single-mode and multimode fibre</li>
-              <li>Connection, testing and acceptance</li>
-            </ul>
-            <a class="svc__link" href="/en/services/electricite-reseaux/">See the electrical offer</a>
-          </div>
-        </article>
+        </div>
       </div>
     </section>
 
     <!-- ─────────────── SECTEURS + RÉFÉRENCES ─────────────── -->
     <section class="h-sectors" id="secteurs">
       <header class="h-head h-head--dark">
-        <h2 class="h-head__title">They trust us with their sites</h2>
+        <h2 class="h-head__title x-title">They trust us with their sites</h2>
         <p class="h-head__lede">Environments where availability is not up for negotiation.</p>
       </header>
 
@@ -386,7 +388,7 @@
     <section class="h-field" id="terrain">
       <div class="h-field__pin">
         <header class="h-field__head">
-          <h2 class="h-head__title">In the field</h2>
+          <h2 class="h-head__title x-title">In the field</h2>
           <p class="h-head__lede">Cabinets, cameras, fibre, production lines: where we work every week.</p>
         </header>
         <div class="h-field__track">
@@ -417,7 +419,7 @@
     <!-- ─────────────── FAQ ─────────────── -->
     <section class="h-faq" id="faq">
       <header class="h-head">
-        <h2 class="h-head__title">Your questions</h2>
+        <h2 class="h-head__title x-title">Your questions</h2>
       </header>
       <div class="h-faq__list">
         <details>
@@ -441,17 +443,12 @@
 
     <!-- ─────────────── CTA ─────────────── -->
     <section class="h-cta">
-      <svg class="h-cta__traces trace" viewBox="0 0 1200 400" preserveAspectRatio="none" aria-hidden="true">
-        <path d="M0 330 H260 V230 H520" />
-        <path d="M1200 70 H900 V170 H700" />
-        <circle cx="520" cy="230" r="7" />
-        <circle cx="700" cy="170" r="7" />
-      </svg>
+      <canvas class="circuit" data-circuit="cta" aria-hidden="true"></canvas>
       <div class="h-cta__inner">
         <h2>Let's talk about your site</h2>
         <p>An audit to understand your constraints, then a clear proposal. Reply within one business day.</p>
         <div class="h-cta__actions">
-          <a href="/en/contact/" class="btn btn--signal">Request an audit</a>
+          <a href="/en/contact/" class="btn btn--glow">Request an audit</a>
           <a href="tel:+33670986561" class="h-cta__phone">+33 6 70 98 65 61</a>
           <a href="tel:+33476729958" class="h-cta__phone h-cta__phone--small">Office: +33 4 76 72 99 58</a>
         </div>

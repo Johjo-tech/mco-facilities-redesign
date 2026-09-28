@@ -173,42 +173,31 @@
   <main id="contenu">
 
     <!-- ─────────────── HERO ─────────────── -->
-    <section class="h-hero">
-      <div class="h-hero__media">
-        <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=1800&q=75&auto=format&fit=crop" alt="Technicien intervenant sur une installation industrielle" fetchpriority="high" />
-      </div>
+    <section class="x-hero">
+      <canvas class="circuit" data-circuit="hero" aria-hidden="true"></canvas>
+      <div class="x-hero__glow" aria-hidden="true"></div>
 
-      <svg class="h-hero__traces trace" viewBox="0 0 600 900" preserveAspectRatio="xMaxYMid slice" aria-hidden="true">
-        <path d="M620 150 H470 V290 H300 V420" />
-        <path d="M620 560 H520 V470 H380" />
-        <path d="M620 760 H430 V640 H240 V560" />
-        <circle cx="300" cy="420" r="8" />
-        <circle cx="380" cy="470" r="8" />
-        <circle cx="240" cy="560" r="8" />
-      </svg>
-
-      <div class="h-hero__inner">
-        <h1 class="h-hero__title">
-          <span class="line"><span>Quand l'usine</span></span>
-          <span class="line"><span>s'arrête, nous</span></span>
-          <span class="line"><span>sommes déjà</span></span>
-          <span class="line"><span>en route.</span></span>
+      <div class="x-hero__inner">
+        <p class="x-hero__status"><span class="live" aria-hidden="true"></span>Astreinte active, 24h/24 et 7j/7</p>
+        <h1 class="x-hero__title" data-scramble>
+          <span class="line">Quand l'usine s'arrête,</span>
+          <span class="line">nous sommes déjà</span>
+          <span class="line x-hero__accent">en route.</span>
         </h1>
-        <p class="h-hero__lede">
-          MCO Facilities maintient, automatise et sécurise les installations industrielles,
-          hospitalières et de défense en Auvergne-Rhône-Alpes. Une seule équipe, un seul numéro,
-          une astreinte 24h/24 et 7j/7.
+        <p class="x-hero__lede">
+          Maintenance, automatisme, sûreté et électricité pour les sites industriels,
+          hospitaliers et de défense. Une seule équipe, un seul numéro.
         </p>
-        <div class="h-hero__actions">
-          <a href="/contact/" class="btn btn--signal">Demander un audit</a>
-          <a href="tel:+33670986561" class="btn btn--line">Appeler le 06 70 98 65 61</a>
+        <div class="x-hero__actions">
+          <a href="/contact/" class="btn btn--glow">Demander un audit</a>
+          <a href="tel:+33670986561" class="btn btn--line">06 70 98 65 61</a>
         </div>
       </div>
 
-      <dl class="h-hero__plate">
-        <div><dt>Astreinte</dt><dd><span class="live" aria-hidden="true"></span>24h/24, 7j/7</dd></div>
-        <div><dt>Siège</dt><dd>Varces, Isère</dd></div>
-        <div><dt>Zone</dt><dd>Auvergne-Rhône-Alpes et France</dd></div>
+      <dl class="x-hud" aria-label="Informations clés">
+        <div><dt>Heure locale</dt><dd data-clock>--:--:--</dd></div>
+        <div><dt>Base</dt><dd>Varces 45.10° N · 5.69° E</dd></div>
+        <div><dt>Zone</dt><dd>Auvergne-Rhône-Alpes, France</dd></div>
         <div><dt>Secteurs</dt><dd>Industrie, santé, défense, collectivités</dd></div>
       </dl>
     </section>
@@ -223,95 +212,108 @@
     </section>
 
     <!-- ─────────────── SERVICES ─────────────── -->
-    <section class="h-services" id="prestations">
-      <header class="h-head">
-        <h2 class="h-head__title">Quatre métiers, une seule équipe</h2>
-        <p class="h-head__lede">Chaque intervention est documentée, chaque installation a un interlocuteur qui la connaît.</p>
-      </header>
+    <section class="x-svc" id="prestations">
+      <div class="x-svc__pin">
+        <header class="x-svc__head">
+          <h2 class="x-title">Quatre métiers, une seule équipe</h2>
+        </header>
 
-      <div class="h-services__grid">
-        <svg class="h-bus trace" viewBox="0 0 40 1000" preserveAspectRatio="none" aria-hidden="true">
-          <path class="h-bus__line" d="M20 0 V1000" />
-        </svg>
-
-        <article class="svc" data-svc>
-          <span class="svc__node" aria-hidden="true"></span>
-          <figure class="svc__media">
-            <img src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=1400&q=75&auto=format&fit=crop" alt="Cellule robotisée dans un atelier de production" loading="lazy" />
-          </figure>
-          <div class="svc__body">
-            <h3>Automatisme &amp; robotique</h3>
-            <p>Conception et intégration de systèmes automatisés et de cellules robotisées, de l'automate jusqu'à la supervision.</p>
-            <ul>
-              <li>Programmation Schneider Electric et Siemens</li>
-              <li>Robots industriels et cobots</li>
-              <li>Informatique industrielle et SCADA</li>
-              <li>Variation de vitesse et rétrofit</li>
-            </ul>
-            <a class="svc__link" href="/services/automatisme-robotique/">Voir l'offre automatisme</a>
+        <div class="x-svc__stage">
+          <div class="x-svc__rail" aria-hidden="true">
+          <ol class="x-svc__nav">
+            <li class="is-active">Automatisme &amp; robotique</li>
+            <li>Maintien en condition opérationnelle</li>
+            <li>Sûreté &amp; vidéoprotection</li>
+            <li>Électricité &amp; réseaux</li>
+          </ol>
+          <span class="x-svc__progress"><span></span></span>
           </div>
-        </article>
 
-        <article class="svc" data-svc>
-          <span class="svc__node" aria-hidden="true"></span>
-          <figure class="svc__media">
-            <img src="https://images.unsplash.com/photo-1573164574511-73c773193279?w=1400&q=75&auto=format&fit=crop" alt="Technicien de maintenance en intervention" loading="lazy" />
-          </figure>
-          <div class="svc__body">
-            <h3>Maintien en condition opérationnelle</h3>
-            <p>Maintenance préventive et corrective des installations critiques, avec une astreinte qui décroche jour et nuit.</p>
-            <ul>
-              <li>Maintenance préventive planifiée</li>
-              <li>Dépannage d'urgence sur site</li>
-              <li>GMAO partagée et reporting mensuel</li>
-              <li>Astreinte 24h/24, 7j/7</li>
-            </ul>
-            <a class="svc__link" href="/services/maintien-condition-operationnelle/">Voir l'offre MCO</a>
+          <div class="x-svc__panels">
+            <article class="x-panel is-active" data-panel>
+              <h3>Automatisme &amp; robotique</h3>
+              <p>Conception et intégration de systèmes automatisés et de cellules robotisées, de l'automate jusqu'à la supervision.</p>
+              <ul>
+                <li>Programmation Schneider Electric et Siemens</li>
+                <li>Robots industriels et cobots</li>
+                <li>Informatique industrielle et SCADA</li>
+                <li>Variation de vitesse et rétrofit</li>
+              </ul>
+              <a class="x-link" href="/services/automatisme-robotique/">Voir l'offre automatisme</a>
+            </article>
+            <article class="x-panel" data-panel>
+              <h3>Maintien en condition opérationnelle</h3>
+              <p>Maintenance préventive et corrective des installations critiques, avec une astreinte qui décroche jour et nuit.</p>
+              <ul>
+                <li>Maintenance préventive planifiée</li>
+                <li>Dépannage d'urgence sur site</li>
+                <li>GMAO partagée et reporting mensuel</li>
+                <li>Astreinte 24h/24, 7j/7</li>
+              </ul>
+              <a class="x-link" href="/services/maintien-condition-operationnelle/">Voir l'offre MCO</a>
+            </article>
+            <article class="x-panel" data-panel>
+              <h3>Sûreté &amp; vidéoprotection</h3>
+              <p>Vidéoprotection intelligente et serveurs dédiés pour protéger les sites sensibles, dans le respect du RGPD.</p>
+              <ul>
+                <li>Serveurs et enregistreurs dédiés</li>
+                <li>Analyse vidéo IA : Hik Vision, Dahua, CASD</li>
+                <li>Intégrateur certifié JRI My Sirius</li>
+                <li>Suivi de température de laboratoire</li>
+              </ul>
+              <a class="x-link" href="/services/surete-videoprotection/">Voir l'offre sûreté</a>
+            </article>
+            <article class="x-panel" data-panel>
+              <h3>Électricité &amp; réseaux</h3>
+              <p>Distribution électrique, câblage cuivre et fibre optique, posés, raccordés et mesurés avec un dossier de recette complet.</p>
+              <ul>
+                <li>Électricité générale industrielle</li>
+                <li>Réseaux cuivre haute performance</li>
+                <li>Fibre optique monomode et multimode</li>
+                <li>Raccordement, mesures et recette</li>
+              </ul>
+              <a class="x-link" href="/services/electricite-reseaux/">Voir l'offre électricité</a>
+            </article>
           </div>
-        </article>
 
-        <article class="svc" data-svc>
-          <span class="svc__node" aria-hidden="true"></span>
-          <figure class="svc__media">
-            <img src="https://images.unsplash.com/photo-1633265486064-086b219458ec?w=1400&q=75&auto=format&fit=crop" alt="Caméra de vidéoprotection sur un site industriel" loading="lazy" />
-          </figure>
-          <div class="svc__body">
-            <h3>Sûreté &amp; vidéoprotection</h3>
-            <p>Vidéoprotection intelligente et serveurs dédiés pour protéger les sites sensibles, dans le respect du RGPD.</p>
-            <ul>
-              <li>Serveurs et enregistreurs dédiés</li>
-              <li>Analyse vidéo IA : Hik Vision, Dahua, CASD</li>
-              <li>Intégrateur certifié JRI My Sirius</li>
-              <li>Suivi de température de laboratoire</li>
-            </ul>
-            <a class="svc__link" href="/services/surete-videoprotection/">Voir l'offre sûreté</a>
+          <div class="x-svc__visual" aria-hidden="true">
+            <svg class="x-art is-active" viewBox="0 0 400 400" data-art>
+              <!-- robot arm -->
+              <path d="M110 340 H290" /><path d="M140 340 V310 H260 V340" />
+              <path d="M200 310 V250" /><circle cx="200" cy="240" r="14" />
+              <path d="M210 230 L270 150" /><circle cx="276" cy="142" r="12" />
+              <path d="M284 136 L330 170" /><path d="M330 170 L350 150 M330 170 L352 188" />
+              <circle cx="200" cy="240" r="30" class="x-art__ring" /><path d="M60 110 H130 V60" class="x-art__trace" /><circle cx="130" cy="60" r="5" />
+            </svg>
+            <svg class="x-art" viewBox="0 0 400 400" data-art>
+              <!-- monitoring gauge + heartbeat -->
+              <path d="M90 250 A110 110 0 0 1 310 250" /><path d="M110 250 A90 90 0 0 1 290 250" class="x-art__ring" />
+              <path d="M200 250 L262 180" /><circle cx="200" cy="250" r="10" />
+              <path d="M100 250 h12 M288 250 h12 M200 140 v12 M129 179 l9 9 M271 179 l-9 9" />
+              <path d="M60 320 H140 L158 290 L176 350 L194 300 L208 320 H340" class="x-art__trace" />
+            </svg>
+            <svg class="x-art" viewBox="0 0 400 400" data-art>
+              <!-- camera with detection -->
+              <path d="M80 110 H200 V160 H80 Z" /><path d="M200 125 L232 115 V155 L200 145" /><path d="M120 160 V200 H100" /><circle cx="110" cy="135" r="10" />
+              <path d="M232 135 L360 90 M232 135 L360 330" class="x-art__ring" />
+              <path d="M270 210 H330 V300 H270 Z" class="x-art__trace" /><path d="M300 225 v20 M290 255 h20 M300 245 v30 M300 275 l-10 20 M300 275 l10 20" />
+            </svg>
+            <svg class="x-art" viewBox="0 0 400 400" data-art>
+              <!-- cabinet, bolt, fibre -->
+              <path d="M90 70 H230 V330 H90 Z" /><path d="M90 130 H230 M90 200 H230 M90 270 H230" />
+              <path d="M170 90 L140 160 H175 L150 230" class="x-art__ring" />
+              <path d="M230 110 C300 110 280 180 350 180" class="x-art__trace" /><path d="M230 170 C290 170 300 240 350 240" class="x-art__trace" /><path d="M230 240 C280 240 310 300 350 300" class="x-art__trace" />
+              <circle cx="350" cy="180" r="5" /><circle cx="350" cy="240" r="5" /><circle cx="350" cy="300" r="5" />
+            </svg>
           </div>
-        </article>
-
-        <article class="svc" data-svc>
-          <span class="svc__node" aria-hidden="true"></span>
-          <figure class="svc__media">
-            <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=1400&q=75&auto=format&fit=crop" alt="Armoire électrique et câblage réseau" loading="lazy" />
-          </figure>
-          <div class="svc__body">
-            <h3>Électricité &amp; réseaux</h3>
-            <p>Distribution électrique, câblage cuivre et fibre optique, posés, raccordés et mesurés avec un dossier de recette complet.</p>
-            <ul>
-              <li>Électricité générale industrielle</li>
-              <li>Réseaux cuivre haute performance</li>
-              <li>Fibre optique monomode et multimode</li>
-              <li>Raccordement, mesures et recette</li>
-            </ul>
-            <a class="svc__link" href="/services/electricite-reseaux/">Voir l'offre électricité</a>
-          </div>
-        </article>
+        </div>
       </div>
     </section>
 
     <!-- ─────────────── SECTEURS + RÉFÉRENCES ─────────────── -->
     <section class="h-sectors" id="secteurs">
       <header class="h-head h-head--dark">
-        <h2 class="h-head__title">Ils nous confient leurs sites</h2>
+        <h2 class="h-head__title x-title">Ils nous confient leurs sites</h2>
         <p class="h-head__lede">Des environnements où la disponibilité ne se négocie pas.</p>
       </header>
 
@@ -386,7 +388,7 @@
     <section class="h-field" id="terrain">
       <div class="h-field__pin">
         <header class="h-field__head">
-          <h2 class="h-head__title">Sur le terrain</h2>
+          <h2 class="h-head__title x-title">Sur le terrain</h2>
           <p class="h-head__lede">Armoires, caméras, fibre, lignes de production : là où nous intervenons chaque semaine.</p>
         </header>
         <div class="h-field__track">
@@ -417,7 +419,7 @@
     <!-- ─────────────── FAQ ─────────────── -->
     <section class="h-faq" id="faq">
       <header class="h-head">
-        <h2 class="h-head__title">Vos questions</h2>
+        <h2 class="h-head__title x-title">Vos questions</h2>
       </header>
       <div class="h-faq__list">
         <details>
@@ -441,17 +443,12 @@
 
     <!-- ─────────────── CTA ─────────────── -->
     <section class="h-cta">
-      <svg class="h-cta__traces trace" viewBox="0 0 1200 400" preserveAspectRatio="none" aria-hidden="true">
-        <path d="M0 330 H260 V230 H520" />
-        <path d="M1200 70 H900 V170 H700" />
-        <circle cx="520" cy="230" r="7" />
-        <circle cx="700" cy="170" r="7" />
-      </svg>
+      <canvas class="circuit" data-circuit="cta" aria-hidden="true"></canvas>
       <div class="h-cta__inner">
         <h2>Parlons de votre site</h2>
         <p>Un audit pour comprendre vos contraintes, puis une proposition claire. Réponse sous 24 heures ouvrées.</p>
         <div class="h-cta__actions">
-          <a href="/contact/" class="btn btn--signal">Demander un audit</a>
+          <a href="/contact/" class="btn btn--glow">Demander un audit</a>
           <a href="tel:+33670986561" class="h-cta__phone">06 70 98 65 61</a>
           <a href="tel:+33476729958" class="h-cta__phone h-cta__phone--small">Bureau : 04 76 72 99 58</a>
         </div>
