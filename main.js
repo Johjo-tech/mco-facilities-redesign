@@ -175,6 +175,131 @@
     }
   }
 
+  /* ─── 10. Scroll motion (GSAP ScrollTrigger) ─── */
+  if (hasGSAP && !prefersReducedMotion) {
+    document.documentElement.classList.add('has-motion');
+
+    /* 10a. Reading progress bar */
+    const bar = document.createElement('div');
+    bar.className = 'scroll-progress';
+    bar.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(bar);
+    gsap.to(bar, {
+      scaleX: 1,
+      ease: 'none',
+      scrollTrigger: { trigger: document.documentElement, start: 'top top', end: 'bottom bottom', scrub: 0.3 }
+    });
+
+    /* 10b. Hero: photo zooms, content drifts up and fades as you leave it */
+    const hero = document.querySelector('.hero, .page-hero');
+    if (hero) {
+      const heroTl = gsap.timeline({
+        scrollTrigger: { trigger: hero, start: 'top top', end: 'bottom top', scrub: true }
+      });
+      const heroImg = hero.querySelector('.hero__photo img, .page-hero__photo img');
+      const heroInner = hero.querySelector('.hero__inner, .page-hero__inner');
+      if (heroImg) heroTl.fromTo(heroImg, { scale: 1.05, yPercent: 0 }, { scale: 1.18, yPercent: 8, ease: 'none' }, 0);
+      if (heroInner) heroTl.to(heroInner, { yPercent: -12, opacity: 0.15, ease: 'none' }, 0);
+    }
+
+    /* 10c. Image parallax inside cards and gallery tiles */
+    document.querySelectorAll('.service__photo img, .gallery__item img').forEach((img) => {
+      gsap.fromTo(img,
+        { yPercent: -7, scale: 1.18 },
+        {
+          yPercent: 7,
+          scale: 1.18,
+          ease: 'none',
+          scrollTrigger: { trigger: img.parentElement, start: 'top bottom', end: 'bottom top', scrub: true }
+        });
+    });
+
+    /* 10d. Gallery tiles open like a shutter */
+    document.querySelectorAll('.gallery__item').forEach((item) => {
+      gsap.fromTo(item,
+        { clipPath: 'inset(14% 10% 14% 10% round 22px)' },
+        {
+          clipPath: 'inset(0% 0% 0% 0% round 22px)',
+          ease: 'power3.out',
+          duration: 1.3,
+          scrollTrigger: { trigger: item, start: 'top 88%', once: true }
+        });
+    });
+
+    /* 10e. Section titles: word-by-word rise */
+    const splitWords = (root) => {
+      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+      const nodes = [];
+      while (walker.nextNode()) if (walker.currentNode.nodeValue.trim()) nodes.push(walker.currentNode);
+      nodes.forEach((node) => {
+        const frag = document.createDocumentFragment();
+        node.nodeValue.split(/(\s+)/).forEach((part) => {
+          if (!part) return;
+          if (/^\s+$/.test(part)) { frag.appendChild(document.createTextNode(part)); return; }
+          const outer = document.createElement('span');
+          outer.className = 'split-word';
+          const inner = document.createElement('span');
+          inner.textContent = part;
+          outer.appendChild(inner);
+          frag.appendChild(outer);
+        });
+        node.parentNode.replaceChild(frag, node);
+      });
+      return root.querySelectorAll('.split-word > span');
+    };
+    document.querySelectorAll('.section__title, .cta-block__title').forEach((title) => {
+      title.setAttribute('aria-label', title.textContent.replace(/\s+/g, ' ').trim());
+      const words = splitWords(title);
+      title.removeAttribute('data-reveal');
+      title.style.opacity = 1;
+      title.style.transform = 'none';
+      gsap.from(words, {
+        yPercent: 110,
+        rotate: 4,
+        duration: 1,
+        ease: 'power4.out',
+        stagger: 0.045,
+        scrollTrigger: { trigger: title, start: 'top 85%', once: true }
+      });
+    });
+
+    /* 10f. Keyword marquee: speeds up and reverses with scroll velocity */
+    const track = document.querySelector('.marquee__track');
+    if (track) {
+      const loop = gsap.to(track, { xPercent: -50, ease: 'none', duration: 40, repeat: -1 });
+      let direction = 1;
+      ScrollTrigger.create({
+        trigger: document.documentElement,
+        start: 'top top',
+        end: 'bottom bottom',
+        onUpdate: (self) => {
+          if (self.direction !== direction) direction = self.direction;
+          const boost = Math.min(Math.abs(self.getVelocity()) / 120, 8);
+          gsap.to(loop, { timeScale: direction * (1 + boost), duration: 0.2, overwrite: true });
+          gsap.to(loop, { timeScale: direction, duration: 1.2, delay: 0.2, ease: 'power2.out' });
+        }
+      });
+    }
+
+    /* 10g. Sector cards and FAQ rows cascade in from the side */
+    document.querySelectorAll('.expertise__pillars, .faq').forEach((group) => {
+      const items = group.querySelectorAll(':scope > li, :scope > details');
+      if (!items.length) return;
+      items.forEach((el) => { el.removeAttribute('data-reveal'); });
+      gsap.from(items, {
+        x: -40,
+        opacity: 0,
+        duration: 0.9,
+        ease: 'power3.out',
+        stagger: 0.1,
+        scrollTrigger: { trigger: group, start: 'top 82%', once: true }
+      });
+    });
+
+    /* Recalculate positions once images and fonts have loaded */
+    window.addEventListener('load', () => ScrollTrigger.refresh());
+  }
+
   /* ─── 9. Footer year ─── */
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
