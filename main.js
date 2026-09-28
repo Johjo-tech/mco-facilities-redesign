@@ -247,7 +247,7 @@
       });
       return root.querySelectorAll('.split-word > span');
     };
-    document.querySelectorAll('.section__title, .cta-block__title').forEach((title) => {
+    document.querySelectorAll('.section__title, .cta-block__title, .h-head__title, .h-cta h2').forEach((title) => {
       title.setAttribute('aria-label', title.textContent.replace(/\s+/g, ' ').trim());
       const words = splitWords(title);
       title.removeAttribute('data-reveal');
@@ -298,6 +298,130 @@
 
     /* Recalculate positions once images and fonts have loaded */
     window.addEventListener('load', () => ScrollTrigger.refresh());
+  }
+
+  /* ─── 11. Home v2: circuit-trace signature, statement fill, service bus, horizontal field ─── */
+  const homeHero = document.querySelector('.h-hero');
+  if (homeHero && hasGSAP && !prefersReducedMotion) {
+    const drawable = (path) => {
+      const len = path.getTotalLength ? path.getTotalLength() : 0;
+      path.style.strokeDasharray = len;
+      path.style.strokeDashoffset = len;
+      return len;
+    };
+
+    /* 11a. Hero: one orchestrated load sequence */
+    const heroLines = homeHero.querySelectorAll('.h-hero__title .line > span');
+    const heroPaths = homeHero.querySelectorAll('.h-hero__traces path');
+    const heroDots = homeHero.querySelectorAll('.h-hero__traces circle');
+    heroPaths.forEach(drawable);
+    const intro = gsap.timeline({ defaults: { ease: 'power4.out' } });
+    intro
+      .fromTo(homeHero.querySelector('.h-hero__media'), { clipPath: 'inset(0 0 0 100%)' }, { clipPath: 'inset(0 0 0 0%)', duration: 1.4, ease: 'power3.inOut' }, 0)
+      .fromTo(homeHero.querySelector('.h-hero__media img'), { scale: 1.25 }, { scale: 1, duration: 2 }, 0)
+      .from(heroLines, { yPercent: 110, duration: 1.1, stagger: 0.12 }, 0.25)
+      .from(homeHero.querySelectorAll('.h-hero__lede, .h-hero__actions'), { y: 24, opacity: 0, duration: 0.9, stagger: 0.1 }, 0.7)
+      .to(heroPaths, { strokeDashoffset: 0, duration: 1.8, ease: 'power2.inOut', stagger: 0.15 }, 0.6)
+      .from(heroDots, { scale: 0, transformOrigin: '50% 50%', duration: 0.5, stagger: 0.1, ease: 'back.out(3)' }, 1.9)
+      .from(homeHero.querySelectorAll('.h-hero__plate > div'), { y: 20, opacity: 0, duration: 0.7, stagger: 0.08 }, 1.0);
+
+    /* hero drifts out as you scroll away */
+    gsap.to(homeHero.querySelector('.h-hero__media img'), {
+      yPercent: 12, ease: 'none',
+      scrollTrigger: { trigger: homeHero, start: 'top top', end: 'bottom top', scrub: true }
+    });
+
+    /* 11b. Statement: words fill from pale to ink as you read */
+    const statement = document.querySelector('[data-fill]');
+    if (statement) {
+      const text = statement.textContent.replace(/\s+/g, ' ').trim();
+      const sr = document.createElement('span');
+      sr.className = 'sr-only';
+      sr.textContent = text;
+      statement.innerHTML = text.split(' ').map((w) => '<span class="w" aria-hidden="true">' + w + '</span>').join(' ');
+      statement.prepend(sr);
+      /* start colour keeps 3:1 on the steel background (large-text threshold) */
+      gsap.fromTo(statement.querySelectorAll('.w'), { color: '#74849A' }, {
+        color: '#0A1A2F', ease: 'none', stagger: 0.1,
+        scrollTrigger: { trigger: statement, start: 'top 80%', end: 'bottom 45%', scrub: true }
+      });
+    }
+
+    /* 11c. Services: the bus line draws down the column, each node lights up */
+    const grid = document.querySelector('.h-services__grid');
+    const bus = grid && grid.querySelector('.h-bus');
+    if (bus) {
+      const fill = bus.querySelector('.h-bus__line').cloneNode();
+      fill.setAttribute('class', 'h-bus__fill');
+      bus.appendChild(fill);
+      gsap.fromTo(fill, { attr: { 'stroke-dasharray': '1000', 'stroke-dashoffset': 1000 } }, {
+        attr: { 'stroke-dashoffset': 0 }, ease: 'none',
+        scrollTrigger: { trigger: grid, start: 'top 60%', end: 'bottom 60%', scrub: true }
+      });
+    }
+    document.querySelectorAll('[data-svc]').forEach((svc) => {
+      ScrollTrigger.create({
+        trigger: svc, start: 'top 60%', end: 'bottom 60%',
+        onToggle: (self) => svc.classList.toggle('is-live', self.isActive)
+      });
+      const media = svc.querySelector('.svc__media');
+      const img = svc.querySelector('.svc__media img');
+      gsap.fromTo(media, { clipPath: 'inset(100% 0 0 0 round 10px)' }, {
+        clipPath: 'inset(0% 0 0 0 round 10px)', duration: 1.2, ease: 'power3.inOut',
+        scrollTrigger: { trigger: svc, start: 'top 80%', once: true }
+      });
+      gsap.fromTo(img, { yPercent: -8, scale: 1.2 }, {
+        yPercent: 8, scale: 1.2, ease: 'none',
+        scrollTrigger: { trigger: svc, start: 'top bottom', end: 'bottom top', scrub: true }
+      });
+      gsap.from(svc.querySelectorAll('.svc__body > *'), {
+        y: 30, opacity: 0, duration: 0.8, stagger: 0.08, ease: 'power3.out',
+        scrollTrigger: { trigger: svc, start: 'top 75%', once: true }
+      });
+    });
+
+    /* 11d. Sectors: columns rise in sequence */
+    const sectors = document.querySelectorAll('.h-sector');
+    if (sectors.length) {
+      gsap.from(sectors, {
+        y: 40, opacity: 0, duration: 0.9, stagger: 0.12, ease: 'power3.out',
+        scrollTrigger: { trigger: '.h-sectors__grid', start: 'top 80%', once: true }
+      });
+    }
+
+    /* 11e. Field: pinned horizontal scroll through the photos (desktop only) */
+    const field = document.querySelector('.h-field');
+    const track = field && field.querySelector('.h-field__track');
+    if (track) {
+      ScrollTrigger.matchMedia({
+        '(min-width: 861px)': () => {
+          const distance = () => Math.max(0, track.scrollWidth - window.innerWidth);
+          const tween = gsap.to(track, {
+            x: () => -distance(), ease: 'none',
+            scrollTrigger: {
+              trigger: field.querySelector('.h-field__pin'), pin: true, scrub: 0.6,
+              start: 'top top', end: () => '+=' + distance(), invalidateOnRefresh: true
+            }
+          });
+          track.querySelectorAll('.shot img').forEach((img) => {
+            gsap.fromTo(img, { xPercent: -6 }, {
+              xPercent: 6, ease: 'none',
+              scrollTrigger: { trigger: img.parentElement, containerAnimation: tween, start: 'left right', end: 'right left', scrub: true }
+            });
+          });
+        }
+      });
+    }
+
+    /* 11f. CTA traces draw when the block arrives */
+    const ctaPaths = document.querySelectorAll('.h-cta__traces path');
+    ctaPaths.forEach(drawable);
+    if (ctaPaths.length) {
+      gsap.to(ctaPaths, {
+        strokeDashoffset: 0, duration: 1.6, ease: 'power2.inOut', stagger: 0.2,
+        scrollTrigger: { trigger: '.h-cta', start: 'top 70%', once: true }
+      });
+    }
   }
 
   /* ─── 9. Footer year ─── */
