@@ -3,12 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#08090f" />
+  <meta name="theme-color" content="#0A1A2F" />
 
   <title>Sûreté & vidéoprotection — Caméras IP, NVR, supervision RGPD | MCO Facilities</title>
   <meta name="description" content="Conception, déploiement et exploitation de systèmes de sûreté et de vidéoprotection IP pour entreprises et collectivités. Caméras, NVR, supervision déportée, conformité RGPD et CNIL. Varces, Grenoble, Auvergne-Rhône-Alpes." />
   <meta name="keywords" content="sûreté, vidéoprotection, vidéosurveillance, caméras IP, NVR, VMS, RGPD, CNIL, télésurveillance, ANPR, lecture de plaques, caméra thermique, Grenoble, Isère" />
   <link rel="canonical" href="https://mco-facilities.vibeia.io/services/surete-videoprotection/" />
+  <link rel="alternate" hreflang="fr" href="https://mco-facilities.vibeia.io/services/surete-videoprotection/" />
+  <link rel="alternate" hreflang="en" href="https://mco-facilities.vibeia.io/en/services/surete-videoprotection/" />
+  <link rel="alternate" hreflang="x-default" href="https://mco-facilities.vibeia.io/services/surete-videoprotection/" />
 
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="fr_FR" />
@@ -18,13 +21,15 @@
   <meta property="og:image" content="https://images.unsplash.com/photo-1573164574511-73c773193279?w=1200&q=80&auto=format&fit=crop" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://images.unsplash.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+  <link rel="preload" href="/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/fonts/fonts.css" />
 
   <link rel="stylesheet" href="/style.css" />
-  <link rel="icon" type="image/svg+xml" href="/Logo.png" />
+  <link rel="stylesheet" href="/site.css" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/favicon-180.png" />
 
   <script type="application/ld+json">
   {
@@ -73,7 +78,7 @@
 
   <header class="nav" id="nav">
     <a href="/" class="nav__logo" aria-label="MCO Facilities — accueil">
-      <img src="/Logo1.png" alt="MCO Facilities" height="50" style="height:55px;width:auto;display:block;" />
+      <img src="/logo-mco.png" alt="MCO Facilities" width="147" height="44" />
     </a>
     <nav class="nav__links" aria-label="Navigation principale">
       <div class="nav__dropdown">
@@ -85,26 +90,26 @@
           <a href="/services/electricite-reseaux/"><span class="nav__dropdown-num">04</span><div><strong>Électricité &amp; réseaux</strong><span>Électricité générale, cuivre &amp; fibre optique</span></div></a>
         </div>
       </div>
-      <a href="/#expertise">Expertise</a>
-      <a href="/#methode">Méthode</a>
-      <a href="/#references">Références</a>
+      <a href="/#secteurs">Secteurs</a>
+      <a href="/#terrain">Réalisations</a>
+      <a href="/#faq">Questions</a>
           <div class="nav__lang" style="margin-left: 15px; font-size: 0.9rem; font-family: var(--ff-mono, monospace);">
         <span class="lang--active" style="font-weight: bold; color: #fff;">FR</span> | <a href="/en/services/surete-videoprotection/" class="lang__link" style="opacity: 0.6; text-decoration: none; color: #fff;">EN</a>
       </div>
     </nav>
-    <a href="/contact/" class="nav__cta"><span>Nous contacter</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a href="/contact/" class="nav__cta">Demander un audit</a>
   </header>
 
   <main>
 
     <section class="page-hero">
       <div class="page-hero__photo" aria-hidden="true">
-        <img src="https://images.unsplash.com/photo-1573164574511-73c773193279?w=1920&q=75&auto=format&fit=crop" alt="" loading="eager" fetchpriority="high" />
+        <picture><source type="image/webp" srcset="/img/security-room-960.webp 960w, /img/security-room.webp 1920w" sizes="100vw" /><img src="/img/security-room.jpg" width="1920" height="1088" alt="" fetchpriority="high" /></picture>
       </div>
       <div class="page-hero__inner">
         <nav class="breadcrumb" aria-label="Fil d'ariane">
           <a href="/">Accueil</a><span aria-hidden="true">·</span>
-          <a href="/#services">Services</a><span aria-hidden="true">·</span>
+          <a href="/#prestations">Services</a><span aria-hidden="true">·</span>
           <span aria-current="page">Sûreté &amp; vidéoprotection</span>
         </nav>
 
@@ -208,7 +213,8 @@
     <section class="section">
       <div class="callout">
         <p data-reveal>
-          <em>Notre principe</em> : la vidéo doit servir à <strong>prévenir, dissuader, et
+          <em>Notre principe</em>
+          La vidéo doit servir à <strong>prévenir, dissuader, et
           documenter</strong> — pas à fliquer. Toute installation respecte le <strong>principe
           de proportionnalité</strong> du RGPD, et les zones privées sont masquées par défaut.
         </p>
@@ -341,7 +347,7 @@
         </div>
         <div class="cta-block__actions" data-reveal>
           <a href="/contact/" class="btn btn--primary"><span>Demander l'étude</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          <a href="tel:+33670986561" class="btn btn--ghost"><span>+33 6 70 98 65 61</span></a>
+          <a href="tel:+33670616870" class="btn btn--ghost"><span>Astreinte 06 70 61 68 70</span></a>
         </div>
       </div>
     </section>
@@ -351,23 +357,23 @@
   <footer class="footer">
     <div class="footer__top">
       <div class="footer__brand">
-        <img src="/Logo1.png" alt="MCO Facilities" height="50" style="height:55px;width:auto;display:block;" />
+        <img src="/logo-mco.png" alt="MCO Facilities" width="147" height="44" />
         <p>Automatisme, MCO, sûreté &amp; vidéoprotection et électricité — pour des sites sereins et performants.</p>
       </div>
       <nav class="footer__nav" aria-label="Pied de page">
-        <div><h4>Services</h4><a href="/services/automatisme-robotique/">Automatisme &amp; robotique</a><a href="/services/maintien-condition-operationnelle/">MCO 24/7</a><a href="/services/surete-videoprotection/">Sûreté &amp; vidéoprotection</a><a href="/services/electricite-reseaux/">Électricité &amp; réseaux</a></div>
-        <div><h4>Société</h4><a href="/#expertise">Expertise</a><a href="/#methode">Méthode</a><a href="/#references">Références</a><a href="/contact/">Contact</a></div>
-        <div><h4>Coordonnées</h4><a href="tel:+33670986561">+33 6 70 98 65 61</a><a href="mailto:alexandre.angulo@mco-facilities.fr">Email</a><span>26 chemin de la digue, 38760 Varces</span></div>
+        <div><h2 class="footer__heading">Services</h2><a href="/services/automatisme-robotique/">Automatisme &amp; robotique</a><a href="/services/maintien-condition-operationnelle/">MCO 24/7</a><a href="/services/surete-videoprotection/">Sûreté &amp; vidéoprotection</a><a href="/services/electricite-reseaux/">Électricité &amp; réseaux</a></div>
+        <div><h2 class="footer__heading">Société</h2><a href="/#secteurs">Secteurs</a><a href="/#terrain">Réalisations</a><a href="/#faq">Questions</a><a href="/contact/">Contact</a></div>
+        <div><h2 class="footer__heading">Coordonnées</h2><a href="tel:+33953966654">Standard : 09 53 96 66 54</a><a href="tel:+33670616870">Astreinte : 06 70 61 68 70</a><a href="mailto:contact@mco-facilities.fr">Email</a><span>26 chemin de la digue, 38760 Varces</span></div>
       </nav>
     </div>
     <div class="footer__bottom">
       <span>© <span id="year"></span> MCO Facilities — Tous droits réservés.</span>
-      <span class="footer__legal"><a href="/mentions-legales/">Mentions légales</a> · <span class="muted">Conçu en France</span></span>
+      <span class="footer__legal"><a href="/mentions-legales/">Mentions légales</a> · <a href="/cgu/">CGU</a> · <span class="muted">Conçu en France</span></span>
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="/vendor/gsap.min.js"></script>
+  <script src="/vendor/ScrollTrigger.min.js"></script>
   <script src="/main.js"></script>
 </body>
 </html>

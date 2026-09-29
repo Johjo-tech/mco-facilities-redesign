@@ -3,12 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#08090f" />
+  <meta name="theme-color" content="#0A1A2F" />
 
   <title>MCO Facilities — Maintien en Condition Opérationnelle, Automatisme & Sûreté | Varces, Grenoble</title>
   <meta name="description" content="MCO Facilities, basé à Varces (Isère), est spécialisé dans le maintien en condition opérationnelle (MCO) des installations industrielles, infrastructures critiques et de défense. Automatisme, robotique, électricité et vidéoprotection IA." />
   <meta name="keywords" content="maintien en condition operationnelle, MCO, automatisme industriel, robotique, informatique industrielle, SCADA, videoprotection IA, electricite industrielle, fibre optique, Varces, Grenoble, Isere, Armee de terre, JRI My Sirius" />
   <link rel="canonical" href="https://mco-facilities.vibeia.io/" />
+  <link rel="alternate" hreflang="fr" href="https://mco-facilities.vibeia.io/" />
+  <link rel="alternate" hreflang="en" href="https://mco-facilities.vibeia.io/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://mco-facilities.vibeia.io/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -16,22 +19,23 @@
   <meta property="og:url" content="https://mco-facilities.vibeia.io/" />
   <meta property="og:title" content="MCO Facilities — MCO Industrielle, Automatisme & Sûreté" />
   <meta property="og:description" content="Vos installations en condition opérationnelle. Partenaire des acteurs industriels de premier plan, grands comptes publics et infrastructures de défense." />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=1200&q=80&auto=format&fit=crop" />
+  <meta property="og:image" content="https://mco-facilities.vibeia.io/img/hero-control-room.jpg" />
   <meta property="og:site_name" content="MCO Facilities" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="MCO Facilities — MCO Industrielle, Automatisme & Sûreté" />
   <meta name="twitter:description" content="Maintien en Condition Opérationnelle, automatisme, robotique et sûreté pour sites industriels et infrastructures critiques." />
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=1200&q=80&auto=format&fit=crop" />
+  <meta name="twitter:image" content="https://mco-facilities.vibeia.io/img/hero-control-room.jpg" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://images.unsplash.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+  <link rel="preload" href="/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/fonts/fonts.css" />
 
   <link rel="stylesheet" href="/style.css" />
-  <link rel="icon" type="image/svg+xml" href="/Logo.png" />
+  <link rel="stylesheet" href="/site.css" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/favicon-180.png" />
 
   <!-- Schema.org : Organization + LocalBusiness + WebSite -->
   <script type="application/ld+json">
@@ -43,7 +47,7 @@
         "@id": "https://mco-facilities.vibeia.io/#organization",
         "name": "MCO Facilities",
         "url": "https://mco-facilities.vibeia.io/",
-        "logo": "https://mco-facilities.vibeia.io/logo.svg",
+        "logo": "https://mco-facilities.vibeia.io/favicon-512.png",
         "description": "Maintien en Condition Opérationnelle (MCO), automatisme, robotique et sûreté pour installations industrielles et infrastructures critiques.",
         "address": {
           "@type": "PostalAddress",
@@ -53,8 +57,8 @@
           "addressRegion": "Auvergne-Rhône-Alpes",
           "addressCountry": "FR"
         },
-        "telephone": "+33476729958",
-        "email": "alexandre.angulo@mco-facilities.fr",
+        "telephone": "+33953966654",
+        "email": "contact@mco-facilities.fr",
         "founder": { "@type": "Person", "name": "Alexandre Angulo" },
         "areaServed": [
           { "@type": "AdministrativeArea", "name": "Auvergne-Rhône-Alpes" },
@@ -75,9 +79,9 @@
         "@type": "LocalBusiness",
         "@id": "https://mco-facilities.vibeia.io/#localbusiness",
         "name": "MCO Facilities SAS",
-        "image": "https://mco-facilities.vibeia.io/logo.svg",
+        "image": "https://mco-facilities.vibeia.io/favicon-512.png",
         "url": "https://mco-facilities.vibeia.io/",
-        "telephone": "+33476729958",
+        "telephone": "+33953966654",
         "priceRange": "€€€",
         "address": {
           "@type": "PostalAddress",
@@ -132,480 +136,384 @@
   </script>
 </head>
 
-<body>
-  <!-- Background parallax layers -->
-  <div class="bg-layer" aria-hidden="true">
-    <div class="bg-grid"></div>
-    <div class="bg-orb bg-orb--1"></div>
-    <div class="bg-orb bg-orb--2"></div>
-    <div class="bg-noise"></div>
-  </div>
+<body class="home">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-  <div class="cursor" aria-hidden="true"><div class="cursor__dot"></div></div>
-
-  <!-- ───────── Nav ───────── -->
   <header class="nav" id="nav">
-    <a href="/" class="nav__logo" aria-label="MCO Facilities — accueil">
-      <img src="/Logo1.png" alt="MCO Facilities" height="50" style="height:55px;width:auto;display:block;" />
+    <a href="/" class="nav__logo" aria-label="MCO Facilities, accueil">
+      <img src="/logo-mco.png" alt="MCO Facilities" width="167" height="50" />
     </a>
 
-    <nav class="nav__links" aria-label="Navigation principale">
+    <nav class="nav__links" id="nav-links" aria-label="Navigation principale">
       <div class="nav__dropdown">
         <button class="nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false">
           Prestations
-          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <div class="nav__dropdown-menu">
-          <a href="/services/automatisme-robotique/">
-            <span class="nav__dropdown-num">01</span>
-            <div><strong>Automatisme & Robotique</strong><span>Systèmes automatisés, SCADA, robotique</span></div>
-          </a>
-          <a href="/services/maintien-condition-operationnelle/">
-            <span class="nav__dropdown-num">02</span>
-            <div><strong>MCO 24h/24 — 7j/7</strong><span>Maintenance préventive & corrective critique</span></div>
-          </a>
-          <a href="/services/surete-videoprotection/">
-            <span class="nav__dropdown-num">03</span>
-            <div><strong>Sûreté & Vidéoprotection</strong><span>Solutions IA, serveurs, JRI My Sirius</span></div>
-          </a>
-          <a href="/services/electricite-reseaux/">
-            <span class="nav__dropdown-num">04</span>
-            <div><strong>Électricité & Réseaux</strong><span>Électricité générale, cuivre & fibre optique</span></div>
-          </a>
+          <a href="/services/automatisme-robotique/"><div><strong>Automatisme &amp; robotique</strong><span>Automates, SCADA, cobots</span></div></a>
+          <a href="/services/maintien-condition-operationnelle/"><div><strong>Maintien en condition opérationnelle</strong><span>Préventif, correctif, astreinte 24/7</span></div></a>
+          <a href="/services/surete-videoprotection/"><div><strong>Sûreté &amp; vidéoprotection</strong><span>Vidéoprotection IA, serveurs, JRI My Sirius</span></div></a>
+          <a href="/services/electricite-reseaux/"><div><strong>Électricité &amp; réseaux</strong><span>Courants forts, cuivre, fibre optique</span></div></a>
         </div>
       </div>
-      <a href="#expertise">Expertise</a>
-      <a href="#methode">Méthode</a>
-      <a href="#references">Références</a>
-      
-      <!-- Sélecteur de Langue (Exigence Cahier des Charges Bilingue) -->
-      <div class="nav__lang" style="margin-left: 15px; font-size: 0.9rem; font-family: var(--ff-mono, monospace);">
-        <span class="lang--active" style="font-weight: bold; color: #fff;">FR</span> | <a href="/en/index.html" class="lang__link" style="opacity: 0.6; text-decoration: none; color: #fff;">EN</a>
+      <a href="#secteurs">Secteurs</a>
+      <a href="#terrain">Réalisations</a>
+      <a href="#faq">Questions</a>
+      <div class="nav__lang">
+        <span class="lang--active" aria-current="true">FR</span>
+        <a href="/en/" class="lang__link" hreflang="en" lang="en">EN</a>
       </div>
     </nav>
 
-    <a href="/contact/" class="nav__cta">
-      <span>Nous contacter</span>
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </a>
+    <a href="/contact/" class="nav__cta">Demander un audit</a>
   </header>
 
-  <main id="top">
+  <main id="contenu">
 
-    <!-- ═════════════════ HERO ═════════════════ -->
-    <section class="hero hero--with-photo">
-      <div class="hero__photo" aria-hidden="true">
-        <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=1920&q=75&auto=format&fit=crop" alt="MCO Facilities Industrie" loading="eager" fetchpriority="high" />
+    <!-- ─────────────── HERO ─────────────── -->
+    <section class="x-hero">
+      <div class="x-hero__photo">
+        <video class="x-hero__video" muted playsinline preload="auto" aria-hidden="true" poster="/img/hero-control-room.jpg"
+               data-src-desktop="/img/hero-scrub.mp4" data-src-mobile="/img/hero-scrub-720.mp4"></video>
+        <picture>
+          <source type="image/webp" srcset="/img/hero-control-room-960.webp 960w, /img/hero-control-room.webp 1920w" sizes="100vw" />
+          <img src="/img/hero-control-room.jpg" width="1920" height="1088" alt="Technicien devant une armoire d'automatisme, ligne robotisée en arrière-plan" fetchpriority="high" />
+        </picture>
       </div>
+      <canvas class="circuit" data-circuit="hero" aria-hidden="true"></canvas>
+      <div class="x-hero__glow" aria-hidden="true"></div>
 
-      <div class="hero__inner">
-        <div class="hero__eyebrow" data-reveal>
-          <span class="dot"></span>
-          <span>Varces · Auvergne-Rhône-Alpes · France</span>
-        </div>
-
-        <h1 class="hero__title">
-          <span class="line" data-reveal><span>Vos installations</span></span>
-          <span class="line" data-reveal><span>en condition <em>opérationnelle.</em></span></span>
-          <span class="line" data-reveal><span>Infrastructures <em>critiques.</em></span></span>
+      <div class="x-hero__inner">
+        <p class="x-hero__status"><span class="live" aria-hidden="true"></span>Astreinte active, 24h/24 et 7j/7</p>
+        <h1 class="x-hero__title" data-scramble>
+          <span class="line">Quand l'usine s'arrête,</span>
+          <span class="line">nous sommes déjà</span>
+          <span class="line x-hero__accent">en route.</span>
         </h1>
-
-        <p class="hero__lede" data-reveal>
-          MCO Facilities accompagne les acteurs industriels de premier plan, les grands comptes publics et les infrastructures de défense dans le
-          <strong>maintien en condition opérationnelle (MCO)</strong>, l'<strong>automatisme</strong>, la <strong>vidéoprotection IA</strong> et l'<strong>électricité industrielle</strong>.
+        <p class="x-hero__lede">
+          Maintenance, automatisme, sûreté et électricité pour les sites industriels,
+          hospitaliers et de défense. Une seule équipe, un seul numéro.
         </p>
-
-        <div class="hero__actions" data-reveal>
-          <a href="#services" class="btn btn--primary">
-            <span>Découvrir nos prestations</span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <a href="/contact/" class="btn btn--ghost"><span>Demander un audit</span></a>
-        </div>
-
-        <div class="hero__meta" data-reveal>
-          <div>
-            <span class="meta__num">24<span class="muted">h/</span>24</span>
-            
-            <span class="meta__lbl">disponibilité totale</span>
-          </div>
-          <div>
-            <span class="meta__num">7<span class="muted">j/</span>7</span>
-            <span class="meta__lbl">maintien opérationnel</span>
-          </div>
-          <div>
-            <span class="meta__num">100<span class="muted">%</span></span>
-            <span class="meta__lbl">sur-mesure industriel</span>
-          </div>
+        <div class="x-hero__actions">
+          <a href="/contact/" class="btn btn--glow">Demander un audit</a>
+          <a href="tel:+33670616870" class="btn btn--line">Astreinte 06 70 61 68 70</a>
         </div>
       </div>
 
-      <div class="hero__scroll" aria-hidden="true">
-        <span>Scroll</span>
-        <div class="hero__scroll-line"><div></div></div>
-      </div>
+      <dl class="x-hud" aria-label="Informations clés">
+        <div><dt>Heure locale</dt><dd data-clock>--:--:--</dd></div>
+        <div><dt>Base</dt><dd>Varces 45.10° N · 5.69° E</dd></div>
+        <div><dt>Zone</dt><dd>Auvergne-Rhône-Alpes, France</dd></div>
+        <div><dt>Secteurs</dt><dd>Industrie, santé, défense, collectivités</dd></div>
+      </dl>
     </section>
 
-    <!-- ═════════════════ MARQUEE (Mises à jour Mots-clés Techniques) ═════════════════ -->
-    <section class="marquee" aria-hidden="true">
-      <div class="marquee__track">
-        <span>Automatisme</span><span>·</span><span>Robotique</span><span>·</span><span>MCO 24/7</span><span>·</span>
-        <span>Informatique Industrielle</span><span>·</span><span>SCADA</span><span>·</span>
-        <span>Vidéoprotection IA</span><span>·</span><span>Fibre Optique</span><span>·</span>
-        <span>Schneider & Siemens</span><span>·</span><span>JRI My Sirius</span><span>·</span>
-        <span>Automatisme</span><span>·</span><span>Robotique</span><span>·</span><span>MCO 24/7</span><span>·</span>
-        <span>Informatique Industrielle</span><span>·</span><span>SCADA</span><span>·</span>
-        <span>Vidéoprotection IA</span><span>·</span><span>Fibre Optique</span><span>·</span>
-        <span>Schneider & Siemens</span><span>·</span><span>JRI My Sirius</span><span>·</span>
-      </div>
+    <!-- ─────────────── STATEMENT ─────────────── -->
+    <section class="h-statement">
+      <p class="h-statement__text" data-fill>
+        Une ligne de production, un bloc opératoire, une base militaire : chaque minute d'arrêt
+        coûte. Nous prenons en charge vos automatismes, votre maintenance, votre sûreté et vos
+        réseaux électriques, pour que vos équipes se concentrent sur leur métier.
+      </p>
     </section>
 
-    <!-- ═════════════════ EXPERTISE ═════════════════ -->
-    <section class="section" id="expertise">
-      <div class="section__head">
-        <span class="kicker" data-reveal>01 — Expertise & Cibles</span>
-        <h2 class="section__title" data-reveal>
-          <span>Maintien technique de pointe</span>
-          <span>pour les secteurs <em>stratégiques.</em></span>
-        </h2>
-      </div>
+    <!-- ─────────────── SERVICES ─────────────── -->
+    <section class="x-svc" id="prestations">
+      <div class="x-svc__pin">
+        <header class="x-svc__head">
+          <h2 class="x-title">Quatre métiers, une seule équipe</h2>
+        </header>
 
-      <div class="expertise">
-        <p class="expertise__lede" data-reveal>
-          MCO Facilities est un prestataire de services techniques de référence, spécialisé dans le maintien en condition opérationnelle (MCO) des installations industrielles complexes et des grandes infrastructures. Nous intervenons sur des environnements hautement exigeants pour le compte d'acteurs industriels, d'infrastructures hospitalières et militaires.
-        </p>
-
-        <ul class="expertise__pillars">
-          <li data-reveal>
-            <span class="pillar__num">C/01</span>
-            <h3>Industrie & Grands Comptes</h3>
-            <p>Secteurs de pointe : chimie, énergie, semiconducteurs avec contraintes de haute disponibilité.</p>
-          </li>
-          <li data-reveal>
-            <span class="pillar__num">C/02</span>
-            <h3>Infrastructures Publiques</h3>
-            <p>Continuité technique globale des grands établissements publics et centres hospitaliers.</p>
-          </li>
-          <li data-reveal>
-            <span class="pillar__num">C/03</span>
-            <h3>Armée & Défense</h3>
-            <p>Interventions spécialisées pour les infrastructures critiques de défense et l'Armée de Terre.</p>
-          </li>
-          <li data-reveal>
-            <span class="pillar__num">C/04</span>
-            <h3>Collectivités</h3>
-            <p>Accompagnement technique rigoureux des collectivités territoriales de la région.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- ═════════════════ SERVICES ═════════════════ -->
-    <section class="section section--dark" id="services">
-      <div class="section__head">
-        <span class="kicker" data-reveal>02 — Activités & Prestations</span>
-        <h2 class="section__title" data-reveal>
-          <span>Quatre domaines clés,</span>
-          <span>une maîtrise <em>industrielle absolue.</em></span>
-        </h2>
-      </div>
-
-      <div class="services">
-
-        <article class="service service--featured" data-reveal data-tilt>
-          <div class="service__photo" aria-hidden="true">
-            <img src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=1200&q=75&auto=format&fit=crop" alt="Automatisme et robotique" loading="lazy" />
-          </div>
-          <div class="service__index">01</div>
-          <h3>Automatisme & robotique industriels</h3>
-          <p>Conception et intégration complète de systèmes automatisés complexes et solutions robotiques de pointe pour optimiser vos cycles de production.</p>
-          <ul>
-            <li>Développement & intégration (Schneider, Siemens...)</li>
-            <li>Intégration robotique avancée et variation de vitesse</li>
-            <li>Informatique industrielle (SCADA, supervision, réseaux industriels)</li>
-            <li>Variation de vitesse (variateurs, démarreurs)</li>
-          </ul>
-          <a href="/services/automatisme-robotique/" class="service__link">
-            <span>En savoir plus</span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-        </article>
-
-        <article class="service" data-reveal data-tilt>
-          <div class="service__photo" aria-hidden="true">
-            <img src="https://images.unsplash.com/photo-1573164574511-73c773193279?w=900&q=75&auto=format&fit=crop" alt="Maintien en Condition Opérationnelle" loading="lazy" />
-          </div>
-          <div class="service__index">02</div>
-          <h3>Maintien en Condition Opérationnelle (MCO)</h3>
-          <p>Garantie de continuité technique absolue et réduction maximale des arrêts de production sur vos infrastructures critiques.</p>
-          <ul>
-            <li>Disponibilité totale MCO 24h/24 — 7j/7</li>
-            <li>Maintenance préventive planifiée stricte</li>
-            <li>Maintenance corrective d'urgence sur site</li>
-            <li>Interventions sur installations industrielles critiques</li>
-          </ul>
-          <a href="/services/maintien-condition-operationnelle/" class="service__link">
-            <span>En savoir plus</span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-        </article>
-
-        <article class="service" data-reveal data-tilt>
-          <div class="service__photo" aria-hidden="true">
-            <img src="https://images.unsplash.com/photo-1633265486064-086b219458ec?w=900&q=75&auto=format&fit=crop" alt="Sûreté et vidéoprotection" loading="lazy" />
-          </div>
-          <div class="service__index">03</div>
-          <h3>Sûreté & vidéoprotection</h3>
-          <p>Déploiement de technologies de pointe pour la protection des infrastructures critiques et la traçabilité des mesures de précision.</p>
-          <ul>
-            <li>Intégration de serveurs dédiés et d'enregistreurs</li>
-            <li>Solutions IA de vidéoprotection (Hik Vision, Dahua, CASD)</li>
-            <li>Intégrateur certifié JRI My Sirius</li>
-            <li>Mesure et suivi de température de laboratoire</li>
-          </ul>
-          <a href="/services/surete-videoprotection/" class="service__link">
-            <span>En savoir plus</span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-        </article>
-
-        <article class="service" data-reveal data-tilt>
-          <div class="service__photo" aria-hidden="true">
-            <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=900&q=75&auto=format&fit=crop" alt="Électricité et réseaux" loading="lazy" />
-          </div>
-          <div class="service__index">04</div>
-          <h3>Électricité & réseaux</h3>
-          <p>Infrastructures électriques robustes et architectures réseaux très haut débit indispensables aux sites connectés modernes.</p>
-          <ul>
-            <li>Électricité générale industrielle</li>
-            <li>Réseaux cuivre haute performance</li>
-            <li>Réseaux en Fibre Optique (FO)</li>
-            <li>Déploiement, raccordement et validation</li>
-          </ul>
-          <a href="/services/electricite-reseaux/" class="service__link">
-            <span>En savoir plus</span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- ═════════════════ GALERIE ═════════════════ -->
-    <section class="section">
-      <div class="section__head">
-        <span class="kicker" data-reveal>03 — Sur le terrain</span>
-        <h2 class="section__title" data-reveal>
-          <span>Du diagnostic industriel</span>
-          <span>au maintien en <em>condition opérationnelle.</em></span>
-        </h2>
-      </div>
-
-      <div class="gallery">
-        <figure class="gallery__item gallery__item--lg" data-reveal>
-          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=75&auto=format&fit=crop" alt="Armoires d'automatisme et réseaux industriels" loading="lazy" />
-          <figcaption><span>Systèmes automatisés</span><span class="muted">Schneider, Siemens, SCADA</span></figcaption>
-        </figure>
-        <figure class="gallery__item" data-reveal>
-          <img src="https://accord-assistance.fr/wp-content/uploads/2020/01/ou-installer-camera-surveillance-jardin.jpg" alt="Caméra de vidéoprotection IA" loading="lazy" />
-          <figcaption><span>Vidéoprotection IA & Sûreté</span><span class="muted">Hik Vision, Dahua, CASD</span></figcaption>
-        </figure>
-        <figure class="gallery__item" data-reveal>
-          <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=75&auto=format&fit=crop" alt="Technicien en informatique industrielle" loading="lazy" />
-          <figcaption><span>Suivi de laboratoire</span><span class="muted">Certification JRI My Sirius</span></figcaption>
-        </figure>
-        <figure class="gallery__item" data-reveal>
-          <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=800&q=75&auto=format&fit=crop" alt="Raccordement fibre optique" loading="lazy" />
-          <figcaption><span>Réseaux & Électricité</span><span class="muted">Fibre optique (FO) & cuivre</span></figcaption>
-        </figure>
-        <figure class="gallery__item gallery__item--wide" data-reveal>
-          <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&q=75&auto=format&fit=crop" alt="Infrastructures industrielles critiques" loading="lazy" />
-          <figcaption><span>Infrastructures stratégiques</span><span class="muted">Industrie de pointe, Santé, Défense</span></figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- ═════════════════ RÉFÉRENCES CLIENTS (Réalignées Section 4) ═════════════════ -->
-    <section class="section" id="references">
-      <div class="section__head">
-        <span class="kicker" data-reveal>04 — Références Clients</span>
-        <h2 class="section__title" data-reveal>
-          <span>Ils nous confient</span>
-          <span>leurs infrastructures <em>stratégiques.</em></span>
-        </h2>
-      </div>
-
-      <div class="refs">
-        <!-- Structuration par secteurs du CDC avec la liste exacte des grands comptes -->
-        <div class="refs__sectors" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 50px;">
-          <div class="refs__sector-block" data-reveal style="background: rgba(255,255,255,0.03); padding: 30px; border-radius: 8px; border-left: 3px solid #fff;">
-            <h3 style="font-size: 1.2rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;">Industrie & Défense</h3>
-            <ul class="refs__client-list" style="list-style: none; padding: 0; line-height: 2;">
-              <li>· Dassault Aviation</li>
-              <li>· ST Microelectronics</li>
-              <li>· Schneider Electric</li>
-              <li>· Véolia</li>
-              <li>· Armée de Terre</li>
-            </ul>
-          </div>
-          
-          <div class="refs__sector-block" data-reveal style="background: rgba(255,255,255,0.03); padding: 30px; border-radius: 8px; border-left: 3px solid #fff;">
-            <h3 style="font-size: 1.2rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;">Secteur Santé / Public</h3>
-            <ul class="refs__client-list" style="list-style: none; padding: 0; line-height: 2;">
-              <li>· CHU Grenoble-Alpes</li>
-              <li>· CH Métropole Savoie</li>
-            </ul>
+        <div class="x-svc__stage">
+          <div class="x-svc__rail" aria-hidden="true">
+          <ol class="x-svc__nav">
+            <li class="is-active">Automatisme &amp; robotique</li>
+            <li>Maintien en condition opérationnelle</li>
+            <li>Sûreté &amp; vidéoprotection</li>
+            <li>Électricité &amp; réseaux</li>
+          </ol>
+          <span class="x-svc__progress"><span></span></span>
           </div>
 
-          <div class="refs__sector-block" data-reveal style="background: rgba(255,255,255,0.03); padding: 30px; border-radius: 8px; border-left: 3px solid #fff;">
-            <h3 style="font-size: 1.2rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;">Collectivités</h3>
-            <ul class="refs__client-list" style="list-style: none; padding: 0; line-height: 2;">
-              <li>· Commune de Moulins</li>
-              <li>· Commune de Chamrousse</li>
-              <li>· Métropole de Lyon</li>
-            </ul>
+          <div class="x-svc__panels">
+            <article class="x-panel is-active" data-panel>
+              <h3>Automatisme &amp; robotique</h3>
+              <p>Conception et intégration de systèmes automatisés et de cellules robotisées, de l'automate jusqu'à la supervision.</p>
+              <ul>
+                <li>Programmation d'automates toutes marques</li>
+                <li>Robots industriels et cobots</li>
+                <li>Informatique industrielle et SCADA</li>
+                <li>Variation de vitesse et rétrofit</li>
+              </ul>
+              <a class="x-link" href="/services/automatisme-robotique/">Voir l'offre automatisme</a>
+            </article>
+            <article class="x-panel" data-panel>
+              <h3>Maintien en condition opérationnelle</h3>
+              <p>Maintenance préventive et corrective des installations critiques, avec une astreinte qui décroche jour et nuit.</p>
+              <ul>
+                <li>Maintenance préventive planifiée</li>
+                <li>Dépannage d'urgence sur site</li>
+                <li>GMAO partagée et reporting mensuel</li>
+                <li>Astreinte 24h/24, 7j/7</li>
+              </ul>
+              <a class="x-link" href="/services/maintien-condition-operationnelle/">Voir l'offre MCO</a>
+            </article>
+            <article class="x-panel" data-panel>
+              <h3>Sûreté &amp; vidéoprotection</h3>
+              <p>Vidéoprotection intelligente et serveurs dédiés pour protéger les sites sensibles, dans le respect du RGPD.</p>
+              <ul>
+                <li>Serveurs et enregistreurs dédiés</li>
+                <li>Analyse vidéo IA : Hik Vision, Dahua, CASD</li>
+                <li>Intégrateur certifié JRI My Sirius</li>
+                <li>Suivi de température de laboratoire</li>
+              </ul>
+              <a class="x-link" href="/services/surete-videoprotection/">Voir l'offre sûreté</a>
+            </article>
+            <article class="x-panel" data-panel>
+              <h3>Électricité &amp; réseaux</h3>
+              <p>Distribution électrique, câblage cuivre et fibre optique, posés, raccordés et mesurés avec un dossier de recette complet.</p>
+              <ul>
+                <li>Électricité générale industrielle</li>
+                <li>Réseaux cuivre haute performance</li>
+                <li>Fibre optique monomode et multimode</li>
+                <li>Raccordement, mesures et recette</li>
+              </ul>
+              <a class="x-link" href="/services/electricite-reseaux/">Voir l'offre électricité</a>
+            </article>
+          </div>
+
+          <div class="x-svc__visual" aria-hidden="true">
+            <svg class="x-art is-active" viewBox="0 0 400 400" data-art>
+              <!-- robot arm -->
+              <path d="M110 340 H290" /><path d="M140 340 V310 H260 V340" />
+              <path d="M200 310 V250" /><circle cx="200" cy="240" r="14" />
+              <path d="M210 230 L270 150" /><circle cx="276" cy="142" r="12" />
+              <path d="M284 136 L330 170" /><path d="M330 170 L350 150 M330 170 L352 188" />
+              <circle cx="200" cy="240" r="30" class="x-art__ring" /><path d="M60 110 H130 V60" class="x-art__trace" /><circle cx="130" cy="60" r="5" />
+            </svg>
+            <svg class="x-art" viewBox="0 0 400 400" data-art>
+              <!-- monitoring gauge + heartbeat -->
+              <path d="M90 250 A110 110 0 0 1 310 250" /><path d="M110 250 A90 90 0 0 1 290 250" class="x-art__ring" />
+              <path d="M200 250 L262 180" /><circle cx="200" cy="250" r="10" />
+              <path d="M100 250 h12 M288 250 h12 M200 140 v12 M129 179 l9 9 M271 179 l-9 9" />
+              <path d="M60 320 H140 L158 290 L176 350 L194 300 L208 320 H340" class="x-art__trace" />
+            </svg>
+            <svg class="x-art" viewBox="0 0 400 400" data-art>
+              <!-- camera with detection -->
+              <path d="M80 110 H200 V160 H80 Z" /><path d="M200 125 L232 115 V155 L200 145" /><path d="M120 160 V200 H100" /><circle cx="110" cy="135" r="10" />
+              <path d="M232 135 L360 90 M232 135 L360 330" class="x-art__ring" />
+              <path d="M270 210 H330 V300 H270 Z" class="x-art__trace" /><path d="M300 225 v20 M290 255 h20 M300 245 v30 M300 275 l-10 20 M300 275 l10 20" />
+            </svg>
+            <svg class="x-art" viewBox="0 0 400 400" data-art>
+              <!-- cabinet, bolt, fibre -->
+              <path d="M90 70 H230 V330 H90 Z" /><path d="M90 130 H230 M90 200 H230 M90 270 H230" />
+              <path d="M170 90 L140 160 H175 L150 230" class="x-art__ring" />
+              <path d="M230 110 C300 110 280 180 350 180" class="x-art__trace" /><path d="M230 170 C290 170 300 240 350 240" class="x-art__trace" /><path d="M230 240 C280 240 310 300 350 300" class="x-art__trace" />
+              <circle cx="350" cy="180" r="5" /><circle cx="350" cy="240" r="5" /><circle cx="350" cy="300" r="5" />
+            </svg>
           </div>
         </div>
-
-        <figure class="quote" data-reveal>
-          <svg class="quote__mark" viewBox="0 0 80 64" fill="none" aria-hidden="true">
-            <path d="M0 64V32C0 14.327 14.327 0 32 0v16C23.163 16 16 23.163 16 32h16v32H0zM48 64V32c0-17.673 14.327-32 32-32v16c-8.837 0-16 7.163-16 16h16v32H48z" fill="currentColor"/>
-          </svg>
-          <blockquote>
-            Le maintien opérationnel et la réactivité absolue de MCO Facilities sont déterminants pour la continuité d'exploitation de nos architectures de supervision industrielles et de nos infrastructures critiques.
-          </blockquote>
-          <figcaption>
-            <span>Responsable Maintenance & Infrastructures</span>
-            <span class="muted">— Grand Compte Industriel</span>
-          </figcaption>
-        </figure>
       </div>
     </section>
 
-    <!-- ═════════════════ FAQ ═════════════════ -->
-    <section class="section section--dark">
-      <div class="section__head">
-        <span class="kicker" data-reveal>05 — Questions fréquentes</span>
-        <h2 class="section__title" data-reveal>
-          <span>Des réponses claires à vos</span>
-          <span>exigences <em>techniques.</em></span>
-        </h2>
+    <!-- ─────────────── SECTEURS + RÉFÉRENCES ─────────────── -->
+    <section class="h-sectors" id="secteurs">
+      <header class="h-head h-head--dark">
+        <h2 class="h-head__title x-title">Ils nous confient leurs sites</h2>
+        <p class="h-head__lede">Des environnements où la disponibilité ne se négocie pas.</p>
+      </header>
+
+      <div class="h-sectors__grid">
+        <div class="h-sector">
+          <h3>Industrie &amp; grands comptes</h3>
+          <p>Chimie, énergie, semiconducteurs : des lignes qui doivent tourner.</p>
+          <ul><li>Dassault Aviation</li><li>ST Microelectronics</li><li>Schneider Electric</li><li>Veolia</li></ul>
+        </div>
+        <div class="h-sector">
+          <h3>Santé &amp; établissements publics</h3>
+          <p>Continuité technique des hôpitaux et des grands établissements publics.</p>
+          <ul><li>CHU Grenoble-Alpes</li><li>CH Métropole Savoie</li></ul>
+        </div>
+        <div class="h-sector">
+          <h3>Armée &amp; défense</h3>
+          <p>Interventions spécialisées sur des infrastructures critiques.</p>
+          <ul><li>Armée de Terre</li></ul>
+        </div>
+        <div class="h-sector">
+          <h3>Collectivités</h3>
+          <p>Accompagnement technique des collectivités de la région.</p>
+          <ul><li>Métropole de Lyon</li><li>Commune de Chamrousse</li><li>Commune de Moulins</li></ul>
+        </div>
       </div>
 
-      <div class="faq">
-        <details class="faq__item" data-reveal>
-          <summary>
-            <span>Qu'est-ce que le Maintien en Condition Opérationnelle (MCO) ?</span>
-            <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </summary>
-          <div class="faq__body">
-            Le MCO consiste à garantir la disponibilité constante, la haute performance et la stricte conformité des installations techniques et industrielles tout au long de leur cycle de vie. Nos contrats intègrent de la <strong>maintenance préventive</strong> rigoureuse et une réactivité en <strong>maintenance corrective</strong> 24h/24 et 7j/7 sur les infrastructures de pointe.
-          </div>
-        </details>
+      <figure class="h-quote">
+        <blockquote>
+          « Le maintien opérationnel et la réactivité de MCO Facilities sont déterminants pour la
+          continuité d'exploitation de nos architectures de supervision et de nos infrastructures critiques. »
+        </blockquote>
+        <figcaption>Responsable maintenance et infrastructures, grand compte industriel</figcaption>
+      </figure>
+    </section>
 
-        <details class="faq__item" data-reveal>
-          <summary>
-            <span>Quelles sont vos technologies de sûreté et certifications ?</span>
-            <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </summary>
-          <div class="faq__body">
-            Nous intervenons en tant qu'intégrateur agréé de serveurs et de solutions IA de vidéoprotection (<strong>Hik Vision</strong>, <strong>Dahua</strong>, <strong>CASD</strong>). De plus, MCO Facilities est intégrateur certifié <strong>JRI My Sirius</strong> pour les systèmes critiques de mesure de température de laboratoire.
-          </div>
-        </details>
+    <div class="logos" role="region" aria-label="Ils nous font confiance">
+      <ul class="logos__track">
+        <li class="logos__item"><img src="/logo%20entreprise/logo_ARKEMA.jpg" alt="Arkema" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/logo_3M.png" alt="3M" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/logo_RGB_VEOLIA_HD.png" alt="Veolia" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/Logo_armee_de_terre.png" alt="Armée de Terre" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/Logo_de_l%27Arm%C3%A9e_de_l%27Air.png" alt="Armée de l'Air et de l'Espace" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/logo_chu.png" alt="CHU Grenoble-Alpes" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/logo_chR.png" alt="Centre hospitalier" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/Logo_Grenoble_Alpes_M%C3%A9tropole.svg" alt="Grenoble-Alpes Métropole" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/Logo_Grand_Chamb%C3%A9ry.svg" alt="Grand Chambéry" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/logo_clemessy.png" alt="Clemessy" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/Logo_Cognizant.png" alt="Cognizant" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/logo_EuroSystems.png" alt="EuroSystems" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/logo_semidao.png" alt="Semidao" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/logo_girod_bois.png" alt="Girod Bois" loading="lazy" decoding="async" /></li>
+      </ul>
+      <ul class="logos__track" aria-hidden="true">
+        <li class="logos__item"><img src="/logo%20entreprise/logo_ARKEMA.jpg" alt="" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/logo_3M.png" alt="" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/logo_RGB_VEOLIA_HD.png" alt="" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/Logo_armee_de_terre.png" alt="" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/Logo_de_l%27Arm%C3%A9e_de_l%27Air.png" alt="" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/logo_chu.png" alt="" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/logo_chR.png" alt="" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/Logo_Grenoble_Alpes_M%C3%A9tropole.svg" alt="" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/Logo_Grand_Chamb%C3%A9ry.svg" alt="" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/logo_clemessy.png" alt="" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/Logo_Cognizant.png" alt="" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/logo_EuroSystems.png" alt="" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/logo_semidao.png" alt="" loading="lazy" decoding="async" /></li>
+        <li class="logos__item"><img src="/logo%20entreprise/logo_girod_bois.png" alt="" loading="lazy" decoding="async" /></li>
+      </ul>
+    </div>
 
-        <details class="faq__item" data-reveal>
-          <summary>
-            <span>Quelle est la zone géographique couverte par vos équipes ?</span>
-            <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </summary>
-          <div class="faq__body">
-            Notre siège social est implanté à <strong>Varces (38760)</strong> à côté de Grenoble. Nous opérons activement dans toute la région <strong>Auvergne-Rhône-Alpes</strong> (Grenoble, Lyon, Chambéry, Annecy...) et nous déplaçons à l'échelle nationale française pour nos clients grands comptes et les infrastructures de défense.
-          </div>
-        </details>
+    <!-- ─────────────── TERRAIN (horizontal) ─────────────── -->
+    <section class="h-field" id="terrain">
+      <div class="h-field__pin">
+        <header class="h-field__head">
+          <h2 class="h-head__title x-title">Sur le terrain</h2>
+          <p class="h-head__lede">Armoires, caméras, fibre, lignes de production : là où nous intervenons chaque semaine.</p>
+        </header>
+        <div class="h-field__track">
+          <figure class="shot shot--wide">
+            <picture><source type="image/webp" srcset="/img/robot-cell-960.webp 960w, /img/robot-cell.webp 1920w" sizes="(max-width: 860px) 80vw, 60vw" /><img src="/img/robot-cell.jpg" alt="Cellule robotisée en production" loading="lazy" /></picture>
+            <figcaption><strong>Automatismes &amp; robotique</strong> Robots, cobots, SCADA</figcaption>
+          </figure>
+          <figure class="shot">
+            <picture><source type="image/webp" srcset="/img/camera-site-960.webp 960w, /img/camera-site.webp 1920w" sizes="(max-width: 860px) 80vw, 60vw" /><img src="/img/camera-site.jpg" alt="Caméra de vidéoprotection sur un site industriel" loading="lazy" /></picture>
+            <figcaption><strong>Vidéoprotection IA</strong> Hik Vision, Dahua, CASD</figcaption>
+          </figure>
+          <figure class="shot shot--wide">
+            <picture><source type="image/webp" srcset="/img/technician-tablet-960.webp 960w, /img/technician-tablet.webp 1920w" sizes="(max-width: 860px) 80vw, 60vw" /><img src="/img/technician-tablet.jpg" alt="Technicien de maintenance avec une tablette" loading="lazy" /></picture>
+            <figcaption><strong>Maintenance 24/7</strong> Préventif, correctif, GMAO</figcaption>
+          </figure>
+          <figure class="shot">
+            <picture><source type="image/webp" srcset="/img/lab-monitoring-960.webp 960w, /img/lab-monitoring.webp 1920w" sizes="(max-width: 860px) 80vw, 60vw" /><img src="/img/lab-monitoring.jpg" alt="Laboratoire avec enregistreurs de température" loading="lazy" /></picture>
+            <figcaption><strong>Suivi de laboratoire</strong> Intégrateur certifié JRI My Sirius</figcaption>
+          </figure>
+          <figure class="shot shot--wide">
+            <picture><source type="image/webp" srcset="/img/cabinet-corridor-960.webp 960w, /img/cabinet-corridor.webp 1920w" sizes="(max-width: 860px) 80vw, 60vw" /><img src="/img/cabinet-corridor.jpg" alt="Allée d'armoires d'automatisme et de baies" loading="lazy" /></picture>
+            <figcaption><strong>Armoires &amp; baies</strong> Automates, réseaux, supervision</figcaption>
+          </figure>
+          <figure class="shot shot--wide">
+            <picture><source type="image/webp" srcset="/img/security-room-960.webp 960w, /img/security-room.webp 1920w" sizes="(max-width: 860px) 80vw, 60vw" /><img src="/img/security-room.jpg" alt="Salle de supervision vidéo" loading="lazy" /></picture>
+            <figcaption><strong>Supervision</strong> Levée de doute, alertes</figcaption>
+          </figure>
+          <figure class="shot">
+            <picture><source type="image/webp" srcset="/img/fiber-splicing-960.webp 960w, /img/fiber-splicing.webp 1920w" sizes="(max-width: 860px) 80vw, 60vw" /><img src="/img/fiber-splicing.jpg" alt="Soudure de fibre optique dans une armoire" loading="lazy" /></picture>
+            <figcaption><strong>Fibre optique</strong> Soudure, mesures, recette</figcaption>
+          </figure>
+          <figure class="shot">
+            <picture><source type="image/webp" srcset="/img/substation-960.webp 960w, /img/substation.webp 1920w" sizes="(max-width: 860px) 80vw, 60vw" /><img src="/img/substation.jpg" alt="Poste électrique d'un site industriel la nuit" loading="lazy" /></picture>
+            <figcaption><strong>Sites critiques</strong> Industrie, santé, défense</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
 
-        <details class="faq__item" data-reveal>
-          <summary>
-            <span>Assurez-vous un service d'astreinte totale ?</span>
-            <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </summary>
-          <div class="faq__body">
-            Oui. Le maintien de la continuité opérationnelle exige une veille sans faille. MCO Facilities met à disposition une <strong>astreinte technique complète et opérationnelle 24h/24 — 7j/7</strong> dédiée aux infrastructures industrielles et aux sites critiques sous contrat.
-          </div>
+    <!-- ─────────────── FAQ ─────────────── -->
+    <section class="h-faq" id="faq">
+      <header class="h-head">
+        <h2 class="h-head__title x-title">Vos questions</h2>
+      </header>
+      <div class="h-faq__list">
+        <details>
+          <summary>Qu'est-ce que le maintien en condition opérationnelle ?</summary>
+          <p>C'est l'ensemble des actions qui garantissent qu'une installation reste disponible, performante et conforme pendant toute sa durée de vie : maintenance préventive planifiée, dépannage rapide quand une panne survient, et suivi documenté de chaque intervention.</p>
+        </details>
+        <details>
+          <summary>Quelles technologies de sûreté intégrez-vous ?</summary>
+          <p>Nous intégrons des serveurs dédiés et des solutions de vidéoprotection avec analyse IA (Hik Vision, Dahua, CASD). MCO Facilities est aussi intégrateur certifié JRI My Sirius pour le suivi de température des laboratoires.</p>
+        </details>
+        <details>
+          <summary>Jusqu'où intervenez-vous ?</summary>
+          <p>Notre siège est à Varces, à côté de Grenoble. Nous intervenons dans toute la région Auvergne-Rhône-Alpes (Grenoble, Lyon, Chambéry, Annecy…) et partout en France pour les grands comptes et les infrastructures de défense.</p>
+        </details>
+        <details>
+          <summary>L'astreinte fonctionne-t-elle vraiment la nuit et le week-end ?</summary>
+          <p>Oui. Les sites sous contrat bénéficient d'une astreinte technique 24h/24 et 7j/7, avec un technicien qui connaît déjà votre installation.</p>
         </details>
       </div>
     </section>
 
-    <!-- ═════════════════ CTA CONTACT ═════════════════ -->
-    <section class="section">
-      <div class="cta-block">
-        <div data-reveal>
-          <span class="kicker">Démarrer une collaboration</span>
-          <h2 class="cta-block__title">
-            <span>Sécurisons votre</span>
-            <span>prochaine <em>infrastructure.</em></span>
-          </h2>
-          <p>Étudions ensemble vos contraintes opérationnelles, vos besoins d'automatisation ou vos architectures de sûreté. Notre équipe technique vous répond sous 24h.</p>
-        </div>
-        <div class="cta-block__actions" data-reveal>
-          <a href="/contact/" class="btn btn--primary">
-            <span>Demander un audit</span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <div class="cta-block__phones" style="display: flex; flex-direction: column; gap: 10px;">
-            <a href="tel:+33670986561" class="btn btn--ghost"><span>Ligne Directe : +33 6 70 98 65 61</span></a>
-            <a href="tel:+33476729958" class="btn btn--ghost"><span>Bureau : 04 76 72 99 58</span></a>
-          </div>
+    <!-- ─────────────── CTA ─────────────── -->
+    <section class="h-cta">
+      <div class="h-cta__photo" aria-hidden="true"><picture><source type="image/webp" srcset="/img/plant-alps-960.webp 960w, /img/plant-alps.webp 1920w" sizes="100vw" /><img src="/img/plant-alps.jpg" alt="" loading="lazy" /></picture></div>
+      <canvas class="circuit" data-circuit="cta" aria-hidden="true"></canvas>
+      <div class="h-cta__inner">
+        <h2>Parlons de votre site</h2>
+        <p>Un audit pour comprendre vos contraintes, puis une proposition claire. Réponse sous 24 heures ouvrées.</p>
+        <div class="h-cta__actions">
+          <a href="/contact/" class="btn btn--glow">Demander un audit</a>
+          <a href="tel:+33670616870" class="h-cta__phone">Astreinte 06 70 61 68 70</a>
+          <a href="tel:+33953966654" class="h-cta__phone h-cta__phone--small">Standard : 09 53 96 66 54</a>
         </div>
       </div>
     </section>
-
   </main>
 
-  <!-- ═════════════════ FOOTER ═════════════════ -->
   <footer class="footer">
     <div class="footer__top">
       <div class="footer__brand">
-        <img src="/Logo1.png" alt="MCO Facilities" height="50" style="height:55px;width:auto;display:block;" />
-        <p style="margin-top: 15px; font-size: 0.85rem; opacity: 0.8; line-height: 1.6;">
-          <strong>MCO Facilities SAS</strong><br>
-          SIREN : 790 810 386<br>
-          Dirigeant : Alexandre Angulo
-        </p>
-        <p style="margin-top: 15px; font-size: 0.9rem;">Maintien en Condition Opérationnelle, automatisme, robotique et sûreté pour sites industriels et infrastructures critiques.</p>
+        <img src="/logo-mco.png" alt="MCO Facilities" width="134" height="40" />
+        <p>Maintien en condition opérationnelle, automatisme, sûreté et électricité pour les sites industriels et les infrastructures critiques.</p>
+        <p class="footer__legalid">M.C.O Facilities SAS au capital de 10 000 €<br />RCS Grenoble 790 810 386</p>
       </div>
-
       <nav class="footer__nav" aria-label="Pied de page">
         <div>
-          <h4>Prestations</h4>
-          <a href="/services/automatisme-robotique/">Automatisme & Robotique</a>
-          <a href="/services/maintien-condition-operationnelle/">MCO Industrielle 24h/7j</a>
-          <a href="/services/surete-videoprotection/">Sûreté & Vidéoprotection IA</a>
-          <a href="/services/electricite-reseaux/">Électricité & Réseaux FO</a>
+          <h2 class="footer__heading">Prestations</h2>
+          <a href="/services/automatisme-robotique/">Automatisme &amp; robotique</a>
+          <a href="/services/maintien-condition-operationnelle/">Maintien en condition opérationnelle</a>
+          <a href="/services/surete-videoprotection/">Sûreté &amp; vidéoprotection</a>
+          <a href="/services/electricite-reseaux/">Électricité &amp; réseaux</a>
         </div>
         <div>
-          <h4>Société</h4>
-          <a href="/#expertise">Expertise & Cibles</a>
-          <a href="/#references">Références clients</a>
-          <a href="/contact/">Contact & Demande d'audit</a>
+          <h2 class="footer__heading">Société</h2>
+          <a href="/#secteurs">Secteurs et références</a>
+          <a href="/#terrain">Réalisations</a>
+          <a href="/contact/">Contact et audit</a>
         </div>
         <div>
-          <h4>Coordonnées</h4>
-          <a href="tel:+33670986561">Mobile : +33 6 70 98 65 61</a>
-          <a href="tel:+33476729958">Fixe : 04 76 72 99 58</a>
-          <a href="mailto:alexandre.angulo@mco-facilities.fr">alexandre.angulo@mco-facilities.fr</a>
-          <span style="display:block; margin-top:5px; font-size:0.85rem; opacity:0.7;">26 chemin de la digue, 38760 Varces</span>
+          <h2 class="footer__heading">Coordonnées</h2>
+          <a href="tel:+33670616870">Astreinte : 06 70 61 68 70</a>
+          <a href="tel:+33953966654">Standard : 09 53 96 66 54</a>
+          <a href="mailto:contact@mco-facilities.fr">contact@mco-facilities.fr</a>
+          <span>26 chemin de la Digue, 38760 Varces</span>
         </div>
       </nav>
     </div>
-
     <div class="footer__bottom">
-      <span>© <span id="year"></span> MCO Facilities SAS — Tous droits réservés.</span>
-      <span class="footer__legal"><a href="/mentions-legales/">Mentions légales</a> · <span class="muted">Version Bilingue FR / EN</span></span>
+      <span>© <span id="year">2026</span> MCO Facilities</span>
+      <span class="footer__legal"><a href="/mentions-legales/">Mentions légales</a> · <a href="/cgu/">CGU</a></span>
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="/vendor/gsap.min.js"></script>
+  <script src="/vendor/ScrollTrigger.min.js"></script>
   <script src="/main.js"></script>
 </body>
 </html>

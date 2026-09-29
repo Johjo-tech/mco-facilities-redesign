@@ -1,31 +1,39 @@
 # MCO Facilities
 
-> MCO Facilities est une entreprise française de **Maintien en Condition Opérationnelle (MCO)**, basée à Varces (38760, Auvergne-Rhône-Alpes), spécialisée dans la maintenance multi-technique de bâtiments tertiaires, industriels et résidentiels, ainsi que dans les systèmes de **vidéosurveillance** et de **contrôle d'accès**.
+> MCO Facilities (SAS, SIREN 790 810 386) est une entreprise française basée à Varces (38760, Isère), près de Grenoble. Elle accompagne les acteurs industriels, les grands comptes publics et les infrastructures de défense dans le **maintien en condition opérationnelle (MCO)**, l'**automatisme et la robotique**, la **sûreté et vidéoprotection IA** et l'**électricité et les réseaux**. Astreinte technique 24h/24 — 7j/7.
 
-Domaines d'expertise principaux :
+Domaines d'activité :
 
-- **Maintien en Condition Opérationnelle (MCO)** : maintenance préventive et corrective des installations multi-techniques (CVC, électricité, plomberie, courants faibles, GTB/GTC). Plans de maintenance sur-mesure, GMAO, reporting mensuel, astreinte 24/7.
-- **Vidéosurveillance professionnelle** : conception, déploiement et exploitation de systèmes vidéo IP. Caméras IP, NVR/VMS, supervision déportée, levée de doute, conformité RGPD et CNIL.
-- **Contrôle d'accès** : gestion des flux et autorisations sur sites professionnels. Lecteurs biométriques, badges Mifare, mobile NFC, vidéophonie, intégration SIRH/Active Directory, traçabilité RGPD.
-- **Maintenance multi-technique** : CVC (climatisation, VMC, chauffage), électricité (TGBT, tableaux divisionnaires), plomberie, détection incendie et intrusion.
+- **Automatisme & robotique industriels** : programmation d'automates toutes marques, intégration robotique et cobots, informatique industrielle et SCADA, variation de vitesse, rétrofit, sécurité machine et marquage CE.
+- **Maintien en Condition Opérationnelle (MCO)** : maintenance préventive planifiée, maintenance corrective d'urgence sur site, GMAO partagée, reporting mensuel, astreinte 24/7 sur installations industrielles critiques.
+- **Sûreté & vidéoprotection** : intégration de serveurs dédiés et d'enregistreurs, solutions IA de vidéoprotection (Hik Vision, Dahua, CASD), intégrateur certifié JRI My Sirius pour la mesure et le suivi de température de laboratoire, conformité RGPD.
+- **Électricité & réseaux** : électricité générale industrielle, réseaux cuivre haute performance, fibre optique (FO), déploiement, raccordement et recette (mesures OTDR).
+
+Secteurs servis : industrie et grands comptes (chimie, énergie, semiconducteurs), infrastructures publiques et centres hospitaliers, armée et défense, collectivités.
+
+Références citées sur le site : Dassault Aviation, ST Microelectronics, Schneider Electric, Veolia, Armée de Terre, CHU Grenoble-Alpes, CH Métropole Savoie, Commune de Moulins, Commune de Chamrousse, Métropole de Lyon.
 
 ## Coordonnées
 
 - **Adresse** : 26 chemin de la digue, 38760 Varces, France
-- **Téléphone mobile** : +33 6 70 98 65 61
-- **Téléphone fixe** : 04 76 72 99 58
-- **Email** : alexandre.angulo@mco-facilities.fr
-- **Zone d'intervention** : France, principalement Auvergne-Rhône-Alpes (Grenoble, Lyon, Chambéry, Annecy, Valence)
+- **Astreinte 24/7** : 06 70 61 68 70
+- **Standard** : 09 53 96 66 54
+- **Email** : contact@mco-facilities.fr
+- **Dirigeant** : Alexandre Angulo
+- **Zone d'intervention** : Auvergne-Rhône-Alpes (Grenoble, Lyon, Chambéry, Annecy…) et France entière pour les grands comptes et les infrastructures de défense
 
 ## Pages principales
 
-- [Accueil](https://mco-facilities.vibeia.io/) : présentation, services, méthode, références
-- [Maintien en Condition Opérationnelle](https://mco-facilities.vibeia.io/services/maintien-condition-operationnelle/) : maintenance préventive et corrective des installations
-- [Vidéosurveillance](https://mco-facilities.vibeia.io/services/videosurveillance/) : systèmes vidéo IP, supervision, RGPD
-- [Contrôle d'accès](https://mco-facilities.vibeia.io/services/controle-acces/) : gestion des flux, biométrie, badges, mobile NFC
-- [Maintenance multi-technique](https://mco-facilities.vibeia.io/services/maintenance-multi-technique/) : CVC, électricité, plomberie, courants faibles
+- [Accueil](https://mco-facilities.vibeia.io/) : présentation, expertises, prestations, références, FAQ
+- [Automatisme & robotique](https://mco-facilities.vibeia.io/services/automatisme-robotique/) : automates, SCADA, cobots, variation de vitesse
+- [Maintien en Condition Opérationnelle](https://mco-facilities.vibeia.io/services/maintien-condition-operationnelle/) : maintenance préventive et corrective, astreinte 24/7
+- [Sûreté & vidéoprotection](https://mco-facilities.vibeia.io/services/surete-videoprotection/) : vidéoprotection IA, serveurs, RGPD
+- [Électricité & réseaux](https://mco-facilities.vibeia.io/services/electricite-reseaux/) : courants forts, cuivre, fibre optique
 - [Contact](https://mco-facilities.vibeia.io/contact/) : formulaire et coordonnées
+- [English version](https://mco-facilities.vibeia.io/en/)
 
 ## Optionnel
 
-- [Mentions légales](https://mco-facilities.vibeia.io/mentions-legales/) : informations légales et politique de confidentialité
+- [Description détaillée](https://mco-facilities.vibeia.io/llms-full.txt)
+- [Mentions légales](https://mco-facilities.vibeia.io/mentions-legales/) : éditeur, hébergeur, données personnelles
+- [Conditions générales d'utilisation](https://mco-facilities.vibeia.io/cgu/)

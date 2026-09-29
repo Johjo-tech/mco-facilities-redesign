@@ -3,12 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#08090f" />
+  <meta name="theme-color" content="#0A1A2F" />
 
   <title>Automatisme &amp; robotique industriels — Automates, SCADA, cobots | MCO Facilities</title>
-  <meta name="description" content="Conception et intégration de systèmes automatisés et de solutions robotiques : automates Schneider &amp; Siemens, SCADA, cobots, variation de vitesse, rétrofit, sécurité machine CE. Varces, Grenoble, Auvergne-Rhône-Alpes." />
-  <meta name="keywords" content="automatisme industriel, robotique, automate programmable, Schneider Electric, Siemens, SCADA, supervision, Profinet, Modbus, OPC-UA, cobot, variation de vitesse, rétrofit, sécurité machine, Grenoble" />
+  <meta name="description" content="Conception et intégration de systèmes automatisés et de solutions robotiques : automates programmables, SCADA, cobots, variation de vitesse, rétrofit, sécurité machine CE. Varces, Grenoble, Auvergne-Rhône-Alpes." />
+  <meta name="keywords" content="automatisme industriel, robotique, automate programmable, SCADA, supervision, Profinet, Modbus, OPC-UA, cobot, variation de vitesse, rétrofit, sécurité machine, Grenoble" />
   <link rel="canonical" href="https://mco-facilities.vibeia.io/services/automatisme-robotique/" />
+  <link rel="alternate" hreflang="fr" href="https://mco-facilities.vibeia.io/services/automatisme-robotique/" />
+  <link rel="alternate" hreflang="en" href="https://mco-facilities.vibeia.io/en/services/automatisme-robotique/" />
+  <link rel="alternate" hreflang="x-default" href="https://mco-facilities.vibeia.io/services/automatisme-robotique/" />
 
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="fr_FR" />
@@ -18,13 +21,15 @@
   <meta property="og:image" content="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=1200&q=80&auto=format&fit=crop" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://images.unsplash.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+  <link rel="preload" href="/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/fonts/fonts.css" />
 
   <link rel="stylesheet" href="/style.css" />
-  <link rel="icon" type="image/svg+xml" href="/logo.png" />
+  <link rel="stylesheet" href="/site.css" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/favicon-180.png" />
 
   <script type="application/ld+json">
   {
@@ -44,12 +49,12 @@
         "name": "Automatisme & robotique",
         "provider": { "@type": "Organization", "name": "MCO Facilities", "url": "https://mco-facilities.vibeia.io/" },
         "areaServed": { "@type": "AdministrativeArea", "name": "Auvergne-Rhône-Alpes" },
-        "description": "Conception et intégration de systèmes automatisés et de solutions robotiques : automates Schneider Electric et Siemens, SCADA, cobots, variation de vitesse, rétrofit, sécurité machine CE."
+        "description": "Conception et intégration de systèmes automatisés et de solutions robotiques : automates programmables, SCADA, cobots, variation de vitesse, rétrofit, sécurité machine CE."
       },
       {
         "@type": "FAQPage",
         "mainEntity": [
-          { "@type": "Question", "name": "Schneider Electric ou Siemens, quel automate choisir ?", "acceptedAnswer": { "@type": "Answer", "text": "Les deux gammes sont excellentes. Schneider Electric (Modicon M340/M580, EcoStruxure) domine en France et dans l'agroalimentaire ; Siemens (S7-1200/1500, TIA Portal) s'impose sur les lignes exportées et la mécatronique de précision. Le vrai critère est votre parc existant et les compétences de vos équipes de maintenance. Nous programmons et maintenons les deux, sans dépendance à une seule marque." } },
+          { "@type": "Question", "name": "Quelle marque d'automate choisir ?", "acceptedAnswer": { "@type": "Answer", "text": "Nous travaillons sur toutes les grandes marques d'automates du marché. Le bon choix dépend de votre parc existant et des compétences de vos équipes de maintenance : nous vous conseillons la solution la plus adaptée, sans dépendance à un constructeur." } },
           { "@type": "Question", "name": "Qu'est-ce qu'un SCADA et à quoi ça sert ?", "acceptedAnswer": { "@type": "Answer", "text": "Un SCADA (Supervisory Control And Data Acquisition) est le poste de supervision qui collecte en temps réel les données des automates, affiche l'état des lignes, historise les alarmes et pilote la production. Il donne à vos opérateurs une vue synoptique du site et permet l'analyse des arrêts, la traçabilité et l'aide à la décision. Nous déployons Wonderware/AVEVA, WinCC, PcVue et Ignition." } },
           { "@type": "Question", "name": "Peut-on moderniser une ligne sans tout remplacer ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, c'est tout l'intérêt du rétrofit. On conserve la mécanique saine et on remplace uniquement la partie commande obsolète : automate en fin de support, variateurs, IHM, câblage. On récupère ainsi une machine performante et documentée pour une fraction du coût du neuf, avec un arrêt de production maîtrisé." } },
           { "@type": "Question", "name": "La variation de vitesse est-elle rentable ?", "acceptedAnswer": { "@type": "Answer", "text": "Sur les pompes et ventilateurs, un variateur de fréquence réduit typiquement la consommation de 20 à 50 % en adaptant la vitesse au besoin réel plutôt qu'en fonctionnant à pleine puissance avec un bridage mécanique. Le retour sur investissement se situe souvent entre 1 et 3 ans, et l'usure mécanique diminue fortement grâce aux démarrages progressifs." } },
@@ -73,7 +78,7 @@
 
   <header class="nav" id="nav">
     <a href="/" class="nav__logo" aria-label="MCO Facilities — accueil">
-      <img src="/Logo1.png" alt="MCO Facilities" height="50" style="height:55px;width:auto;display:block;" />
+      <img src="/logo-mco.png" alt="MCO Facilities" width="147" height="44" />
     </a>
     <nav class="nav__links" aria-label="Navigation principale">
       <div class="nav__dropdown">
@@ -85,28 +90,28 @@
           <a href="/services/electricite-reseaux/"><span class="nav__dropdown-num">04</span><div><strong>Électricité &amp; réseaux</strong><span>Électricité générale, cuivre &amp; fibre optique</span></div></a>
         </div>
       </div>
-      <a href="/#expertise">Expertise</a>
-      <a href="/#methode">Méthode</a>
-      <a href="/#references">Références</a>
+      <a href="/#secteurs">Secteurs</a>
+      <a href="/#terrain">Réalisations</a>
+      <a href="/#faq">Questions</a>
 
       <!-- Language Selector Toggle -->
       <div class="nav__lang" style="margin-left: 15px; font-size: 0.9rem; font-family: var(--ff-mono, monospace);">
         <span class="lang--active" style="font-weight: bold; color: #fff;">FR</span> | <a href="/en/services/automatisme-robotique/" class="lang__link" style="opacity: 0.6; text-decoration: none; color: #fff;">EN</a>
       </div>
     </nav>
-    <a href="/contact/" class="nav__cta"><span>Nous contacter</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a href="/contact/" class="nav__cta">Demander un audit</a>
   </header>
 
   <main>
 
     <section class="page-hero">
       <div class="page-hero__photo" aria-hidden="true">
-        <img src="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=1920&q=75&auto=format&fit=crop" alt="" loading="eager" fetchpriority="high" />
+        <picture><source type="image/webp" srcset="/img/robot-cell-960.webp 960w, /img/robot-cell.webp 1920w" sizes="100vw" /><img src="/img/robot-cell.jpg" width="1920" height="1088" alt="" fetchpriority="high" /></picture>
       </div>
       <div class="page-hero__inner">
         <nav class="breadcrumb" aria-label="Fil d'ariane">
           <a href="/">Accueil</a><span aria-hidden="true">·</span>
-          <a href="/#services">Services</a><span aria-hidden="true">·</span>
+          <a href="/#prestations">Services</a><span aria-hidden="true">·</span>
           <span aria-current="page">Automatisme &amp; robotique</span>
         </nav>
 
@@ -121,7 +126,7 @@
         <p class="page-hero__lede" data-reveal>
           Conception et intégration complète de <strong>systèmes automatisés</strong> complexes et
           de <strong>solutions robotiques</strong> de pointe pour optimiser vos cycles de production —
-          de l'automate Schneider ou Siemens jusqu'au cobot, en passant par la
+          de l'automate programmable jusqu'au cobot, en passant par la
           <strong>supervision SCADA</strong> et les réseaux industriels temps réel.
         </p>
 
@@ -145,7 +150,7 @@
         <div class="why-grid__item" data-reveal>
           <span class="why-grid__num">01</span>
           <h3>Multi-constructeur</h3>
-          <p>Nous programmons et maintenons <strong>Schneider Electric et Siemens</strong> comme Rockwell ou Beckhoff. Pas de dépendance à une seule marque : on retient la solution la plus adaptée à votre parc et aux compétences de vos équipes.</p>
+          <p>Nous programmons et maintenons <strong>toutes les grandes marques d'automates</strong>. Pas de dépendance à un constructeur : on retient la solution la plus adaptée à votre parc et aux compétences de vos équipes.</p>
         </div>
         <div class="why-grid__item" data-reveal>
           <span class="why-grid__num">02</span>
@@ -173,7 +178,7 @@
         <article class="sub-service" data-reveal>
           <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><rect x="6" y="8" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M10 12h4M10 16h4M10 20h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="21" cy="13" r="1.5" fill="currentColor"/><circle cx="21" cy="19" r="1.5" fill="currentColor"/></svg></div>
           <h3>Développement &amp; intégration automate</h3>
-          <p>Programmation d'automates <strong>Schneider Electric</strong> (Modicon M340/M580, EcoStruxure) et <strong>Siemens</strong> (S7-1200/1500, TIA Portal). Analyse fonctionnelle, développement, mise en service et documentation complète.</p>
+          <p>Programmation d'automates <strong>toutes marques</strong>. Analyse fonctionnelle, développement, mise en service et documentation complète.</p>
         </article>
 
         <article class="sub-service" data-reveal>
@@ -211,7 +216,8 @@
     <section class="section">
       <div class="callout">
         <p data-reveal>
-          <em>Notre principe</em> : on n'automatise pas pour automatiser. On part de votre
+          <em>Notre principe</em>
+          On n'automatise pas pour automatiser. On part de votre
           <strong>goulot d'étranglement réel</strong> — cadence, pénibilité, non-qualité,
           énergie — et on dimensionne la solution à l'enjeu. <strong>La technologie sert
           la production</strong>, pas l'inverse.
@@ -273,8 +279,8 @@
 
       <div class="faq">
         <details class="faq__item" data-reveal>
-          <summary><span>Schneider Electric ou Siemens, quel automate choisir ?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
-          <div class="faq__body">Les deux gammes sont excellentes. <strong>Schneider Electric</strong> (Modicon M340/M580, EcoStruxure) domine en France et dans l'agroalimentaire ; <strong>Siemens</strong> (S7-1200/1500, TIA Portal) s'impose sur les lignes exportées et la mécatronique de précision. Le vrai critère est votre parc existant et les compétences de vos équipes de maintenance. Nous programmons et maintenons les deux, sans dépendance à une seule marque.</div>
+          <summary><span>Quelle marque d'automate choisir ?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">Nous travaillons sur toutes les grandes marques d'automates du marché. Le bon choix dépend de votre parc existant et des compétences de vos équipes de maintenance : nous vous conseillons la solution la plus adaptée, sans dépendance à un constructeur.</div>
         </details>
 
         <details class="faq__item" data-reveal>
@@ -343,7 +349,7 @@
         </div>
         <div class="cta-block__actions" data-reveal>
           <a href="/contact/" class="btn btn--primary"><span>Demander l'étude</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          <a href="tel:+33670986561" class="btn btn--ghost"><span>+33 6 70 98 65 61</span></a>
+          <a href="tel:+33670616870" class="btn btn--ghost"><span>Astreinte 06 70 61 68 70</span></a>
         </div>
       </div>
     </section>
@@ -353,23 +359,23 @@
   <footer class="footer">
     <div class="footer__top">
       <div class="footer__brand">
-        <img src="/Logo1.png" alt="MCO Facilities" height="50" style="height:55px;width:auto;display:block;" />
+        <img src="/logo-mco.png" alt="MCO Facilities" width="147" height="44" />
         <p>Automatisme, robotique, maintien en condition opérationnelle, sûreté et réseaux — pour des sites industriels performants et sereins.</p>
       </div>
       <nav class="footer__nav" aria-label="Pied de page">
-        <div><h4>Services</h4><a href="/services/automatisme-robotique/">Automatisme &amp; robotique</a><a href="/services/maintien-condition-operationnelle/">MCO 24/7</a><a href="/services/surete-videoprotection/">Sûreté &amp; vidéoprotection</a><a href="/services/electricite-reseaux/">Électricité &amp; réseaux</a></div>
-        <div><h4>Société</h4><a href="/#expertise">Expertise</a><a href="/#methode">Méthode</a><a href="/#references">Références</a><a href="/contact/">Contact</a></div>
-        <div><h4>Coordonnées</h4><a href="tel:+33670986561">+33 6 70 98 65 61</a><a href="mailto:alexandre.angulo@mco-facilities.fr">Email</a><span>26 chemin de la digue, 38760 Varces</span></div>
+        <div><h2 class="footer__heading">Services</h2><a href="/services/automatisme-robotique/">Automatisme &amp; robotique</a><a href="/services/maintien-condition-operationnelle/">MCO 24/7</a><a href="/services/surete-videoprotection/">Sûreté &amp; vidéoprotection</a><a href="/services/electricite-reseaux/">Électricité &amp; réseaux</a></div>
+        <div><h2 class="footer__heading">Société</h2><a href="/#secteurs">Secteurs</a><a href="/#terrain">Réalisations</a><a href="/#faq">Questions</a><a href="/contact/">Contact</a></div>
+        <div><h2 class="footer__heading">Coordonnées</h2><a href="tel:+33953966654">Standard : 09 53 96 66 54</a><a href="tel:+33670616870">Astreinte : 06 70 61 68 70</a><a href="mailto:contact@mco-facilities.fr">Email</a><span>26 chemin de la digue, 38760 Varces</span></div>
       </nav>
     </div>
     <div class="footer__bottom">
       <span>© <span id="year"></span> MCO Facilities — Tous droits réservés.</span>
-      <span class="footer__legal"><a href="/mentions-legales/">Mentions légales</a> · <span class="muted">Conçu en France</span></span>
+      <span class="footer__legal"><a href="/mentions-legales/">Mentions légales</a> · <a href="/cgu/">CGU</a> · <span class="muted">Conçu en France</span></span>
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="/vendor/gsap.min.js"></script>
+  <script src="/vendor/ScrollTrigger.min.js"></script>
   <script src="/main.js"></script>
 </body>
 </html>

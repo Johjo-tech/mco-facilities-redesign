@@ -3,25 +3,30 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#08090f" />
+  <meta name="theme-color" content="#0A1A2F" />
 
   <title>Contact — Request an Audit | MCO Facilities Varces, Grenoble</title>
   <meta name="description" content="Contact MCO Facilities for a free audit of your site: multi-technical maintenance, video surveillance, or access control. Response within 24 business hours. Varces, Grenoble, Auvergne-Rhône-Alpes." />
-  <link rel="canonical" href="https://mco-facilities.vibeia.io/contact/" />
+  <link rel="canonical" href="https://mco-facilities.vibeia.io/en/contact/" />
+  <link rel="alternate" hreflang="fr" href="https://mco-facilities.vibeia.io/contact/" />
+  <link rel="alternate" hreflang="en" href="https://mco-facilities.vibeia.io/en/contact/" />
+  <link rel="alternate" hreflang="x-default" href="https://mco-facilities.vibeia.io/contact/" />
 
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:url" content="https://mco-facilities.vibeia.io/contact/" />
+  <meta property="og:url" content="https://mco-facilities.vibeia.io/en/contact/" />
   <meta property="og:title" content="Contact — MCO Facilities" />
   <meta property="og:description" content="Tell us about your site, your operational constraints, and your deadline. We will get back to you within 24 business hours with an audit proposal." />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+  <link rel="preload" href="/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/fonts/fonts.css" />
 
   <link rel="stylesheet" href="/style.css" />
-  <link rel="icon" type="image/svg+xml" href="/Logo1.png" />
+  <link rel="stylesheet" href="/site.css" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/favicon-180.png" />
 
   <script type="application/ld+json">
   {
@@ -32,8 +37,8 @@
     "mainEntity": {
       "@type": "Organization",
       "name": "MCO Facilities",
-      "telephone": "+33670986561",
-      "email": "alexandre.angulo@mco-facilities.fr",
+      "telephone": "+33953966654",
+      "email": "contact@mco-facilities.fr",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "26 chemin de la digue",
@@ -58,7 +63,7 @@
 
   <header class="nav" id="nav">
     <a href="/en/" class="nav__logo" aria-label="MCO Facilities — home">
-      <img src="/Logo1.png" alt="MCO Facilities" height="50" style="height:55px;width:auto;display:block;" />
+      <img src="/logo-mco.png" alt="MCO Facilities" width="147" height="44" />
     </a>
     <nav class="nav__links" aria-label="Main navigation">
       <div class="nav__dropdown">
@@ -70,16 +75,16 @@
           <a href="/en/services/electricite-reseaux/"><span class="nav__dropdown-num">04</span><div><strong>Electricity &amp; Networks</strong><span>Industrial power, copper &amp; fibre optic</span></div></a>
         </div>
       </div>
-      <a href="/en/#expertise">Expertise</a>
-      <a href="/en/#methode">Method</a>
-      <a href="/en/#references">References</a>
+      <a href="/en/#secteurs">Sectors</a>
+      <a href="/en/#terrain">Field work</a>
+      <a href="/en/#faq">FAQ</a>
 
       <!-- Language Selector -->
       <div class="nav__lang" style="margin-left: 15px; font-size: 0.9rem; font-family: var(--ff-mono, monospace);">
         <span class="lang--active" style="font-weight: bold; color: #fff;">EN</span> | <a href="/contact/" class="lang__link" style="opacity: 0.6; text-decoration: none; color: #fff;">FR</a>
       </div>
     </nav>
-    <a href="/en/contact/" class="nav__cta is-active"><span>Contact us</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a href="/en/contact/" class="nav__cta is-active">Request an audit</a>
   </header>
 
   <main>
@@ -169,13 +174,13 @@
         <aside class="contact__info" data-reveal>
           <div class="info-block">
             <span class="info-block__lbl">Phone</span>
-            <a href="tel:+33670986561" class="info-block__val">+33 6 70 98 65 61</a>
-            <a href="tel:+33476729958" class="info-block__sub">+33 4 76 72 99 58 — office</a>
+            <a href="tel:+33953966654" class="info-block__val">+33 9 53 96 66 54</a>
+            <a href="tel:+33670616870" class="info-block__sub">On call: +33 6 70 61 68 70</a>
           </div>
 
           <div class="info-block">
             <span class="info-block__lbl">Email</span>
-            <a href="mailto:alexandre.angulo@mco-facilities.fr" class="info-block__val">alexandre.angulo<wbr/>@mco-facilities.fr</a>
+            <a href="mailto:contact@mco-facilities.fr" class="info-block__val">contact<wbr/>@mco-facilities.fr</a>
           </div>
 
           <div class="info-block">
@@ -233,67 +238,26 @@
   <footer class="footer">
     <div class="footer__top">
       <div class="footer__brand">
-        <img src="/Logo1.png" alt="MCO Facilities" height="50" style="height:55px;width:auto;display:block;" />
+        <img src="/logo-mco.png" alt="MCO Facilities" width="147" height="44" />
         <p>Automation, MCO, security &amp; video protection, and electricity — for secure and high-performing sites.</p>
       </div>
       <nav class="footer__nav" aria-label="Footer navigation">
-        <div><h4>Services</h4><a href="/en/services/automatisme-robotique/">Automation &amp; Robotics</a><a href="/en/services/maintien-condition-operationnelle/">MCO 24/7</a><a href="/en/services/surete-videoprotection/">Security &amp; Video Protection</a><a href="/en/services/electricite-reseaux/">Electricity &amp; Networks</a></div>
-        <div><h4>Company</h4><a href="/en/#expertise">Expertise</a><a href="/en/#methode">Method</a><a href="/en/#references">References</a><a href="/en/contact/">Contact</a></div>
-        <div><h4>Contact Details</h4><a href="tel:+33670986561">+33 6 70 98 65 61</a><a href="mailto:alexandre.angulo@mco-facilities.fr">Email</a><span>26 chemin de la digue, 38760 Varces</span></div>
+        <div><h2 class="footer__heading">Services</h2><a href="/en/services/automatisme-robotique/">Automation &amp; Robotics</a><a href="/en/services/maintien-condition-operationnelle/">MCO 24/7</a><a href="/en/services/surete-videoprotection/">Security &amp; Video Protection</a><a href="/en/services/electricite-reseaux/">Electricity &amp; Networks</a></div>
+        <div><h2 class="footer__heading">Company</h2><a href="/en/#secteurs">Sectors</a><a href="/en/#terrain">Field work</a><a href="/en/#faq">FAQ</a><a href="/en/contact/">Contact</a></div>
+        <div><h2 class="footer__heading">Contact Details</h2><a href="tel:+33953966654">Main line: +33 9 53 96 66 54</a><a href="tel:+33670616870">On call: +33 6 70 61 68 70</a><a href="mailto:contact@mco-facilities.fr">Email</a><span>26 chemin de la digue, 38760 Varces</span></div>
       </nav>
     </div>
     <div class="footer__bottom">
       <span>© <span id="year"></span> MCO Facilities — All rights reserved.</span>
-      <span class="footer__legal"><a href="/en/mentions-legales/">Legal Notice</a> · <span class="muted">Designed in France</span></span>
+      <span class="footer__legal"><a href="/en/mentions-legales/">Legal Notice</a> · <a href="/en/cgu/">Terms of Use</a> · <span class="muted">Designed in France</span></span>
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="/vendor/gsap.min.js"></script>
+  <script src="/vendor/ScrollTrigger.min.js"></script>
   <script src="/main.js"></script>
 
   <!-- Envoi du formulaire de contact via Web3Forms -->
-  <script>
-  (function () {
-    var form = document.getElementById('mco-contact-form');
-    if (!form) return;
-    var statusEl = document.getElementById('contact-status');
-    var btn = form.querySelector('button[type="submit"]');
-    var btnLabel = btn ? btn.querySelector('span') : null;
-    var defaultLabel = btnLabel ? btnLabel.textContent : 'Submit my request';
-
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      if (btn) btn.setAttribute('disabled', '');
-      if (btnLabel) btnLabel.textContent = 'Sending...';
-      if (statusEl) { statusEl.style.color = ''; statusEl.textContent = ''; }
-
-      var payload = Object.fromEntries(new FormData(form).entries());
-
-      fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify(payload)
-      })
-        .then(function (r) { return r.json(); })
-        .then(function (data) {
-          if (data.success) {
-            if (btnLabel) btnLabel.textContent = 'Message sent ✓';
-            if (statusEl) { statusEl.style.color = '#36d399'; statusEl.textContent = 'Thank you, your request has been successfully sent. Response within 24 business hours.'; }
-            form.reset();
-          } else {
-            if (btn) btn.removeAttribute('disabled');
-            if (btnLabel) btnLabel.textContent = defaultLabel;
-            if (statusEl) { statusEl.style.color = '#f87272'; statusEl.textContent = 'An error occurred: ' + (data.message || 'unable to send') + '. Please try again or email us directly.'; }
-          }
-        })
-        .catch(function () {
-          if (btn) btn.removeAttribute('disabled');
-          if (btnLabel) btnLabel.textContent = defaultLabel;
-          if (statusEl) { statusEl.style.color = '#f87272'; statusEl.textContent = 'Network error. Please try again or write to us at alexandre.angulo@mco-facilities.fr.'; }
-        });
-    });
-  })();
-  </script>
+<script src="/contact-form.js" defer></script>
 </body>
 </html>
