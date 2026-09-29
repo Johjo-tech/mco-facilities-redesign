@@ -459,6 +459,12 @@
     gsap.from('.x-hero__status, .x-hero__lede, .x-hero__actions', { y: 24, opacity: 0, duration: 0.9, stagger: 0.12, ease: 'power3.out', delay: 0.5 });
     gsap.from('.x-hud > div', { y: 20, opacity: 0, duration: 0.7, stagger: 0.08, ease: 'power3.out', delay: 0.9 });
     gsap.to('.x-hero__inner', { yPercent: -18, opacity: 0.2, ease: 'none', scrollTrigger: { trigger: '.x-hero', start: 'top top', end: 'bottom top', scrub: true } });
+    /* hero photo: settles in on load, then pushes in and dims as you scroll away */
+    const heroPhoto = document.querySelector('.x-hero__photo img');
+    if (heroPhoto) {
+      gsap.fromTo(heroPhoto, { scale: 1.22, opacity: 0 }, { scale: 1.05, opacity: 1, duration: 2.2, ease: 'power3.out' });
+      gsap.to(heroPhoto, { scale: 1.3, yPercent: 6, filter: 'brightness(0.55)', ease: 'none', scrollTrigger: { trigger: '.x-hero', start: 'top top', end: 'bottom top', scrub: true } });
+    }
 
     /* 11e. Statement fills in as you read */
     const statement = document.querySelector('[data-fill]');
