@@ -459,11 +459,37 @@
     gsap.from('.x-hero__status, .x-hero__lede, .x-hero__actions', { y: 24, opacity: 0, duration: 0.9, stagger: 0.12, ease: 'power3.out', delay: 0.5 });
     gsap.from('.x-hud > div', { y: 20, opacity: 0, duration: 0.7, stagger: 0.08, ease: 'power3.out', delay: 0.9 });
     gsap.to('.x-hero__inner', { yPercent: -18, opacity: 0.2, ease: 'none', scrollTrigger: { trigger: '.x-hero', start: 'top top', end: 'bottom top', scrub: true } });
+    /* hero video: the Artlist dolly-in shot advances frame by frame with the scroll */
+    const heroVideo = document.querySelector('.x-hero__video');
+    if (heroVideo) {
+      const small = window.matchMedia('(max-width: 860px)').matches;
+      /* VP9 webm where supported (smaller), H.264 mp4 for Safari */
+      const webm = heroVideo.canPlayType('video/webm; codecs="vp9"') ? '.webm' : '.mp4';
+      heroVideo.src = (small ? heroVideo.dataset.srcMobile : heroVideo.dataset.srcDesktop).replace(/\.mp4$/, webm);
+      const target = { t: 0 };
+      let pending = false;
+      const seek = () => {
+        pending = false;
+        if (heroVideo.readyState >= 1 && Math.abs(heroVideo.currentTime - target.t) > 0.01) heroVideo.currentTime = target.t;
+      };
+      heroVideo.addEventListener('loadeddata', () => {
+        heroVideo.classList.add('is-ready');
+        ScrollTrigger.create({
+          trigger: '.x-hero', start: 'top top', end: 'bottom top', scrub: true,
+          onUpdate: (self) => {
+            target.t = self.progress * (heroVideo.duration - 0.05);
+            if (!pending) { pending = true; requestAnimationFrame(seek); }
+          }
+        });
+      }, { once: true });
+      heroVideo.load();
+    }
+
     /* hero photo: settles in on load, then pushes in and dims as you scroll away */
-    const heroPhoto = document.querySelector('.x-hero__photo img');
+    const heroPhoto = document.querySelector('.x-hero__photo');
     if (heroPhoto) {
       gsap.fromTo(heroPhoto, { scale: 1.22, opacity: 0 }, { scale: 1.05, opacity: 1, duration: 2.2, ease: 'power3.out' });
-      gsap.to(heroPhoto, { scale: 1.3, yPercent: 6, filter: 'brightness(0.55)', ease: 'none', scrollTrigger: { trigger: '.x-hero', start: 'top top', end: 'bottom top', scrub: true } });
+      gsap.to(heroPhoto, { scale: 1.12, yPercent: 4, filter: 'brightness(0.6)', ease: 'none', scrollTrigger: { trigger: '.x-hero', start: 'top top', end: 'bottom top', scrub: true } });
     }
 
     /* 11e. Statement fills in as you read */
