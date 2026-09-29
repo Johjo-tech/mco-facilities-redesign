@@ -150,7 +150,7 @@
   }
 
   /* ─── 8. Custom cursor (desktop only) ─── */
-  if (isFinePointer && !prefersReducedMotion) {
+  if (false) { /* custom cursor retired in v2 — native pointer is used */
     const cursor = document.querySelector('.cursor');
     if (cursor) {
       let cx = window.innerWidth / 2, cy = window.innerHeight / 2;

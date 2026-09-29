@@ -429,3 +429,10 @@ h1, h2, h3, .section__title, .page-hero__title, .cta-block__title {
 .live { width: 10px; height: 10px; border-radius: 50%; background: var(--signal); box-shadow: 0 0 0 0 rgba(255, 106, 43, .6); animation: live 2s infinite; flex: none; display: inline-block; }
 @keyframes live { 70% { box-shadow: 0 0 0 10px rgba(255, 106, 43, 0); } 100% { box-shadow: 0 0 0 0 rgba(255, 106, 43, 0); } }
 @media (prefers-reduced-motion: reduce) { .live { animation: none; } }
+
+/* restore the native pointer — v1 hid it for a custom cursor that no longer exists */
+@media (hover: hover) and (pointer: fine) {
+  body { cursor: auto !important; }
+  a, button, summary, label, select, [role="button"], [data-tilt] { cursor: pointer !important; }
+  input, textarea { cursor: text !important; }
+}
