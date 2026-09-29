@@ -4,7 +4,7 @@
 
 Domaines d'activité :
 
-- **Automatisme & robotique industriels** : programmation d'automates Schneider Electric et Siemens, intégration robotique et cobots, informatique industrielle et SCADA, variation de vitesse, rétrofit, sécurité machine et marquage CE.
+- **Automatisme & robotique industriels** : programmation d'automates toutes marques, intégration robotique et cobots, informatique industrielle et SCADA, variation de vitesse, rétrofit, sécurité machine et marquage CE.
 - **Maintien en Condition Opérationnelle (MCO)** : maintenance préventive planifiée, maintenance corrective d'urgence sur site, GMAO partagée, reporting mensuel, astreinte 24/7 sur installations industrielles critiques.
 - **Sûreté & vidéoprotection** : intégration de serveurs dédiés et d'enregistreurs, solutions IA de vidéoprotection (Hik Vision, Dahua, CASD), intégrateur certifié JRI My Sirius pour la mesure et le suivi de température de laboratoire, conformité RGPD.
 - **Électricité & réseaux** : électricité générale industrielle, réseaux cuivre haute performance, fibre optique (FO), déploiement, raccordement et recette (mesures OTDR).
@@ -16,9 +16,9 @@ Références citées sur le site : Dassault Aviation, ST Microelectronics, Schne
 ## Coordonnées
 
 - **Adresse** : 26 chemin de la digue, 38760 Varces, France
-- **Téléphone mobile** : +33 6 70 98 65 61
-- **Téléphone fixe** : 04 76 72 99 58
-- **Email** : alexandre.angulo@mco-facilities.fr
+- **Astreinte 24/7** : 06 70 61 68 70
+- **Standard** : 09 53 96 66 54
+- **Email** : contact@mco-facilities.fr
 - **Dirigeant** : Alexandre Angulo
 - **Zone d'intervention** : Auvergne-Rhône-Alpes (Grenoble, Lyon, Chambéry, Annecy…) et France entière pour les grands comptes et les infrastructures de défense
 

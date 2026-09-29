@@ -11,14 +11,14 @@
     sent: 'Message sent ✓',
     ok: 'Thank you, your request has been successfully sent. Response within 24 business hours.',
     fail: function (m) { return 'An error occurred: ' + (m || 'unable to send') + '. Please try again or email us directly.'; },
-    network: 'Network error. Please try again or write to us at alexandre.angulo@mco-facilities.fr.'
+    network: 'Network error. Please try again or write to us at contact@mco-facilities.fr.'
   } : {
     fallback: 'Envoyer ma demande',
     sending: 'Envoi en cours…',
     sent: 'Message envoyé ✓',
     ok: 'Merci, votre demande a bien été envoyée. Réponse sous 24h ouvrées.',
     fail: function (m) { return 'Une erreur est survenue : ' + (m || 'envoi impossible') + '. Réessayez ou écrivez-nous directement.'; },
-    network: 'Erreur réseau. Réessayez ou écrivez-nous à alexandre.angulo@mco-facilities.fr.'
+    network: 'Erreur réseau. Réessayez ou écrivez-nous à contact@mco-facilities.fr.'
   };
 
   var statusEl = document.getElementById('contact-status');
