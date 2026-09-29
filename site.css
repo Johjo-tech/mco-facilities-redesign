@@ -449,3 +449,9 @@ h1, h2, h3, .section__title, .page-hero__title, .cta-block__title {
   a, button, summary, label, select, [role="button"], [data-tilt] { cursor: pointer !important; }
   input, textarea { cursor: text !important; }
 }
+
+/* generated photography — picture wrappers fill their frames */
+.shot picture, .x-hero__photo picture, .h-cta__photo picture, .page-hero__photo picture { display: block; width: 100%; height: 100%; }
+.page-hero__photo picture img { width: 100%; height: 100%; object-fit: cover; }
+.h-cta__photo { position: absolute; inset: 0; z-index: -3; overflow: hidden; }
+.h-cta__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 70%; opacity: 0.75; }

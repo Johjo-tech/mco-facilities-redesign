@@ -517,6 +517,12 @@
       });
     }
 
+    /* CTA backdrop: the plant slowly comes closer as the block scrolls through */
+    const ctaPhoto = document.querySelector('.h-cta__photo img');
+    if (ctaPhoto) {
+      gsap.fromTo(ctaPhoto, { scale: 1.25, yPercent: -6 }, { scale: 1.02, yPercent: 6, ease: 'none', scrollTrigger: { trigger: '.h-cta', start: 'top bottom', end: 'bottom top', scrub: true } });
+    }
+
     /* 11g. Sectors rise in sequence */
     gsap.from('.h-sector', { y: 40, opacity: 0, duration: 0.9, stagger: 0.12, ease: 'power3.out', scrollTrigger: { trigger: '.h-sectors__grid', start: 'top 80%', once: true } });
 

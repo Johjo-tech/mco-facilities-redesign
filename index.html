@@ -28,7 +28,6 @@
   <meta name="twitter:description" content="Maintien en Condition Opérationnelle, automatisme, robotique et sûreté pour sites industriels et infrastructures critiques." />
   <meta name="twitter:image" content="https://mco-facilities.vibeia.io/img/hero-control-room.jpg" />
 
-  <link rel="preconnect" href="https://images.unsplash.com" />
   <link rel="preload" href="/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="/fonts/fonts.css" />
 
@@ -399,24 +398,28 @@
         </header>
         <div class="h-field__track">
           <figure class="shot shot--wide">
-            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1400&q=75&auto=format&fit=crop" alt="Baies réseau et armoires d'automatisme" loading="lazy" />
-            <figcaption><strong>Systèmes automatisés</strong> Schneider, Siemens, SCADA</figcaption>
+            <picture><source type="image/webp" srcset="/img/robot-cell-720.webp 720w, /img/robot-cell.webp 1280w" sizes="(max-width: 860px) 80vw, 60vw" /><img src="/img/robot-cell.jpg" alt="Cellule robotisée en production" loading="lazy" /></picture>
+            <figcaption><strong>Automatismes &amp; robotique</strong> Robots, cobots, SCADA</figcaption>
           </figure>
           <figure class="shot">
-            <img src="https://images.unsplash.com/photo-1633265486064-086b219458ec?w=900&q=75&auto=format&fit=crop" alt="Caméra de vidéoprotection" loading="lazy" />
+            <picture><source type="image/webp" srcset="/img/camera-site-720.webp 720w, /img/camera-site.webp 1280w" sizes="(max-width: 860px) 80vw, 60vw" /><img src="/img/camera-site.jpg" alt="Caméra de vidéoprotection sur un site industriel" loading="lazy" /></picture>
             <figcaption><strong>Vidéoprotection IA</strong> Hik Vision, Dahua, CASD</figcaption>
           </figure>
-          <figure class="shot">
-            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=900&q=75&auto=format&fit=crop" alt="Techniciens en informatique industrielle" loading="lazy" />
-            <figcaption><strong>Suivi de laboratoire</strong> Certification JRI My Sirius</figcaption>
+          <figure class="shot shot--wide">
+            <picture><source type="image/webp" srcset="/img/technician-tablet-720.webp 720w, /img/technician-tablet.webp 1280w" sizes="(max-width: 860px) 80vw, 60vw" /><img src="/img/technician-tablet.jpg" alt="Technicien de maintenance avec une tablette" loading="lazy" /></picture>
+            <figcaption><strong>Maintenance 24/7</strong> Préventif, correctif, GMAO</figcaption>
           </figure>
           <figure class="shot shot--wide">
-            <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=1400&q=75&auto=format&fit=crop" alt="Raccordement de fibre optique" loading="lazy" />
-            <figcaption><strong>Réseaux &amp; électricité</strong> Fibre optique et cuivre</figcaption>
+            <picture><source type="image/webp" srcset="/img/security-room-720.webp 720w, /img/security-room.webp 1280w" sizes="(max-width: 860px) 80vw, 60vw" /><img src="/img/security-room.jpg" alt="Salle de supervision vidéo" loading="lazy" /></picture>
+            <figcaption><strong>Supervision</strong> Levée de doute, alertes</figcaption>
           </figure>
           <figure class="shot">
-            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=900&q=75&auto=format&fit=crop" alt="Infrastructure hospitalière" loading="lazy" />
-            <figcaption><strong>Sites critiques</strong> Industrie, santé, défense</figcaption>
+            <picture><source type="image/webp" srcset="/img/fiber-splicing-720.webp 720w, /img/fiber-splicing.webp 1280w" sizes="(max-width: 860px) 80vw, 60vw" /><img src="/img/fiber-splicing.jpg" alt="Soudure de fibre optique dans une armoire" loading="lazy" /></picture>
+            <figcaption><strong>Fibre optique</strong> Soudure, mesures, recette</figcaption>
+          </figure>
+          <figure class="shot shot--wide">
+            <picture><source type="image/webp" srcset="/img/fiber-panel-720.webp 720w, /img/fiber-panel.webp 1280w" sizes="(max-width: 860px) 80vw, 60vw" /><img src="/img/fiber-panel.jpg" alt="Tiroir optique et jarretières fibre" loading="lazy" /></picture>
+            <figcaption><strong>Réseaux très haut débit</strong> Cuivre et fibre</figcaption>
           </figure>
         </div>
       </div>
@@ -449,6 +452,7 @@
 
     <!-- ─────────────── CTA ─────────────── -->
     <section class="h-cta">
+      <div class="h-cta__photo" aria-hidden="true"><picture><source type="image/webp" srcset="/img/plant-alps-720.webp 720w, /img/plant-alps.webp 1280w" sizes="100vw" /><img src="/img/plant-alps.jpg" alt="" loading="lazy" /></picture></div>
       <canvas class="circuit" data-circuit="cta" aria-hidden="true"></canvas>
       <div class="h-cta__inner">
         <h2>Parlons de votre site</h2>
