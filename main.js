@@ -571,6 +571,14 @@
     }
   }
 
+  /* ─── 404: switch to English when the missing URL is under /en/ ─── */
+  if (document.body.classList.contains('page--404') && /^\/en(\/|$)/.test(location.pathname)) {
+    document.documentElement.lang = 'en';
+    document.title = 'Page not found | MCO Facilities';
+    document.querySelectorAll('[data-lang="fr"]').forEach((el) => { el.hidden = true; });
+    document.querySelectorAll('[data-lang="en"]').forEach((el) => { el.hidden = false; });
+  }
+
   /* ─── 9. Footer year ─── */
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
