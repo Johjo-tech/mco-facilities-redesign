@@ -1,0 +1,26 @@
+{
+  "layout": "vibeia/layout.html",
+  "inject": [
+    "index.html"
+  ],
+  "llms": [
+    "llms.txt",
+    "llms-full.txt"
+  ],
+  "name": "MCO Facilities",
+  "ogImage": "/img/hero-control-room.jpg",
+  "organizationId": "https://mco-facilities.vibeia.io/#organization",
+  "blog": {
+    "title": "Blog maintenance, automatisme et sûreté | MCO Facilities",
+    "description": "Conseils de MCO Facilities (Varces, Grenoble) sur la maintenance industrielle, l'automatisme, la vidéoprotection et l'électricité des sites critiques.",
+    "emptyLink": null
+  },
+  "realisations": {
+    "title": "Nos réalisations industrielles | MCO Facilities",
+    "description": "Chantiers récents de MCO Facilities en Isère et en Auvergne-Rhône-Alpes : automatisme, maintenance, vidéoprotection, électricité et fibre optique.",
+    "emptyLink": {
+      "href": "/#terrain",
+      "label": "En attendant, voyez nos interventions sur le terrain."
+    }
+  }
+}

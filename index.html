@@ -37,6 +37,7 @@
 
   <link rel="stylesheet" href="/style.css" />
   <link rel="stylesheet" href="/site.css" />
+  <link rel="stylesheet" href="/vibeia/vibeia.css" />
   <link rel="icon" href="/favicon.ico" sizes="48x48" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
   <link rel="apple-touch-icon" href="/favicon-180.png" />
@@ -303,7 +304,8 @@
         </div>
       </div>
       <a href="#secteurs">Secteurs</a>
-      <a href="#terrain">Réalisations</a>
+      <a href="/realisations/">Réalisations</a>
+      <a href="/blog/">Blog</a>
       <a href="#faq">Questions</a>
       <div class="nav__lang">
         <span class="lang--active" aria-current="true">FR</span>
@@ -580,6 +582,31 @@
       </div>
     </section>
 
+    <!-- ─────────────── CONTENUS GÉRÉS DEPUIS LE COCKPIT VIBE.IA ───────────────
+         Remplis à chaque déploiement par vibeia/build.mjs (entre les marqueurs). Un bloc vide reste caché. -->
+    <section class="vibeia-home" aria-label="Réalisations, articles et guide">
+      <div class="vibeia-home__block">
+        <div class="vibeia-home__head">
+          <h2 class="h-head__title">Nos dernières réalisations</h2>
+          <a href="/realisations/">Toutes les réalisations →</a>
+        </div>
+        <!-- vibeia:dernieres-realisations --><!-- /vibeia:dernieres-realisations -->
+      </div>
+      <div class="vibeia-home__block">
+        <div class="vibeia-home__head">
+          <h2 class="h-head__title">Derniers articles</h2>
+          <a href="/blog/">Tous les articles →</a>
+        </div>
+        <!-- vibeia:derniers-articles --><!-- /vibeia:derniers-articles -->
+      </div>
+      <div class="vibeia-home__block">
+        <div class="vibeia-home__head">
+          <h2 class="h-head__title">Guide gratuit</h2>
+        </div>
+        <!-- vibeia:livre-blanc --><!-- /vibeia:livre-blanc -->
+      </div>
+    </section>
+
     <!-- ─────────────── FAQ ─────────────── -->
     <section class="h-faq" id="faq">
       <header class="h-head">
@@ -639,7 +666,8 @@
         <div>
           <h2 class="footer__heading">Société</h2>
           <a href="/#secteurs">Secteurs et références</a>
-          <a href="/#terrain">Réalisations</a>
+          <a href="/realisations/">Réalisations</a>
+          <a href="/blog/">Blog</a>
           <a href="/contact/">Contact et audit</a>
         </div>
         <div>

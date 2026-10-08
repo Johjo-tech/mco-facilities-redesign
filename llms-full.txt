@@ -86,6 +86,8 @@ Siège à Varces, près de Grenoble ; interventions dans toute la région Auverg
 **Assurez-vous une astreinte ?**
 Oui, une astreinte technique 24h/24 — 7j/7 est dédiée aux infrastructures industrielles et aux sites critiques sous contrat.
 
+<!-- vibeia:llms-full --><!-- /vibeia:llms-full -->
+
 ## Contact
 
 - Adresse : 26 chemin de la digue, 38760 Varces, France

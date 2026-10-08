@@ -30,7 +30,11 @@ Références citées sur le site : Dassault Aviation, ST Microelectronics, Schne
 - [Sûreté & vidéoprotection](https://mco-facilities.vibeia.io/services/surete-videoprotection/) : vidéoprotection IA, serveurs, RGPD
 - [Électricité & réseaux](https://mco-facilities.vibeia.io/services/electricite-reseaux/) : courants forts, cuivre, fibre optique
 - [Contact](https://mco-facilities.vibeia.io/contact/) : formulaire et coordonnées
+- [Réalisations](https://mco-facilities.vibeia.io/realisations/) : chantiers récents, en photos
+- [Blog](https://mco-facilities.vibeia.io/blog/) : conseils et actualités (maintenance, automatisme, sûreté)
 - [English version](https://mco-facilities.vibeia.io/en/)
+
+<!-- vibeia:llms --><!-- /vibeia:llms -->
 
 ## Optionnel
 

@@ -29,6 +29,7 @@
 
   <link rel="stylesheet" href="/style.css" />
   <link rel="stylesheet" href="/site.css" />
+  <link rel="stylesheet" href="/vibeia/vibeia.css" />
   <link rel="icon" href="/favicon.ico" sizes="48x48" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
   <link rel="apple-touch-icon" href="/favicon-180.png" />
@@ -127,26 +128,26 @@
           
           <div class="field">
             <label for="f-name">Full name</label>
-            <input id="f-name" name="name" type="text" required placeholder="First Name Last Name" />
+            <input id="f-name" name="name" type="text" required minlength="2" maxlength="120" autocomplete="name" placeholder="First Name Last Name" />
           </div>
           <div class="field-row">
             <div class="field">
               <label for="f-company">Company / organization</label>
-              <input id="f-company" name="company" type="text" placeholder="Name of your organization" />
+              <input id="f-company" name="company" type="text" maxlength="160" autocomplete="organization" placeholder="Name of your organization" />
             </div>
             <div class="field">
               <label for="f-role">Job title</label>
-              <input id="f-role" name="role" type="text" placeholder="Technical Director, Facility Manager…" />
+              <input id="f-role" name="role" type="text" maxlength="100" placeholder="Technical Director, Facility Manager…" />
             </div>
           </div>
           <div class="field-row">
             <div class="field">
               <label for="f-email">Professional email</label>
-              <input id="f-email" name="email" type="email" required placeholder="you@company.com" />
+              <input id="f-email" name="email" type="email" required maxlength="200" pattern="[^@\s]+@[^@\s]+\.[A-Za-z]{2,}" autocomplete="email" placeholder="you@company.com" />
             </div>
             <div class="field">
               <label for="f-phone">Phone number</label>
-              <input id="f-phone" name="phone" type="tel" placeholder="+33 6 00 00 00 00" />
+              <input id="f-phone" name="phone" type="tel" maxlength="40" autocomplete="tel" placeholder="+33 6 00 00 00 00" />
             </div>
           </div>
           <div class="field">
@@ -163,12 +164,13 @@
           </div>
           <div class="field">
             <label for="f-msg">Describe your requirements</label>
-            <textarea id="f-msg" name="message" rows="5" placeholder="Type of site (commercial, industrial…), approximate surface area, specific constraints (environmental regulations, public access building, GDPR…), desired timeline…" required></textarea>
+            <textarea id="f-msg" name="message" rows="5" maxlength="4800" placeholder="Type of site (commercial, industrial…), approximate surface area, specific constraints (environmental regulations, public access building, GDPR…), desired timeline…" required></textarea>
           </div>
-          <p class="contact__rgpd">
-            By submitting this form, you agree that your data will be used to process your request.
-            In accordance with GDPR, you have the right to access, rectify, and delete your data — see our <a href="/en/mentions-legales/">legal notice</a>.
-          </p>
+          <label class="contact__rgpd contact__consent">
+            <input type="checkbox" name="consent" required />
+            <span>I agree that my data will be used to process my request and to contact me.
+            In accordance with GDPR, you have the right to access, rectify, and delete your data — see our <a href="/en/mentions-legales/">legal notice</a>.</span>
+          </label>
           <p class="contact__status" id="contact-status" role="status" aria-live="polite" style="margin:0 0 .5rem;min-height:1.2em;"></p>
           <button type="submit" class="btn btn--primary btn--block">
             <span>Submit my request</span>
@@ -262,7 +264,7 @@
   <script src="/vendor/ScrollTrigger.min.js"></script>
   <script src="/main.js"></script>
 
-  <!-- Envoi du formulaire de contact via Web3Forms -->
+  <!-- Envoi du formulaire de contact : cockpit Vibe.IA (/api/lead), Web3Forms en secours -->
 <script src="/contact-form.js" defer></script>
 </body>
 </html>

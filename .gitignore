@@ -19,3 +19,10 @@
 # Env
 .env
 .env.local
+
+# Pages générées par vibeia/build.mjs à chaque déploiement (ne pas committer)
+/blog/
+/realisations/
+/livre-blanc/
+/sitemap-vibeia.xml
+.vercel

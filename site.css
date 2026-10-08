@@ -97,7 +97,7 @@ h1, h2, h3, .section__title, .page-hero__title, .cta-block__title {
 }
 .nav.is-stuck { background: rgba(10, 26, 47, 0.94); padding-block: 10px; }
 .nav__logo img { height: 58px; width: auto; display: block; }
-@media (max-width: 820px) { .nav__logo img { height: 46px; } }
+@media (max-width: 960px) { .nav__logo img { height: 46px; } }
 .nav__links { gap: 30px; }
 .nav__links a, .nav__dropdown-trigger { color: #DCE5EE; font-size: 15px; font-weight: 500; }
 .nav__links a::after, .nav__dropdown-trigger::after { background: var(--cyan) !important; }
@@ -128,9 +128,20 @@ h1, h2, h3, .section__title, .page-hero__title, .cta-block__title {
 .nav__dropdown-num { display: none !important; }
 .nav__dropdown-menu a:hover { background: var(--ink-3); }
 .nav__dropdown-menu a span:not(.nav__dropdown-num) { color: var(--mist) !important; }
-@media (max-width: 820px) {
+@media (max-width: 960px) {
   .nav__links { background: var(--ink); }
   .nav__lang { border-left: 0; padding-left: 0; }
+  .nav__cta { padding: 10px 14px; font-size: 14px; }
+}
+/* the burger never shrinks; on desktop the logo keeps its size and, between 961 and 1180px,
+   the menu tightens its spacing instead (placed after the base rules so it wins the cascade) */
+.nav__burger { flex: none; }
+@media (min-width: 961px) { .nav__logo { flex: none; } }
+@media (min-width: 961px) and (max-width: 1180px) {
+  .nav { gap: 16px; }
+  .nav__links { gap: 18px; }
+  .nav__links a, .nav__dropdown-trigger { font-size: 14px; }
+  .nav__lang { margin-left: 0; padding-left: 14px; }
   .nav__cta { padding: 10px 14px; font-size: 14px; }
 }
 

@@ -1,0 +1,122 @@
+/* ════════════════════════════════════════════════════════════════
+   Contenus gérés depuis le cockpit Vibe.IA : blog, réalisations, livre blanc.
+   Pages générées par vibeia/build.mjs (classes « vibeia-* »), blocs de l'accueil
+   et case de consentement du formulaire de contact. Chargé après site.css.
+   ════════════════════════════════════════════════════════════════ */
+
+.page--vibeia, .vibeia-home { --edge: rgba(94, 200, 245, 0.18); --glass: rgba(120, 190, 235, 0.05); --glow: #5CD3FF; }
+
+/* ─── Pages générées ─── */
+.vibeia-page { padding-top: clamp(120px, 14vh, 170px); }
+.vibeia-list, .vibeia-contact { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--pad-x); }
+.vibeia-list h1, .vibeia-article h1 {
+  font-size: clamp(32px, 6vw, 72px); line-height: 1.04; letter-spacing: -0.035em;
+  color: #fff; margin: 0 0 clamp(32px, 5vw, 56px);
+  overflow-wrap: break-word; hyphens: auto; /* « opérationnelle » ne tient pas sur un téléphone de 320 px */
+}
+.vibeia-article h2, .vibeia-card h2, .vibeia-card h3, .vibeia-whitepaper-teaser h3 { overflow-wrap: break-word; hyphens: auto; }
+.vibeia-list > p { color: var(--mist); font-size: 19px; max-width: 56ch; }
+
+/* cartes (listes et blocs de l'accueil) */
+.vibeia-cards {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 18px;
+}
+.vibeia-card {
+  display: flex; flex-direction: column;
+  border: 1px solid var(--edge); border-radius: 12px; background: var(--glass); overflow: hidden;
+  transition: border-color .3s, transform .3s;
+}
+.vibeia-card:hover { border-color: rgba(92, 211, 255, 0.5); transform: translateY(-3px); }
+.vibeia-card a { display: block; color: inherit; }
+.vibeia-card img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; background: var(--ink-2); }
+.vibeia-card h2, .vibeia-card h3 { font-size: 21px; line-height: 1.2; font-stretch: 112%; color: #fff; margin: 0; padding: 22px 22px 0; }
+.vibeia-card a:hover h2, .vibeia-card a:hover h3 { color: var(--glow); }
+.vibeia-card p { margin: 10px 0 0; padding: 0 22px; color: var(--mist); font-size: 15.5px; }
+.vibeia-card > :last-child { padding-bottom: 22px; }
+.vibeia-date { color: var(--text-faint) !important; font-size: 14px !important; }
+
+/* article (billet de blog, réalisation, livre blanc) */
+.vibeia-article { max-width: 760px; margin: 0 auto; padding: 0 var(--pad-x); }
+.vibeia-article > p:first-child a { color: var(--mist); font-size: 15px; }
+.vibeia-article > p:first-child a:hover { color: var(--glow); }
+.vibeia-article > p:first-child { margin: 0 0 24px; }
+.vibeia-article h1 { margin-bottom: 24px; }
+.vibeia-article h2 { font-size: clamp(22px, 2.4vw, 28px); line-height: 1.2; color: #fff; margin: 48px 0 14px; }
+.vibeia-article p, .vibeia-article li { color: #D4DEE8; font-size: 17px; line-height: 1.7; }
+.vibeia-article p { margin: 0 0 16px; }
+.vibeia-article ul, .vibeia-article ol { margin: 0 0 20px; padding-left: 22px; list-style: disc; }
+.vibeia-article ol { list-style: decimal; }
+.vibeia-article li { margin-bottom: 6px; }
+.vibeia-article li::marker { color: var(--cyan); }
+.vibeia-lead { font-size: 21px !important; line-height: 1.5 !important; color: #fff !important; }
+.vibeia-meta { color: var(--cyan) !important; font-weight: 600; font-size: 15px !important; margin-bottom: 12px !important; }
+.vibeia-author { color: var(--mist) !important; font-size: 15px !important; margin: -8px 0 20px !important; }
+.vibeia-cover img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--edge); }
+.vibeia-article a:not(.vibeia-cta) { color: var(--glow); border-bottom: 1px dashed currentColor; }
+.vibeia-article > p:first-child a { border-bottom: 0; }
+.vibeia-faq h3 { font-size: 19px; line-height: 1.3; color: #fff; margin: 28px 0 8px; }
+.vibeia-sources li { font-size: 15px; color: var(--mist); }
+.vibeia-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 14px; margin: 32px 0; }
+.vibeia-gallery img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--edge); }
+
+/* bouton d'action */
+.vibeia-cta {
+  display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 26px;
+  border-radius: var(--r-sm); background: var(--cyan); color: #03101D !important; font-weight: 700; font-size: 16px;
+  box-shadow: 0 0 0 1px rgba(92, 211, 255, 0.6), 0 10px 40px -6px rgba(38, 169, 218, 0.6);
+  transition: background .25s, transform .25s;
+}
+.vibeia-cta:hover { background: #5CD3FF; transform: translateY(-2px); }
+
+/* formulaire du livre blanc */
+.vibeia-form {
+  display: grid; gap: 18px; margin-top: 24px; padding: clamp(24px, 4vw, 40px);
+  background: var(--bg-soft); border: 1px solid var(--line); border-radius: var(--r-xl);
+}
+.vibeia-form label { display: grid; gap: 8px; color: var(--mist); font-size: 15px; font-weight: 600; }
+.vibeia-form input:not([type="checkbox"]) {
+  font: inherit; font-size: 16px; font-weight: 400; color: var(--text); width: 100%;
+  background: rgba(255, 255, 255, 0.03); border: 1px solid var(--line-strong); border-radius: var(--r-md); padding: 14px 16px;
+}
+.vibeia-form input:not([type="checkbox"]):focus { outline: 0; border-color: var(--cyan); }
+.vibeia-form button {
+  justify-self: start; min-height: 52px; padding: 0 26px; border: 0; border-radius: var(--r-sm); cursor: pointer;
+  background: var(--cyan); color: #03101D; font: inherit; font-size: 16px; font-weight: 700;
+}
+.vibeia-form button:hover { background: #5CD3FF; }
+.vibeia-form button:disabled { opacity: .6; cursor: wait; }
+.vibeia-status { min-height: 1.4em; margin: 0 !important; color: var(--glow) !important; font-size: 15px !important; }
+
+/* case de consentement (livre blanc et formulaire de contact) */
+.vibeia-consent, .contact__consent {
+  display: flex !important; align-items: flex-start; gap: 12px; cursor: pointer;
+  font-weight: 400 !important; font-size: 14px !important; line-height: 1.55; color: var(--mist) !important;
+}
+.vibeia-consent input, .contact__consent input { flex: none; width: 20px; height: 20px; margin: 1px 0 0; accent-color: var(--cyan); cursor: pointer; }
+.contact__consent a { color: var(--accent); border-bottom: 1px dashed currentColor; }
+
+/* bandeau de contact en bas des pages générées */
+.vibeia-contact { margin-top: clamp(80px, 10vw, 130px); padding-top: clamp(48px, 6vw, 72px); padding-bottom: clamp(80px, 10vw, 120px); border-top: 1px solid var(--edge); }
+.vibeia-contact h2 { font-size: clamp(30px, 4vw, 48px); color: #fff; }
+.vibeia-contact > p { color: var(--mist); max-width: 52ch; margin-top: 14px; }
+.vibeia-contact__actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px !important; }
+
+/* ─── Accueil : dernières réalisations, derniers articles, livre blanc ─── */
+.vibeia-home { background: var(--void, #040A13); padding: clamp(90px, 10vw, 130px) 0; border-top: 1px solid var(--edge); }
+.vibeia-home__block { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--pad-x); }
+.vibeia-home__block + .vibeia-home__block { margin-top: clamp(56px, 7vw, 90px); }
+.vibeia-home__head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px 24px; margin-bottom: 28px; }
+.vibeia-home__head h2 { font-size: clamp(28px, 3.4vw, 44px); color: #fff; }
+.vibeia-home__head a { color: var(--glow); font-weight: 600; }
+.vibeia-home__head a:hover { color: #fff; }
+.vibeia-whitepaper-teaser {
+  display: grid; gap: 14px; justify-items: start; padding: clamp(28px, 4vw, 44px);
+  border: 1px solid var(--edge); border-radius: 14px;
+  background: linear-gradient(120deg, rgba(38, 169, 218, 0.16), rgba(120, 190, 235, 0.04));
+}
+.vibeia-whitepaper-teaser h3 { font-size: clamp(24px, 2.6vw, 32px); color: #fff; margin: 0; }
+.vibeia-whitepaper-teaser p { color: #D4DEE8; max-width: 64ch; margin: 0; }
+/* un bloc sans contenu publié reste caché (et la section entière si tout est vide) */
+.vibeia-home__block:not(:has(.vibeia-cards, .vibeia-whitepaper-teaser)) { display: none; }
+.vibeia-home:not(:has(.vibeia-cards, .vibeia-whitepaper-teaser)) { display: none; }
