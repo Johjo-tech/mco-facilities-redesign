@@ -26,7 +26,7 @@ Conception et intégration de systèmes automatisés et de solutions robotiques 
 - **Rétrofit & modernisation** : remplacement d'automates et d'IHM en fin de support, migration de programmes.
 - **Sécurité & conformité CE** : analyse de risques, circuits de sécurité, niveaux de performance PLd/PLe, dossier technique et marquage CE.
 
-Page : https://mco-facilities.vibeia.io/services/automatisme-robotique/
+Page : https://www.mco-facilities.fr/services/automatisme-robotique/
 
 ### 2. Maintien en Condition Opérationnelle (MCO)
 
@@ -39,7 +39,7 @@ Garantir la disponibilité, la performance et la conformité des installations t
 - **Astreinte 24/7** : numéro unique, technicien d'astreinte qualifié, intervention sur site selon SLA contractuel.
 - **Pilotage CAPEX** : anticipation des fins de vie et des renouvellements d'équipements.
 
-Page : https://mco-facilities.vibeia.io/services/maintien-condition-operationnelle/
+Page : https://www.mco-facilities.fr/services/maintien-condition-operationnelle/
 
 ### 3. Sûreté & vidéoprotection
 
@@ -52,7 +52,7 @@ Conception, déploiement et exploitation de systèmes de sûreté et de vidéopr
 - **Conformité RGPD intégrée** : registre des traitements, durée de conservation paramétrée, procédure de réponse aux demandes d'accès.
 - **Couplage avec le contrôle d'accès** depuis une même interface.
 
-Page : https://mco-facilities.vibeia.io/services/surete-videoprotection/
+Page : https://www.mco-facilities.fr/services/surete-videoprotection/
 
 ### 4. Électricité & réseaux
 
@@ -64,7 +64,7 @@ Infrastructures électriques robustes et architectures réseaux très haut débi
 - **Déploiement, raccordement et recette** : certification cuivre, réflectométrie OTDR sur la fibre, dossier de recette complet.
 - **Courants faibles** et GTB.
 
-Page : https://mco-facilities.vibeia.io/services/electricite-reseaux/
+Page : https://www.mco-facilities.fr/services/electricite-reseaux/
 
 ## Références clients citées sur le site
 
@@ -92,4 +92,4 @@ Oui, une astreinte technique 24h/24 — 7j/7 est dédiée aux infrastructures in
 - Astreinte : 06 70 61 68 70
 - Standard : 09 53 96 66 54
 - Email : contact@mco-facilities.fr
-- Formulaire : https://mco-facilities.vibeia.io/contact/
+- Formulaire : https://www.mco-facilities.fr/contact/

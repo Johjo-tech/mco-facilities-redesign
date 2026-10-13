@@ -35,4 +35,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://mco-facilities.vibeia.io/sitemap.xml
+Sitemap: https://www.mco-facilities.fr/sitemap.xml
