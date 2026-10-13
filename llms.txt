@@ -24,16 +24,16 @@ Références citées sur le site : Dassault Aviation, ST Microelectronics, Schne
 
 ## Pages principales
 
-- [Accueil](https://mco-facilities.vibeia.io/) : présentation, expertises, prestations, références, FAQ
-- [Automatisme & robotique](https://mco-facilities.vibeia.io/services/automatisme-robotique/) : automates, SCADA, cobots, variation de vitesse
-- [Maintien en Condition Opérationnelle](https://mco-facilities.vibeia.io/services/maintien-condition-operationnelle/) : maintenance préventive et corrective, astreinte 24/7
-- [Sûreté & vidéoprotection](https://mco-facilities.vibeia.io/services/surete-videoprotection/) : vidéoprotection IA, serveurs, RGPD
-- [Électricité & réseaux](https://mco-facilities.vibeia.io/services/electricite-reseaux/) : courants forts, cuivre, fibre optique
-- [Contact](https://mco-facilities.vibeia.io/contact/) : formulaire et coordonnées
-- [English version](https://mco-facilities.vibeia.io/en/)
+- [Accueil](https://www.mco-facilities.fr/) : présentation, expertises, prestations, références, FAQ
+- [Automatisme & robotique](https://www.mco-facilities.fr/services/automatisme-robotique/) : automates, SCADA, cobots, variation de vitesse
+- [Maintien en Condition Opérationnelle](https://www.mco-facilities.fr/services/maintien-condition-operationnelle/) : maintenance préventive et corrective, astreinte 24/7
+- [Sûreté & vidéoprotection](https://www.mco-facilities.fr/services/surete-videoprotection/) : vidéoprotection IA, serveurs, RGPD
+- [Électricité & réseaux](https://www.mco-facilities.fr/services/electricite-reseaux/) : courants forts, cuivre, fibre optique
+- [Contact](https://www.mco-facilities.fr/contact/) : formulaire et coordonnées
+- [English version](https://www.mco-facilities.fr/en/)
 
 ## Optionnel
 
-- [Description détaillée](https://mco-facilities.vibeia.io/llms-full.txt)
-- [Mentions légales](https://mco-facilities.vibeia.io/mentions-legales/) : éditeur, hébergeur, données personnelles
-- [Conditions générales d'utilisation](https://mco-facilities.vibeia.io/cgu/)
+- [Description détaillée](https://www.mco-facilities.fr/llms-full.txt)
+- [Mentions légales](https://www.mco-facilities.fr/mentions-legales/) : éditeur, hébergeur, données personnelles
+- [Conditions générales d'utilisation](https://www.mco-facilities.fr/cgu/)
