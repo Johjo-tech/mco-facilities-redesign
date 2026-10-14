@@ -5,7 +5,7 @@
 Domaines d'activité :
 
 - **Automatisme & robotique industriels** : programmation d'automates toutes marques, intégration robotique et cobots, informatique industrielle et SCADA, variation de vitesse, rétrofit, sécurité machine et marquage CE.
-- **Maintien en Condition Opérationnelle (MCO)** : maintenance préventive planifiée, maintenance corrective d'urgence sur site, GMAO partagée, reporting mensuel, astreinte 24/7 sur installations industrielles critiques.
+- **Maintien en Condition Opérationnelle (MCO)** : maintenance préventive et corrective des automatismes (Schneider Electric et autres marques), supervisions SCADA (PCvue), vidéoprotection (Hikvision, Dahua, CASD), alarmes intrusion (Honeywell Galaxy, Vanderbilt), suivi de température (intégrateur certifié JRI My Sirius) ; astreinte 24/7.
 - **Sûreté & vidéoprotection** : intégration de serveurs dédiés et d'enregistreurs, solutions IA de vidéoprotection (Hik Vision, Dahua, CASD), intégrateur certifié JRI My Sirius pour la mesure et le suivi de température de laboratoire, conformité RGPD.
 - **Électricité & réseaux** : électricité générale industrielle, réseaux cuivre haute performance, fibre optique (FO), déploiement, raccordement et recette (mesures OTDR).
 
@@ -26,7 +26,8 @@ Références citées sur le site : Dassault Aviation, ST Microelectronics, Schne
 
 - [Accueil](https://www.mco-facilities.fr/) : présentation, expertises, prestations, références, FAQ
 - [Automatisme & robotique](https://www.mco-facilities.fr/services/automatisme-robotique/) : automates, SCADA, cobots, variation de vitesse
-- [Maintien en Condition Opérationnelle](https://www.mco-facilities.fr/services/maintien-condition-operationnelle/) : maintenance préventive et corrective, astreinte 24/7
+- [Maintien en Condition Opérationnelle](https://www.mco-facilities.fr/services/maintien-condition-operationnelle/) : maintenance des automatismes et systèmes de sûreté, astreinte 24/7
+- [Dépannage automate Schneider](https://www.mco-facilities.fr/expertises/depannage-automate-schneider/) : diagnostic, sauvegarde et restauration de programme, remplacement de modules, rétrofit, 24h/24 en Isère
 - [Sûreté & vidéoprotection](https://www.mco-facilities.fr/services/surete-videoprotection/) : vidéoprotection IA, serveurs, RGPD
 - [Électricité & réseaux](https://www.mco-facilities.fr/services/electricite-reseaux/) : courants forts, cuivre, fibre optique
 - [Contact](https://www.mco-facilities.fr/contact/) : formulaire et coordonnées
