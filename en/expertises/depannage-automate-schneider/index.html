@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0A1A2F" />
+
+  <title>24/7 Schneider PLC Troubleshooting – Isère | MCO Facilities</title>
+  <meta name="description" content="Schneider PLC fault? 24/7 troubleshooting in Isère, France: diagnosis, program backup and restore, module replacement, retrofit." />
+  <meta name="geo.region" content="FR-38" />
+  <meta name="geo.placename" content="Varces-Allières-et-Risset, Isère" />
+  <meta name="geo.position" content="45.099;5.687" />
+  <meta name="ICBM" content="45.099, 5.687" />
+  <link rel="canonical" href="https://www.mco-facilities.fr/en/expertises/depannage-automate-schneider/" />
+  <link rel="alternate" hreflang="fr" href="https://www.mco-facilities.fr/expertises/depannage-automate-schneider/" />
+  <link rel="alternate" hreflang="en" href="https://www.mco-facilities.fr/en/expertises/depannage-automate-schneider/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.mco-facilities.fr/expertises/depannage-automate-schneider/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="https://www.mco-facilities.fr/en/expertises/depannage-automate-schneider/" />
+  <meta property="og:title" content="24/7 Schneider PLC troubleshooting — MCO Facilities" />
+  <meta property="og:description" content="Schneider Electric PLC fault? 24/7 response in Isère, France, from Varces." />
+  <meta property="og:image" content="https://www.mco-facilities.fr/img/cabinet-corridor.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preload" href="/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/fonts/fonts.css" />
+
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/site.css" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/favicon-180.png" />
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mco-facilities.fr/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Automation & Robotics",
+          "item": "https://www.mco-facilities.fr/en/services/automatisme-robotique/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Schneider PLC troubleshooting",
+          "item": "https://www.mco-facilities.fr/en/expertises/depannage-automate-schneider/"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "serviceType": "Schneider Electric PLC troubleshooting",
+      "name": "Schneider Electric PLC troubleshooting",
+      "provider": {
+        "@id": "https://www.mco-facilities.fr/#localbusiness"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Isère"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Auvergne-Rhône-Alpes"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "France"
+        }
+      ],
+      "description": "A line at a standstill, a faulty PLC, a program nobody can find: MCO Facilities works on your Schneider Electric PLCs day and night, from Varces, just south of Grenoble."
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "My PLC no longer has a saved program. Can you help?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we retrieve the program in place whenever possible and make a documented backup."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work on other brands?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, contact us with the brand and model of your PLC."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+
+<body class="page--service">
+  <div class="bg-layer" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-orb bg-orb--1"></div>
+    <div class="bg-orb bg-orb--2"></div>
+    <div class="bg-noise"></div>
+  </div>
+
+  <div class="cursor" aria-hidden="true"><div class="cursor__dot"></div></div>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <a href="/en/" class="nav__logo" aria-label="MCO Facilities — home">
+      <img src="/logo-mco.png" alt="MCO Facilities" width="147" height="44" />
+    </a>
+    <nav class="nav__links" aria-label="Main navigation">
+      <div class="nav__dropdown">
+        <button class="nav__dropdown-trigger is-active" aria-haspopup="true" aria-expanded="false">
+          Services <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="nav__dropdown-menu">
+          <a href="/en/services/automatisme-robotique/"><span class="nav__dropdown-num">01</span><div><strong>Automation &amp; Robotics</strong><span>Automated systems, SCADA, robotics</span></div></a>
+          <a href="/en/services/maintien-condition-operationnelle/"><span class="nav__dropdown-num">02</span><div><strong>Operational Readiness (MCO)</strong><span>24/7 preventive &amp; corrective maintenance</span></div></a>
+          <a href="/en/services/surete-videoprotection/"><span class="nav__dropdown-num">03</span><div><strong>Security &amp; Video Protection</strong><span>AI video protection, servers, JRI</span></div></a>
+          <a href="/en/services/electricite-reseaux/"><span class="nav__dropdown-num">04</span><div><strong>Electricity &amp; Networks</strong><span>Industrial power, copper &amp; fibre optic</span></div></a>
+        </div>
+      </div>
+      <a href="/en/#secteurs">Sectors</a>
+      <a href="/en/#terrain">Field work</a>
+      <a href="/en/#faq">FAQ</a>
+
+      <!-- Language Selector -->
+      <div class="nav__lang" style="margin-left: 15px; font-size: 0.9rem; font-family: var(--ff-mono, monospace);">
+        <span class="lang--active" style="font-weight: bold; color: #fff;">EN</span> | <a href="/expertises/depannage-automate-schneider/" class="lang__link" style="opacity: 0.6; text-decoration: none; color: #fff;">FR</a>
+      </div>
+    </nav>
+    <a href="/en/contact/" class="nav__cta">Request an audit</a>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="page-hero">
+      <div class="page-hero__photo" aria-hidden="true">
+        <picture><source type="image/webp" srcset="/img/cabinet-corridor-960.webp 960w, /img/cabinet-corridor.webp 1920w" sizes="100vw" /><img src="/img/cabinet-corridor.jpg" width="1920" height="1088" alt="Aisle of electrical and automation cabinets in a technical room" fetchpriority="high" /></picture>
+      </div>
+      <div class="page-hero__inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/en/">Home</a>
+          <span aria-hidden="true">·</span>
+          <a href="/en/services/automatisme-robotique/">Automation &amp; Robotics</a>
+          <span aria-hidden="true">·</span>
+          <span aria-current="page">Schneider PLC troubleshooting</span>
+        </nav>
+
+        <span class="page-hero__kicker" data-reveal>
+          <span class="dot"></span>
+          <span>Expertise — 24/7 troubleshooting</span>
+        </span>
+
+        <h1 class="page-hero__title page-hero__title--long" data-reveal>
+          <em>Schneider Electric</em> PLC troubleshooting, 24/7 in Isère
+        </h1>
+
+        <p class="page-hero__lede" data-reveal>
+          A line at a standstill, a faulty PLC, a program nobody can find: MCO Facilities works on your <strong>Schneider Electric PLCs</strong> day and night, from Varces, just south of Grenoble.
+        </p>
+
+        <div class="page-hero__actions" data-reveal>
+          <a href="tel:+33670616870" class="btn btn--primary"><span>On call: +33 6 70 61 68 70</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="/en/contact/" class="btn btn--ghost"><span>Request a call-out</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERVENTIONS -->
+    <section class="section section--dark" id="offre">
+      <div class="section__head">
+        <span class="kicker" data-reveal>What we do</span>
+        <h2 class="section__title" data-reveal>
+          <span>What</span><span>we <em>do.</em></span>
+        </h2>
+      </div>
+      <div class="sub-services">
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><path d="M4 16h6l3-9 6 18 3-9h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Faulty PLC diagnosis</h3>
+          <p>CPU, power supply, I/O cards, network communication.</p>
+        </article>
+
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><path d="M6 6h16l4 4v16H6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M11 6v6h9V6M10 26v-8h12v8" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+          <h3>Backup and restore</h3>
+          <p>Program backup and restore, including when no documentation exists.</p>
+        </article>
+
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><rect x="5" y="8" width="6" height="16" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="13" y="8" width="6" height="16" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M23 16h5M25.5 13.5v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+          <h3>Module replacement</h3>
+          <p>Module replacement and recommissioning.</p>
+        </article>
+
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><path d="M6 12a10 10 0 0 1 18-4M26 20a10 10 0 0 1-18 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M24 3v5h-5M8 29v-5h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Retrofit of obsolete PLCs</h3>
+          <p>Migration from legacy ranges (TSX Micro, Premium, Quantum) to the current Modicon M340 and M580 ranges.</p>
+        </article>
+
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><rect x="5" y="6" width="22" height="16" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M9 17l4-4 3 3 6-6M11 26h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Supervision link</h3>
+          <p>Connection to and testing of exchanges with the supervision system (PCvue or other SCADA).</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- POURQUOI -->
+    <section class="section">
+      <div class="section__head">
+        <span class="kicker" data-reveal>Why call us</span>
+        <h2 class="section__title" data-reveal>
+          <span>Why</span><span>call <em>us.</em></span>
+        </h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-grid__item" data-reveal>
+          <span class="why-grid__num">01</span>
+          <h3>24/7 on-call</h3>
+          <p>One number, day and night, weekends included.</p>
+        </div>
+        <div class="why-grid__item" data-reveal>
+          <span class="why-grid__num">02</span>
+          <h3>Demanding sites</h3>
+          <p>Work on industrial, hospital and military sites.</p>
+        </div>
+        <div class="why-grid__item" data-reveal>
+          <span class="why-grid__num">03</span>
+          <h3>Programs protected</h3>
+          <p>Programs are always backed up before any change.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="section__head">
+        <span class="kicker" data-reveal>Frequently asked questions</span>
+        <h2 class="section__title" data-reveal>
+          <span>Frequently asked</span><span><em>questions.</em></span>
+        </h2>
+      </div>
+      <div class="faq">
+        <details class="faq__item" data-reveal>
+          <summary><span>My PLC no longer has a saved program. Can you help?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">Yes, we retrieve the program in place whenever possible and make a documented backup.</div>
+        </details>
+
+        <details class="faq__item" data-reveal>
+          <summary><span>Do you work on other brands?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">Yes, contact us with the brand and model of your PLC.</div>
+        </details>
+      </div>
+    </section>
+
+    <!-- AUTRES SERVICES -->
+    <section class="section section--dark">
+      <div class="section__head">
+        <span class="kicker" data-reveal>Related services</span>
+        <h2 class="section__title" data-reveal>
+          <span>Related</span><span><em>services.</em></span>
+        </h2>
+      </div>
+      <div class="related">
+        <a href="/en/services/automatisme-robotique/" class="related__card" data-reveal>
+          <span class="related__num">01</span>
+          <h3>Automation &amp; Robotics</h3>
+          <p>Design, integration and retrofit of automated systems.</p>
+          <span class="related__link">Discover →</span>
+        </a>
+        <a href="/en/services/maintien-condition-operationnelle/" class="related__card" data-reveal>
+          <span class="related__num">02</span>
+          <h3>Operational readiness (MCO)</h3>
+          <p>Preventive and corrective maintenance, 24/7 on-call.</p>
+          <span class="related__link">Discover →</span>
+        </a>
+        <a href="/en/services/electricite-reseaux/" class="related__card" data-reveal>
+          <span class="related__num">04</span>
+          <h3>Electricity &amp; Networks</h3>
+          <p>Equipment power supply, copper and fibre optic.</p>
+          <span class="related__link">Discover →</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="cta-block">
+        <div data-reveal>
+          <span class="kicker">PLC fault?</span>
+          <h2 class="cta-block__title"><span>Line at</span><span>a <em>standstill?</em></span></h2>
+          <p>Call the on-call line, or tell us the brand, model and fault you are seeing: we will get back to you quickly.</p>
+        </div>
+        <div class="cta-block__actions" data-reveal>
+          <a href="tel:+33670616870" class="btn btn--primary"><span>On call: +33 6 70 61 68 70</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="/en/contact/" class="btn btn--ghost"><span>Request a call-out</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="/logo-mco.png" alt="MCO Facilities" width="147" height="44" />
+        <p>Automation, MCO, security &amp; video protection, and electricity — for safe, resilient, and high-performing sites.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <div><h2 class="footer__heading">Services</h2><a href="/en/services/automatisme-robotique/">Automation &amp; Robotics</a><a href="/en/services/maintien-condition-operationnelle/">MCO 24/7</a><a href="/en/services/surete-videoprotection/">Security &amp; Video Protection</a><a href="/en/services/electricite-reseaux/">Electricity &amp; Networks</a></div>
+        <div><h2 class="footer__heading">Company</h2><a href="/en/#secteurs">Sectors</a><a href="/en/#terrain">Field work</a><a href="/en/#faq">FAQ</a><a href="/en/contact/">Contact</a></div>
+        <div><h2 class="footer__heading">Contact Details</h2><a href="tel:+33953966654">Main line: +33 9 53 96 66 54</a><a href="tel:+33670616870">On call: +33 6 70 61 68 70</a><a href="mailto:contact@mco-facilities.fr">Email</a><span>26 chemin de la digue, 38760 Varces</span></div>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> MCO Facilities — All rights reserved.</span>
+      <span class="footer__legal"><a href="/en/mentions-legales/">Legal Notice</a> · <a href="/en/cgu/">Terms of Use</a> · <span class="muted">Designed in France</span></span>
+    </div>
+  </footer>
+
+  <script src="/vendor/gsap.min.js"></script>
+  <script src="/vendor/ScrollTrigger.min.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>
